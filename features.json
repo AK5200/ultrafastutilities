@@ -89,7 +89,7 @@
       "See Next/Continue button to proceed",
       "Page has clear heading explaining the step"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
