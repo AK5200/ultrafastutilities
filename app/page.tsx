@@ -69,6 +69,99 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
+            Choose Your Plan
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Free Tier */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Free</CardTitle>
+                <CardDescription className="text-lg mt-2">
+                  Perfect for getting started
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold mb-4">₹0</div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Generate Privacy Policy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Download as text</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✗</span>
+                    <span className="line-through text-gray-400">Watermark-free document</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✗</span>
+                    <span className="line-through text-gray-400">PDF download</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✗</span>
+                    <span className="line-through text-gray-400">Terms & Cookie Policy</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-500 mb-4">
+                  * Free version includes watermark
+                </p>
+                <Link href="/generate" className="block">
+                  <Button className="w-full" variant="outline">
+                    Get Started Free
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Paid Tier */}
+            <Card className="border-2 border-primary">
+              <CardHeader>
+                <CardTitle className="text-2xl">Premium</CardTitle>
+                <CardDescription className="text-lg mt-2">
+                  Best for professional use
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold mb-4">₹999</div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Everything in Free</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Watermark-free document</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>PDF download</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Privacy Policy + Terms + Cookie Policy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✓</span>
+                    <span>Priority support</span>
+                  </li>
+                </ul>
+                <Link href="/generate" className="block">
+                  <Button className="w-full">
+                    Upgrade to Premium
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
