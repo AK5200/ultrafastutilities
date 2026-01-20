@@ -1,0 +1,501 @@
+[
+  {
+    "category": "setup",
+    "description": "Initialize Next.js 14 project with TypeScript and Tailwind",
+    "steps": [
+      "Run npx create-next-app@latest with TypeScript and Tailwind options",
+      "Verify package.json has next, react, typescript, tailwindcss",
+      "Run npm run dev successfully",
+      "Verify localhost:3000 shows Next.js default page"
+    ],
+    "passes": true
+  },
+  {
+    "category": "setup",
+    "description": "Install and configure shadcn/ui",
+    "steps": [
+      "Run npx shadcn-ui@latest init",
+      "Install button, card, input, checkbox, select, radio-group components",
+      "Verify components folder exists with ui subfolder",
+      "Import and render a Button component on home page"
+    ],
+    "passes": false
+  },
+  {
+    "category": "setup",
+    "description": "Create init.sh script for environment setup",
+    "steps": [
+      "Create init.sh in project root",
+      "Script should run npm install",
+      "Script should start dev server in background",
+      "Script should be executable (chmod +x)",
+      "Running ./init.sh starts the development server"
+    ],
+    "passes": false
+  },
+  {
+    "category": "landing",
+    "description": "Create landing page hero section",
+    "steps": [
+      "Navigate to localhost:3000",
+      "See headline: Generate a Privacy Policy in 60 Seconds",
+      "See subheadline explaining the value proposition",
+      "See a prominent CTA button: Create Your Policy",
+      "CTA button links to /generate"
+    ],
+    "passes": false
+  },
+  {
+    "category": "landing",
+    "description": "Create landing page features section",
+    "steps": [
+      "Scroll down on landing page",
+      "See 3-4 feature cards explaining benefits",
+      "Features include: Fast, Legal compliance, Free option, Multiple formats",
+      "Section is visually appealing with icons"
+    ],
+    "passes": false
+  },
+  {
+    "category": "landing",
+    "description": "Create landing page pricing section",
+    "steps": [
+      "Scroll to pricing section",
+      "See Free tier card with features and limitations",
+      "See Paid tier card (₹999) with premium features",
+      "Both cards have CTA buttons",
+      "Free tier mentions watermark limitation"
+    ],
+    "passes": false
+  },
+  {
+    "category": "landing",
+    "description": "Create landing page footer",
+    "steps": [
+      "Scroll to bottom of page",
+      "See footer with copyright text",
+      "See links to: Privacy Policy, Terms of Service, Contact",
+      "Footer is styled consistently with rest of page"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create generator page with URL input",
+    "steps": [
+      "Navigate to /generate",
+      "See input field for website URL",
+      "URL field is optional (can be skipped)",
+      "See Next/Continue button to proceed",
+      "Page has clear heading explaining the step"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 1: Website Type",
+    "steps": [
+      "After URL step, see Question 1",
+      "Question asks: What type of website is this?",
+      "Options: Personal Blog, Business Website, E-commerce, SaaS, Mobile App, Other",
+      "User can select ONE option",
+      "Other option shows text input",
+      "Next button proceeds to Question 2"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 2: Data Collected",
+    "steps": [
+      "See Question 2 after completing Q1",
+      "Question asks: What personal information do you collect?",
+      "Options are checkboxes: Name, Email, Phone, Address, Payment info, DOB, Govt ID, Photos",
+      "User can select MULTIPLE options",
+      "Include None of the above option",
+      "Next button proceeds to Question 3"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 3: Collection Methods",
+    "steps": [
+      "See Question 3 after completing Q2",
+      "Question asks: How do you collect this information?",
+      "Options are checkboxes: Contact forms, Account signup, Newsletter, Checkout, Cookies, Social login, User content",
+      "User can select MULTIPLE options",
+      "Next button proceeds to Question 4"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 4: Data Usage",
+    "steps": [
+      "See Question 4 after completing Q3",
+      "Question asks: What do you use this data for?",
+      "Options are checkboxes: Providing services, Processing orders, Marketing emails, Customer support, Analytics, Personalization, Legal compliance",
+      "User can select MULTIPLE options",
+      "Next button proceeds to Question 5"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 5: Third Party Sharing",
+    "steps": [
+      "See Question 5 after completing Q4",
+      "Question asks: Do you share data with third parties?",
+      "Options are checkboxes: Payment processors, Email services, Analytics, Advertising, Cloud hosting, CRM tools, No sharing",
+      "User can select MULTIPLE options",
+      "No sharing deselects other options",
+      "Next button proceeds to Question 6"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 6: Cookies",
+    "steps": [
+      "See Question 6 after completing Q5",
+      "Question asks: Do you use cookies?",
+      "Options are radio buttons: Essential only, Analytics cookies, Advertising cookies, All types, No cookies",
+      "User can select ONE option",
+      "Next button proceeds to Question 7"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 7: User Rights",
+    "steps": [
+      "See Question 7 after completing Q6",
+      "Question asks: What can users do with their data?",
+      "Options are checkboxes: View data, Download data, Request deletion, Opt out of marketing, All of the above",
+      "All of the above selects all options",
+      "Next button proceeds to Question 8"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Create Question 8: Business Details",
+    "steps": [
+      "See Question 8 after completing Q7",
+      "See input field for Business/Website Name",
+      "See input field for Contact Email",
+      "See dropdown for Country (default: India)",
+      "If India selected, show State dropdown",
+      "Business name pre-filled if URL was provided",
+      "Generate button to create policy"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Generator shows progress indicator",
+    "steps": [
+      "On any question page, see progress bar or step indicator",
+      "Indicator shows current step out of total (e.g., 3/8)",
+      "Previous steps are visually marked as complete",
+      "User can click back to edit previous answers"
+    ],
+    "passes": false
+  },
+  {
+    "category": "generator",
+    "description": "Generator stores answers in state",
+    "steps": [
+      "Fill out all 8 questions",
+      "Go back to question 1",
+      "Verify previous answer is still selected",
+      "Navigate forward, all answers are preserved",
+      "Answers persist through the wizard flow"
+    ],
+    "passes": false
+  },
+  {
+    "category": "templates",
+    "description": "Create privacy policy template",
+    "steps": [
+      "Create lib/templates/privacy-policy.ts",
+      "Template has sections: Intro, Data Collection, Usage, Sharing, Cookies, Rights, Security, Children, Changes, Contact",
+      "Template uses placeholder variables: {{businessName}}, {{contactEmail}}, etc.",
+      "Template conditionally includes sections based on answers",
+      "Export function that takes PolicyData and returns string"
+    ],
+    "passes": false
+  },
+  {
+    "category": "templates",
+    "description": "Create terms of service template",
+    "steps": [
+      "Create lib/templates/terms-of-service.ts",
+      "Template has standard ToS sections",
+      "Template uses same variables as privacy policy",
+      "Export function that takes PolicyData and returns string"
+    ],
+    "passes": false
+  },
+  {
+    "category": "templates",
+    "description": "Create cookie policy template",
+    "steps": [
+      "Create lib/templates/cookie-policy.ts",
+      "Template explains cookie types used",
+      "Template content varies based on cookie answer",
+      "Export function that takes PolicyData and returns string"
+    ],
+    "passes": false
+  },
+  {
+    "category": "api",
+    "description": "Create generate API endpoint",
+    "steps": [
+      "Create app/api/generate/route.ts",
+      "POST endpoint accepts PolicyData JSON",
+      "Calls template functions to generate documents",
+      "Returns JSON with: privacyPolicy, termsOfService, cookiePolicy",
+      "Test with curl or Postman"
+    ],
+    "passes": false
+  },
+  {
+    "category": "api",
+    "description": "Create URL detection API endpoint",
+    "steps": [
+      "Create app/api/detect/route.ts",
+      "POST endpoint accepts { url: string }",
+      "Fetches the URL and extracts: title, meta description, contact email",
+      "Returns JSON with detected values",
+      "Handles errors gracefully (invalid URL, timeout)",
+      "Test with real website URL"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preview",
+    "description": "Create preview page showing generated policy",
+    "steps": [
+      "Navigate to /preview after completing generator",
+      "See generated privacy policy displayed",
+      "Policy is formatted with proper headings and paragraphs",
+      "See tabs or buttons to switch between: Privacy Policy, Terms, Cookies",
+      "Content updates when switching tabs"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preview",
+    "description": "Add copy to clipboard functionality",
+    "steps": [
+      "On preview page, see Copy button",
+      "Clicking Copy copies policy text to clipboard",
+      "Show success toast: Copied to clipboard",
+      "Paste in text editor confirms content was copied"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preview",
+    "description": "Add download as text file functionality",
+    "steps": [
+      "On preview page, see Download button",
+      "Clicking Download saves .txt file",
+      "File is named privacy-policy.txt",
+      "File contains the full policy text",
+      "Works in Chrome and Firefox"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preview",
+    "description": "Free tier shows watermark in policy",
+    "steps": [
+      "Generate policy without paying",
+      "Preview shows policy with watermark at bottom",
+      "Watermark text: Generated by PolicyDraft.in - Create yours free",
+      "Watermark is included in copy and download",
+      "Watermark is visually distinct but not obtrusive"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preview",
+    "description": "Show upgrade prompt for paid features",
+    "steps": [
+      "On preview page, see upgrade card/banner",
+      "Card shows: Remove watermark, Get Terms of Service, Get Cookie Policy, PDF download",
+      "Card shows price: ₹999 one-time",
+      "Card has Pay Now button",
+      "Clicking Pay Now initiates Razorpay checkout"
+    ],
+    "passes": false
+  },
+  {
+    "category": "payment",
+    "description": "Integrate Razorpay checkout",
+    "steps": [
+      "Create lib/razorpay.ts with Razorpay configuration",
+      "Pay Now button opens Razorpay modal",
+      "Modal shows correct amount (₹999)",
+      "Modal accepts UPI, cards, netbanking",
+      "Use test mode for development"
+    ],
+    "passes": false
+  },
+  {
+    "category": "payment",
+    "description": "Create payment webhook handler",
+    "steps": [
+      "Create app/api/payment/route.ts",
+      "Webhook verifies Razorpay signature",
+      "On successful payment, store transaction in Supabase",
+      "Return 200 OK to Razorpay",
+      "Test with Razorpay test mode"
+    ],
+    "passes": false
+  },
+  {
+    "category": "payment",
+    "description": "Unlock premium features after payment",
+    "steps": [
+      "After successful payment, redirect to preview page",
+      "Preview now shows policy WITHOUT watermark",
+      "Terms of Service tab is now accessible",
+      "Cookie Policy tab is now accessible",
+      "Download PDF button is now visible"
+    ],
+    "passes": false
+  },
+  {
+    "category": "payment",
+    "description": "Add PDF download for paid users",
+    "steps": [
+      "After payment, see Download PDF button",
+      "Clicking generates PDF with all three documents",
+      "PDF has professional formatting",
+      "PDF has no watermark",
+      "PDF downloads successfully"
+    ],
+    "passes": false
+  },
+  {
+    "category": "payment",
+    "description": "Email documents to paid users",
+    "steps": [
+      "After payment, user enters email (or use from Q8)",
+      "Send email with all three documents attached",
+      "Email subject: Your PolicyDraft Documents",
+      "Email body thanks them and includes documents",
+      "Use Resend or similar email service"
+    ],
+    "passes": false
+  },
+  {
+    "category": "seo",
+    "description": "Add meta tags and OpenGraph",
+    "steps": [
+      "Add title tag: Free Privacy Policy Generator - PolicyDraft",
+      "Add meta description with keywords",
+      "Add OpenGraph tags for social sharing",
+      "Add Twitter card tags",
+      "Create og-image.png for social preview"
+    ],
+    "passes": false
+  },
+  {
+    "category": "seo",
+    "description": "Add sitemap.xml",
+    "steps": [
+      "Create public/sitemap.xml",
+      "Include all public pages: /, /generate, /preview",
+      "Set appropriate lastmod dates",
+      "Set appropriate priority values",
+      "Verify sitemap is accessible at /sitemap.xml"
+    ],
+    "passes": false
+  },
+  {
+    "category": "seo",
+    "description": "Add robots.txt",
+    "steps": [
+      "Create public/robots.txt",
+      "Allow all crawlers",
+      "Reference sitemap location",
+      "Verify robots.txt is accessible at /robots.txt"
+    ],
+    "passes": false
+  },
+  {
+    "category": "polish",
+    "description": "Add loading states",
+    "steps": [
+      "URL detection shows loading spinner",
+      "Generate button shows loading state",
+      "Payment button shows processing state",
+      "All async operations have visual feedback"
+    ],
+    "passes": false
+  },
+  {
+    "category": "polish",
+    "description": "Add error handling",
+    "steps": [
+      "Invalid URL shows friendly error message",
+      "API failures show retry option",
+      "Payment failures show clear error message",
+      "No unhandled exceptions in console"
+    ],
+    "passes": false
+  },
+  {
+    "category": "polish",
+    "description": "Mobile responsive design",
+    "steps": [
+      "Open site on mobile viewport (375px)",
+      "Landing page is readable and usable",
+      "Generator wizard works on mobile",
+      "Preview page is scrollable and readable",
+      "All buttons are tappable size"
+    ],
+    "passes": false
+  },
+  {
+    "category": "polish",
+    "description": "Add analytics",
+    "steps": [
+      "Add Google Analytics 4 script",
+      "Track page views",
+      "Track Generate Policy event",
+      "Track Payment Success event",
+      "Verify events appear in GA dashboard"
+    ],
+    "passes": false
+  },
+  {
+    "category": "deploy",
+    "description": "Deploy to Vercel",
+    "steps": [
+      "Push code to GitHub repository",
+      "Connect repository to Vercel",
+      "Add environment variables in Vercel",
+      "Deploy succeeds without errors",
+      "Site is accessible at production URL"
+    ],
+    "passes": false
+  },
+  {
+    "category": "deploy",
+    "description": "Configure custom domain",
+    "steps": [
+      "Add policydraft.in domain in Vercel",
+      "Update DNS records at registrar",
+      "SSL certificate is provisioned",
+      "Site loads at https://policydraft.in",
+      "www redirects to non-www (or vice versa)"
+    ],
+    "passes": false
+  }
+]

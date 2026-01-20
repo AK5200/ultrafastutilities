@@ -1,0 +1,31 @@
+# PolicyDraft - Progress Log
+
+## Project Overview
+Building a privacy policy generator website.
+- Users enter URL (optional) + answer 8 questions
+- Get a professional privacy policy
+- Free tier has watermark
+- Paid tier (₹999) removes watermark + adds ToS and Cookie Policy
+
+## How to Use This File
+- Read this at the START of every session
+- Add notes at the END of every session
+- Format: [DATE]: What you did | What's next | Any blockers
+
+---
+
+## Progress Log
+
+[INIT]: Project initialized. 0/43 features complete. Start with setup features.
+
+---
+
+## Known Issues / Blockers
+(Add any issues that need attention here)
+
+---
+
+## Decisions Made
+(Document any architecture or design decisions here)
+
+---
