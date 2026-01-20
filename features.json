@@ -54,7 +54,7 @@
       "Features include: Fast, Legal compliance, Free option, Multiple formats",
       "Section is visually appealing with icons"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "landing",
