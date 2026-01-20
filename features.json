@@ -31,7 +31,7 @@
       "Script should be executable (chmod +x)",
       "Running ./init.sh starts the development server"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "landing",
