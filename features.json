@@ -77,7 +77,7 @@
       "See links to: Privacy Policy, Terms of Service, Contact",
       "Footer is styled consistently with rest of page"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",

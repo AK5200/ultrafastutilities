@@ -162,6 +162,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                © {new Date().getFullYear()} PolicyDraft. All rights reserved.
+              </p>
+            </div>
+            <div className="flex gap-6">
+              <Link href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-sm">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-sm">
+                Terms of Service
+              </Link>
+              <Link href="/contact" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-sm">
+                Contact
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
