@@ -1,15 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
+import { saveFormState, getFormState } from "@/lib/form-state";
+import { ProgressIndicator } from "@/components/progress-indicator";
 
 export default function Question7Page() {
   const [selectedRights, setSelectedRights] = useState<string[]>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    const saved = getFormState();
+    if (saved.userRights) setSelectedRights(saved.userRights);
+  }, []);
 
   const rights = [
     "View data",
@@ -35,6 +42,7 @@ export default function Question7Page() {
   };
 
   const handleNext = () => {
+    saveFormState({ userRights: selectedRights });
     router.push("/generate/form/question8");
   };
 
@@ -42,6 +50,7 @@ export default function Question7Page() {
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <Card className="w-full max-w-2xl">
         <CardHeader>
+          <ProgressIndicator currentStep={7} totalSteps={8} />
           <CardTitle className="text-3xl mb-2">Question 7: User Rights</CardTitle>
           <CardDescription className="text-lg">
             What can users do with their data?

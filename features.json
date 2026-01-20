@@ -201,7 +201,7 @@
       "Previous steps are visually marked as complete",
       "User can click back to edit previous answers"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -213,7 +213,7 @@
       "Navigate forward, all answers are preserved",
       "Answers persist through the wizard flow"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "templates",
@@ -319,7 +319,7 @@
       "Watermark is included in copy and download",
       "Watermark is visually distinct but not obtrusive"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "preview",
@@ -331,7 +331,7 @@
       "Card has Pay Now button",
       "Clicking Pay Now initiates Razorpay checkout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "payment",
@@ -343,7 +343,7 @@
       "Modal accepts UPI, cards, netbanking",
       "Use test mode for development"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "payment",
@@ -355,7 +355,7 @@
       "Return 200 OK to Razorpay",
       "Test with Razorpay test mode"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "payment",
@@ -367,7 +367,7 @@
       "Cookie Policy tab is now accessible",
       "Download PDF button is now visible"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "payment",
@@ -379,7 +379,7 @@
       "PDF has no watermark",
       "PDF downloads successfully"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "payment",
@@ -391,7 +391,7 @@
       "Email body thanks them and includes documents",
       "Use Resend or similar email service"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "seo",
@@ -403,7 +403,7 @@
       "Add Twitter card tags",
       "Create og-image.png for social preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "seo",
@@ -415,7 +415,7 @@
       "Set appropriate priority values",
       "Verify sitemap is accessible at /sitemap.xml"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "seo",
@@ -426,7 +426,7 @@
       "Reference sitemap location",
       "Verify robots.txt is accessible at /robots.txt"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "polish",
@@ -437,7 +437,7 @@
       "Payment button shows processing state",
       "All async operations have visual feedback"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "polish",
@@ -448,7 +448,7 @@
       "Payment failures show clear error message",
       "No unhandled exceptions in console"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "polish",
@@ -460,7 +460,7 @@
       "Preview page is scrollable and readable",
       "All buttons are tappable size"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "polish",
@@ -472,7 +472,7 @@
       "Track Payment Success event",
       "Verify events appear in GA dashboard"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "deploy",

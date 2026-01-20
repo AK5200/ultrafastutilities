@@ -1,20 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
+import { saveFormState, getFormState } from "@/lib/form-state";
+import { ProgressIndicator } from "@/components/progress-indicator";
 
 export default function FormPage() {
   const [websiteType, setWebsiteType] = useState("");
   const [otherType, setOtherType] = useState("");
   const router = useRouter();
 
+  useEffect(() => {
+    // Load saved state
+    const saved = getFormState();
+    if (saved.websiteType) {
+      setWebsiteType(saved.websiteType);
+      if (saved.otherWebsiteType) setOtherType(saved.otherWebsiteType);
+    }
+  }, []);
+
   const handleNext = () => {
-    // Store form data and proceed to next question
+    // Save form data
+    saveFormState({
+      websiteType: websiteType === "other" ? otherType : websiteType,
+      otherWebsiteType: websiteType === "other" ? otherType : undefined,
+    });
     router.push("/generate/form/question2");
   };
 
@@ -22,6 +37,7 @@ export default function FormPage() {
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <Card className="w-full max-w-2xl">
         <CardHeader>
+          <ProgressIndicator currentStep={1} totalSteps={8} />
           <CardTitle className="text-3xl mb-2">Question 1: Website Type</CardTitle>
           <CardDescription className="text-lg">
             What type of website is this?

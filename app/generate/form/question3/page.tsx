@@ -1,15 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
+import { saveFormState, getFormState } from "@/lib/form-state";
+import { ProgressIndicator } from "@/components/progress-indicator";
 
 export default function Question3Page() {
   const [selectedMethods, setSelectedMethods] = useState<string[]>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    const saved = getFormState();
+    if (saved.collectionMethods) setSelectedMethods(saved.collectionMethods);
+  }, []);
 
   const methods = [
     "Contact forms",
@@ -30,6 +37,7 @@ export default function Question3Page() {
   };
 
   const handleNext = () => {
+    saveFormState({ collectionMethods: selectedMethods });
     router.push("/generate/form/question4");
   };
 
@@ -37,6 +45,7 @@ export default function Question3Page() {
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <Card className="w-full max-w-2xl">
         <CardHeader>
+          <ProgressIndicator currentStep={3} totalSteps={8} />
           <CardTitle className="text-3xl mb-2">Question 3: Collection Methods</CardTitle>
           <CardDescription className="text-lg">
             How do you collect this information?

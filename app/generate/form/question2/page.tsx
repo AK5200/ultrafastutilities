@@ -1,15 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
+import { saveFormState, getFormState } from "@/lib/form-state";
+import { ProgressIndicator } from "@/components/progress-indicator";
 
 export default function Question2Page() {
   const [selectedData, setSelectedData] = useState<string[]>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    // Load saved state
+    const saved = getFormState();
+    if (saved.dataCollected) setSelectedData(saved.dataCollected);
+  }, []);
 
   const dataOptions = [
     "Name",
@@ -39,6 +47,7 @@ export default function Question2Page() {
   };
 
   const handleNext = () => {
+    saveFormState({ dataCollected: selectedData });
     router.push("/generate/form/question3");
   };
 
@@ -46,6 +55,7 @@ export default function Question2Page() {
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <Card className="w-full max-w-2xl">
         <CardHeader>
+          <ProgressIndicator currentStep={2} totalSteps={8} />
           <CardTitle className="text-3xl mb-2">Question 2: Data Collected</CardTitle>
           <CardDescription className="text-lg">
             What personal information do you collect?
