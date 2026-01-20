@@ -225,7 +225,7 @@
       "Template conditionally includes sections based on answers",
       "Export function that takes PolicyData and returns string"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "templates",
@@ -236,7 +236,7 @@
       "Template uses same variables as privacy policy",
       "Export function that takes PolicyData and returns string"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "templates",
@@ -247,7 +247,7 @@
       "Template content varies based on cookie answer",
       "Export function that takes PolicyData and returns string"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "api",
@@ -259,7 +259,7 @@
       "Returns JSON with: privacyPolicy, termsOfService, cookiePolicy",
       "Test with curl or Postman"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "api",
@@ -272,7 +272,7 @@
       "Handles errors gracefully (invalid URL, timeout)",
       "Test with real website URL"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "preview",
@@ -284,7 +284,7 @@
       "See tabs or buttons to switch between: Privacy Policy, Terms, Cookies",
       "Content updates when switching tabs"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "preview",
@@ -295,7 +295,7 @@
       "Show success toast: Copied to clipboard",
       "Paste in text editor confirms content was copied"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "preview",
@@ -307,7 +307,7 @@
       "File contains the full policy text",
       "Works in Chrome and Firefox"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "preview",
