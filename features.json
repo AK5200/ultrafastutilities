@@ -127,7 +127,7 @@
       "User can select MULTIPLE options",
       "Next button proceeds to Question 4"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -139,7 +139,7 @@
       "User can select MULTIPLE options",
       "Next button proceeds to Question 5"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -152,7 +152,7 @@
       "No sharing deselects other options",
       "Next button proceeds to Question 6"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -164,7 +164,7 @@
       "User can select ONE option",
       "Next button proceeds to Question 7"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -176,7 +176,7 @@
       "All of the above selects all options",
       "Next button proceeds to Question 8"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
@@ -190,7 +190,7 @@
       "Business name pre-filled if URL was provided",
       "Generate button to create policy"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
