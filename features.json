@@ -19,7 +19,7 @@
       "Verify components folder exists with ui subfolder",
       "Import and render a Button component on home page"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "setup",

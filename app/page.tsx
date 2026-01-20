@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
@@ -5,9 +7,12 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center mb-8">
           Welcome to Next.js!
         </h1>
-        <p className="text-center">
+        <p className="text-center mb-4">
           Get started by editing <code className="font-mono font-bold">app/page.tsx</code>
         </p>
+        <div className="flex justify-center">
+          <Button>Test Button</Button>
+        </div>
       </div>
     </main>
   );

@@ -18,6 +18,10 @@ Building a privacy policy generator website.
 
 [INIT]: Project initialized. 0/43 features complete. Start with setup features.
 
+[2025-01-27]: Completed feature 1 - Initialize Next.js 14 project with TypeScript and Tailwind. Moving to feature 2 - Install and configure shadcn/ui.
+
+[2025-01-27]: Completed feature 2 - Install and configure shadcn/ui. Moving to feature 3 - Create init.sh script.
+
 ---
 
 ## Known Issues / Blockers
