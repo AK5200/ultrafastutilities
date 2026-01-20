@@ -43,7 +43,7 @@
       "See a prominent CTA button: Create Your Policy",
       "CTA button links to /generate"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "landing",
