@@ -115,7 +115,7 @@
       "Include None of the above option",
       "Next button proceeds to Question 3"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "generator",
