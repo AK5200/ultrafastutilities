@@ -33,7 +33,7 @@ export default function FormPage() {
     // Save form data
     saveFormState({
       websiteType: websiteType === "other" ? otherType : websiteType,
-      otherWebsiteType: websiteType === "other" ? otherType : undefined,
+      otherType: websiteType === "other" ? otherType : undefined,
     });
     router.push("/generate/form/question2");
   };
