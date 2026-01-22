@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   const effectiveDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const businessName = "ultrafastutilities";
-  const contactEmail = "support@ultrafastutilities.com";
+  const contactEmail = "anuformal@gmail.com";
   const location = "United States";
 
   return (
