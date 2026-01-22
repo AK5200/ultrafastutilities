@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 import { saveFormState, getFormState } from "@/lib/form-state";
+import { PolicyData } from "@/lib/types";
 import { ProgressIndicator } from "@/components/progress-indicator";
 import { trackGeneratePolicy } from "@/lib/analytics";
 import { ArrowLeft } from "lucide-react";
@@ -46,13 +47,20 @@ export default function Question8Page() {
     try {
       // Collect all form data from previous questions
       const savedState = getFormState();
-      const allData = {
+      const allData: PolicyData = {
         ...savedState,
         businessName,
         contactEmail,
         country,
         state: country === "India" ? state : undefined,
-      };
+        websiteType: savedState.websiteType || "",
+        dataCollected: savedState.dataCollected || [],
+        collectionMethods: savedState.collectionMethods || [],
+        dataUsage: savedState.dataUsage || [],
+        thirdPartySharing: savedState.thirdPartySharing || [],
+        cookies: savedState.cookies || "",
+        userRights: savedState.userRights || [],
+      } as PolicyData;
       
       // Save current question data
       saveFormState({
