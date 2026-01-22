@@ -21,7 +21,7 @@ export default function FormPage() {
     const saved = getFormState();
     if (saved.websiteType) {
       setWebsiteType(saved.websiteType);
-      if (saved.otherWebsiteType) setOtherType(saved.otherWebsiteType);
+      if (saved.otherType) setOtherType(saved.otherType);
     }
   }, []);
 
