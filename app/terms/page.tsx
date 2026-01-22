@@ -287,12 +287,18 @@ export default function TermsPage() {
           </CardHeader>
           <CardContent className="space-y-6 text-blue-900/90">
             <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">Refunds</h2>
+              <h2 className="text-xl font-semibold mb-3 text-blue-900">Refund Policy</h2>
               <p className="text-sm leading-relaxed">
-                Purchases made through this website are processed by Paddle, our authorized reseller and merchant of record.
+                All sales are processed by Paddle, our authorized reseller and the merchant of record.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                Refund requests are handled in accordance with Paddle's refund policy. Customers may request a refund by contacting Paddle support or by reaching out to us, and we will assist in initiating the request where applicable.
+                You may request a refund directly through Paddle within 30 days of your purchase.
+              </p>
+              <p className="text-sm leading-relaxed mt-2">
+                Paddle's refund policy applies uniformly, and we do not impose additional conditions, exceptions, or limitations.
+              </p>
+              <p className="text-sm leading-relaxed mt-2">
+                To request a refund, please contact Paddle Support or reach out to us and we will assist you in initiating the request.
               </p>
             </div>
           </CardContent>
