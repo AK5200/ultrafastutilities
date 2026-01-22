@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import Navbar from "@/components/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Free Privacy Policy Generator - PolicyDraft",
+  title: "Free Privacy Policy Generator - ultrafastutilities",
   description: "Generate a professional privacy policy in 60 seconds. Free privacy policy generator with Terms of Service and Cookie Policy. No credit card required.",
   keywords: ["privacy policy generator", "free privacy policy", "terms of service generator", "cookie policy", "GDPR compliance"],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ultrafastutilities.com"),
   openGraph: {
-    title: "Free Privacy Policy Generator - PolicyDraft",
+    title: "Free Privacy Policy Generator - ultrafastutilities",
     description: "Generate a professional privacy policy in 60 seconds. Free privacy policy generator with Terms of Service and Cookie Policy.",
-    url: "https://policydraft.in",
-    siteName: "PolicyDraft",
+    url: "https://ultrafastutilities.com",
+    siteName: "ultrafastutilities",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PolicyDraft - Privacy Policy Generator"
+        alt: "ultrafastutilities - Privacy Policy Generator"
       }
     ],
     locale: "en_US",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Privacy Policy Generator - PolicyDraft",
+    title: "Free Privacy Policy Generator - ultrafastutilities",
     description: "Generate a professional privacy policy in 60 seconds.",
     images: ["/og-image.png"]
   },
@@ -60,7 +63,10 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body>{children}</body>
+      <body className="bg-gradient-to-b from-blue-50 via-white to-blue-50/50 text-blue-900 min-h-screen">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

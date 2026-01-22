@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project specific
+*.zip
+claude-progress.txt
+BLOCKED.md
+INDEXING_READY.md

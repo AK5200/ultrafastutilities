@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { loadRazorpay, openRazorpayCheckout } from "@/lib/razorpay";
 import { generatePDF } from "@/lib/pdf-generator";
-import { trackPaymentSuccess, trackGeneratePolicy } from "@/lib/analytics";
+import { trackPaymentSuccess } from "@/lib/analytics";
+import { loadPaddle, openPaddleCheckout, diagnosePaddleSetup } from "@/lib/paddle";
 
 export default function PreviewPage() {
   const [activeTab, setActiveTab] = useState("privacy");
@@ -29,6 +29,17 @@ export default function PreviewPage() {
     // Check if user has paid
     const paid = localStorage.getItem("isPaid") === "true";
     setIsPaid(paid);
+
+    // Load Paddle.js for overlay checkout
+    loadPaddle()
+      .then(() => {
+        // Run diagnostics after loading
+        diagnosePaddleSetup();
+      })
+      .catch((err) => {
+        console.error("Failed to load Paddle:", err);
+        console.error("Run diagnosePaddleSetup() in console to check configuration");
+      });
   }, []);
 
   const handleCopy = async () => {
@@ -72,52 +83,59 @@ export default function PreviewPage() {
 
   const handlePayment = async () => {
     try {
-      await loadRazorpay();
+      console.log('[Payment] Starting checkout process...');
       
-      // Create order
-      const orderResponse = await fetch("/api/payment/create-order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: 999 })
-      });
+      // Run diagnostics first
+      diagnosePaddleSetup();
       
-      const { orderId } = await orderResponse.json();
+      // Ensure Paddle is loaded and initialized
+      await loadPaddle();
+
+      // Double-check Paddle is ready
+      if (!window.Paddle) {
+        throw new Error("Paddle object not found. Please refresh the page and try again.");
+      }
       
-      if (!orderId) {
-        throw new Error("Failed to create order");
+      if (!window.Paddle.Checkout) {
+        throw new Error("Paddle.Checkout not available. Paddle may not be initialized correctly.");
+      }
+      
+      if (typeof window.Paddle.Checkout.open !== 'function') {
+        throw new Error("Paddle.Checkout.open is not a function. Check Paddle.js version.");
       }
 
-      openRazorpayCheckout({
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "",
-        amount: 99900, // in paise
-        currency: "INR",
-        name: "PolicyDraft",
-        description: "Premium Privacy Policy Package",
-        order_id: orderId,
-        prefill: {
-          email: policyData?.contactEmail || ""
-        },
-        handler: async (response: any) => {
-          // Verify payment
-          const verifyResponse = await fetch("/api/payment", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(response)
-          });
-          
-          if (verifyResponse.ok) {
-            localStorage.setItem("isPaid", "true");
-            setIsPaid(true);
-            trackPaymentSuccess(999);
-            alert("Payment successful! Premium features unlocked.");
-          } else {
-            alert("Payment verification failed. Please contact support.");
-          }
-        }
+      const priceId = process.env.NEXT_PUBLIC_PADDLE_PRICE_ID || "pri_01kfg71m7d2hy7pc11rc29nwm3";
+      
+      console.log('[Payment] Opening checkout with priceId:', priceId);
+      console.log('[Payment] Customer email:', policyData?.contactEmail);
+      
+      localStorage.setItem("pendingUpgrade", "plus");
+      
+      openPaddleCheckout({
+        priceId: priceId,
+        customerEmail: policyData?.contactEmail,
+        successUrl: `${window.location.origin}/success`,
       });
+      
+      console.log('[Payment] Checkout.open() called. Waiting for overlay...');
     } catch (error: any) {
       console.error("Payment error:", error);
-      alert(`Payment failed: ${error.message}`);
+      console.error("Error details:", {
+        message: error.message,
+        stack: error.stack,
+        name: error.name,
+      });
+      
+      // Provide more helpful error message
+      let errorMessage = error.message || "Unknown error";
+      
+      if (errorMessage.includes('token')) {
+        errorMessage += "\n\nPlease check:\n- NEXT_PUBLIC_PADDLE_CLIENT_TOKEN is set in .env.local\n- Token starts with 'test_' for sandbox or 'live_' for production\n- Token matches your environment setting";
+      } else if (errorMessage.includes('initialized')) {
+        errorMessage += "\n\nPlease:\n- Refresh the page\n- Check browser console for Paddle errors\n- Verify Paddle.js script loaded correctly";
+      }
+      
+      alert(`Failed to open checkout: ${errorMessage}\n\nCheck browser console (F12) for details.`);
     }
   };
 
@@ -131,38 +149,50 @@ export default function PreviewPage() {
     );
   };
 
-  const handleSendEmail = async () => {
-    if (!generatedPolicies || !policyData) return;
-    
-    try {
-      const response = await fetch("/api/email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: policyData.contactEmail,
-          privacyPolicy: generatedPolicies.privacyPolicy,
-          termsOfService: generatedPolicies.termsOfService,
-          cookiePolicy: generatedPolicies.cookiePolicy
-        })
-      });
-
-      if (response.ok) {
-        alert("Documents sent to your email!");
-      } else {
-        throw new Error("Failed to send email");
-      }
-    } catch (error: any) {
-      alert(`Failed to send email: ${error.message}`);
-    }
-  };
-
   return (
-    <main className="min-h-screen py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <Card>
+    <main className="min-h-screen px-4 py-16 sm:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50/50 relative overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
+        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
+      </div>
+
+      <div className="relative max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent pb-3">
+            Preview your documents
+          </h1>
+          <p className="text-lg text-blue-800/90">
+            Review, copy, and download your generated policies.
+          </p>
+        </div>
+
+        {/* Subtle Top Upgrade Card */}
+        {!isPaid && (
+          <div className="mb-6 p-4 rounded-lg bg-blue-50/40 border border-blue-200/40 backdrop-blur-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-semibold tracking-wide text-blue-700 bg-blue-100/60 px-2 py-1 rounded-full">
+                  PLUS
+                </span>
+                <span className="text-sm text-blue-800/90">
+                  Unlock Terms of Service, Cookie Policy & PDF downloads
+                </span>
+              </div>
+              <Button
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-md shadow-blue-500/20 whitespace-nowrap text-sm"
+                onClick={handlePayment}
+                disabled={!policyData}
+              >
+                Upgrade $4.99
+              </Button>
+            </div>
+          </div>
+        )}
+
+        <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md">
           <CardHeader>
-            <CardTitle className="text-3xl mb-2">Preview Your Policy</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-2xl text-blue-900 pb-2">Your ultrafastutilities documents</CardTitle>
+            <CardDescription className="text-blue-800/80">
               Review your generated privacy policy and related documents
             </CardDescription>
           </CardHeader>
@@ -179,93 +209,110 @@ export default function PreviewPage() {
               </TabsList>
               
               <TabsContent value="privacy" className="mt-6">
-                <div className="prose max-w-none mb-6 p-4 border rounded">
-                  <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
+                <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
+                  <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
                     {getCurrentPolicyText().split("\n").map((line, i) => (
                       <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
                         {line}
                       </div>
                     ))}
                   </div>
-                  {!isPaid && (
-                    <div className="mt-4 pt-4 border-t text-center text-sm text-gray-500 italic">
-                      Generated by PolicyDraft.in - Create yours free
-                    </div>
-                  )}
                 </div>
                 <div className="flex gap-4">
-                  <Button onClick={handleCopy}>Copy</Button>
-                  <Button onClick={handleDownload} variant="outline">Download as Text</Button>
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
                 </div>
               </TabsContent>
 
               <TabsContent value="terms" className="mt-6">
-                <div className="prose max-w-none mb-6 p-4 border rounded">
-                  <pre className="whitespace-pre-wrap font-sans">
-                    Terms of Service content...
-                  </pre>
+                <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
+                  <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
+                    {getCurrentPolicyText().split("\n").map((line, i) => (
+                      <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
+                        {line}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="flex gap-4">
-                  <Button onClick={handleCopy}>Copy</Button>
-                  <Button onClick={handleDownload} variant="outline">Download as Text</Button>
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
                 </div>
               </TabsContent>
 
               <TabsContent value="cookies" className="mt-6">
-                <div className="prose max-w-none mb-6 p-4 border rounded">
-                  <pre className="whitespace-pre-wrap font-sans">
-                    Cookie Policy content...
-                  </pre>
+                <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
+                  <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
+                    {getCurrentPolicyText().split("\n").map((line, i) => (
+                      <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
+                        {line}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="flex gap-4">
-                  <Button onClick={handleCopy}>Copy</Button>
-                  <Button onClick={handleDownload} variant="outline">Download as Text</Button>
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
                 </div>
               </TabsContent>
+              
+              {/* Bigger Bottom Upgrade Card */}
+              {!isPaid && (
+                <div className="mt-8 pt-6 border-t border-blue-200/50">
+                  <Card className="overflow-hidden rounded-xl border-2 border-blue-300/50 bg-gradient-to-br from-blue-50/80 via-white/90 to-blue-100/40 backdrop-blur-md shadow-lg">
+                    <CardHeader>
+                      <div className="inline-flex items-center gap-2">
+                        <span className="text-xs font-semibold tracking-wide text-blue-700 bg-blue-100/70 px-2 py-1 rounded-full">
+                          PLUS
+                        </span>
+                      </div>
+                      <CardTitle className="text-xl text-blue-900 pb-2">Upgrade to Plus</CardTitle>
+                      <CardDescription className="text-blue-800/80">
+                        Unlock premium documents for a one-time $4.99.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-disc list-inside mb-5 space-y-2 text-blue-900/90 text-sm">
+                        <li>Terms of Service</li>
+                        <li>Cookie Policy</li>
+                        <li>PDF download for all documents</li>
+                      </ul>
+                      <Button
+                        className="w-full h-auto py-4 text-base bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg shadow-blue-500/30"
+                        onClick={handlePayment}
+                        disabled={!policyData}
+                      >
+                        Upgrade $4.99
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
+              )}
+
+              {isPaid && (
+                <div className="mt-8 pt-6 border-t border-blue-200/50">
+                  <Card className="border-2 border-blue-200/50 shadow-sm rounded-xl bg-white/70 backdrop-blur-md">
+                    <CardHeader>
+                      <CardTitle className="text-blue-900">Premium Features Unlocked</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-blue-800/80">
+                        You now have access to all premium documents and PDF downloads.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              )}
             </Tabs>
-
-            {!isPaid && (
-              <Card className="mt-6 border-primary">
-                <CardHeader>
-                  <CardTitle>Upgrade to Premium</CardTitle>
-                  <CardDescription>
-                    Unlock all features for just ₹999 one-time
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside mb-4 space-y-2">
-                    <li>Remove watermark</li>
-                    <li>Get Terms of Service</li>
-                    <li>Get Cookie Policy</li>
-                    <li>Download as PDF</li>
-                    <li>Email documents</li>
-                  </ul>
-                  <Button 
-                    className="w-full" 
-                    onClick={handlePayment}
-                    disabled={!policyData}
-                  >
-                    Pay Now - ₹999
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
-
-            {isPaid && (
-              <Card className="mt-6">
-                <CardHeader>
-                  <CardTitle>Premium Features Unlocked</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Button 
-                    className="w-full mb-2" 
-                    onClick={handleSendEmail}
-                  >
-                    Send Documents to Email
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
           </CardContent>
         </Card>
       </div>

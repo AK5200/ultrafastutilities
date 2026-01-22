@@ -22,15 +22,15 @@ export async function POST(request: NextRequest) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: "PolicyDraft <noreply@policydraft.in>",
+        from: "ultrafastutilities <noreply@ultrafastutilities.com>",
         to: email,
-        subject: "Your PolicyDraft Documents",
+        subject: "Your ultrafastutilities Documents",
         html: `
-          <h1>Thank you for using PolicyDraft!</h1>
+          <h1>Thank you for using ultrafastutilities!</h1>
           <p>Your privacy policy documents are attached to this email.</p>
           <p>You can download and use these documents for your website.</p>
           <p>If you have any questions, please contact us.</p>
-          <p>Best regards,<br>The PolicyDraft Team</p>
+          <p>Best regards,<br>The ultrafastutilities Team</p>
         `,
         attachments: [
           {
