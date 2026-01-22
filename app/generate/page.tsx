@@ -38,7 +38,7 @@ export default function GeneratePage() {
       
       // Save detected data
       saveFormState({
-        websiteUrl: url,
+        url: url,
         businessName: data.title || "",
         contactEmail: data.contactEmail || "",
       });
@@ -53,7 +53,7 @@ export default function GeneratePage() {
 
   const handleContinue = () => {
     if (url) {
-      saveFormState({ websiteUrl: url });
+      saveFormState({ url: url });
     }
     router.push("/generate/form");
   };
