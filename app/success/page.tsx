@@ -14,9 +14,7 @@ export default function SuccessPage() {
   const [countdown, setCountdown] = useState(3);
 
   const paramsSummary = useMemo(() => {
-    const entries: Array<[string, string]> = [];
-    for (const [k, v] of searchParams.entries()) entries.push([k, v]);
-    return entries;
+    return Array.from(searchParams.entries());
   }, [searchParams]);
 
   useEffect(() => {
