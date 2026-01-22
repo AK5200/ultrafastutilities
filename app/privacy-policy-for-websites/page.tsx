@@ -7,7 +7,10 @@ export const metadata = {
   title: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities",
   description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
   keywords: "privacy policy for websites, website privacy policy, GDPR privacy policy, CCPA privacy policy, privacy policy generator",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyForWebsitesPage() {

@@ -7,7 +7,10 @@ export const metadata = {
   title: "Privacy Policy for Mobile Apps (iOS & Android) GDPR & CCPA | ultrafastutilities",
   description: "Create a privacy policy for your mobile app. Meet App Store and Play Store requirements. Get GDPR & CCPA-ready documents for iOS and Android apps.",
   keywords: "privacy policy for apps, mobile app privacy policy, iOS privacy policy, Android privacy policy, app store privacy policy",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyForAppsPage() {

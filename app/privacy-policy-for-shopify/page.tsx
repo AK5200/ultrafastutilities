@@ -7,7 +7,10 @@ export const metadata = {
   title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
   description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
   keywords: "privacy policy for Shopify, Shopify privacy policy, Shopify store privacy policy, Shopify GDPR, Shopify CCPA",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyForShopifyPage() {

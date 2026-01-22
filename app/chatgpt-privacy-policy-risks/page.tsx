@@ -7,7 +7,10 @@ export const metadata = {
   title: "ChatGPT Privacy Policy Risks Why Generic AI Policies Fall Short | ultrafastutilities",
   description: "Understand the limitations and risks of using ChatGPT or generic AI to generate privacy policies. Learn about compliance gaps and why structured documents are essential.",
   keywords: "ChatGPT privacy policy risks, AI privacy policy risks, generic privacy policy problems, privacy policy compliance",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ChatGPTPrivacyPolicyRisksPage() {

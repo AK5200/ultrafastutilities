@@ -7,7 +7,10 @@ export const metadata = {
   title: "Privacy Policy for Ecommerce (GDPR & CCPA) Free Preview | ultrafastutilities",
   description: "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
   keywords: "privacy policy for ecommerce, ecommerce privacy policy, online store privacy policy, ecommerce GDPR, ecommerce CCPA",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyForEcommercePage() {

@@ -7,7 +7,10 @@ export const metadata = {
   title: "GDPR Privacy Policy Template Structured for Compliance (Free Preview) | ultrafastutilities",
   description: "Get a GDPR-compliant privacy policy template. Understand GDPR requirements, lawful basis, data retention, and user rights. Generate your full policy for $4.99.",
   keywords: "GDPR privacy policy template, GDPR privacy policy, EU privacy policy, UK privacy policy, GDPR compliance",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function GDPRPrivacyPolicyTemplatePage() {

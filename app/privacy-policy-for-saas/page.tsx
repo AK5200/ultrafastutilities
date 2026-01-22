@@ -7,7 +7,10 @@ export const metadata = {
   title: "Privacy Policy for SaaS (GDPR & CCPA) Free Preview | ultrafastutilities",
   description: "Create a privacy policy for your SaaS platform. Cover user accounts, billing, analytics, GDPR lawful basis, and CCPA rights. Generate compliant documents for $4.99.",
   keywords: "privacy policy for SaaS, SaaS privacy policy, SaaS GDPR compliance, SaaS CCPA compliance, SaaS data protection",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyForSaaSPage() {

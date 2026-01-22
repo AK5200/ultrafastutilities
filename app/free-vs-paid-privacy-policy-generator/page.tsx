@@ -7,7 +7,10 @@ export const metadata = {
   title: "Free vs Paid Privacy Policy Generator What You're Really Trading Off | ultrafastutilities",
   description: "Compare free and paid privacy policy generators. Understand tradeoffs of free tools and value of structured documents. Generate compliant policies for $4.99.",
   keywords: "free privacy policy generator, paid privacy policy generator, privacy policy generator comparison, free vs paid",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function FreeVsPaidPrivacyPolicyGeneratorPage() {

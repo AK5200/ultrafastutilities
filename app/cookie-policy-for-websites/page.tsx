@@ -7,7 +7,10 @@ export const metadata = {
   title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
   description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
   keywords: "cookie policy, cookie policy for websites, GDPR cookies, EU cookie law, cookie consent, cookie policy generator",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function CookiePolicyForWebsitesPage() {

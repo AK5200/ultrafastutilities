@@ -7,7 +7,10 @@ export const metadata = {
   title: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities",
   description: "Get a CCPA/CPRA-compliant privacy policy example. Understand California privacy rights, required disclosures, and example structure. Generate your full policy for $4.99.",
   keywords: "CCPA privacy policy, CPRA privacy policy, California privacy policy, CCPA compliance, California privacy rights",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function CCPAPrivacyPolicyExamplePage() {
