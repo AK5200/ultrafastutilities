@@ -16,7 +16,6 @@ export default function TermsPage() {
   const effectiveDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const businessName = "ultrafastutilities";
   const contactEmail = "anuformal@gmail.com";
-  const location = "United States";
 
   return (
     <main className="min-h-screen px-4 py-16 sm:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50/50 relative overflow-hidden">
@@ -155,7 +154,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-semibold mb-3 text-blue-900">11. Governing Law</h2>
               <p className="text-sm leading-relaxed">
-                These Terms and Conditions are governed by and construed in accordance with the laws of {location}, without regard to its conflict of law provisions. You irrevocably submit to the exclusive jurisdiction of the courts in {location} for the resolution of any disputes arising out of or relating to these Terms or the Service.
+                These Terms and Conditions are governed by and construed in accordance with applicable laws, without regard to conflict of law provisions. Any disputes arising out of or relating to these Terms or the Service shall be resolved through appropriate legal channels.
               </p>
             </div>
           </CardContent>
@@ -311,9 +310,6 @@ export default function TermsPage() {
             <div className="mt-4 space-y-2">
               <p className="text-sm">
                 <strong>Email:</strong> <a href={`mailto:${contactEmail}`} className="text-blue-600 hover:underline ml-2">{contactEmail}</a>
-              </p>
-              <p className="text-sm">
-                <strong>Location:</strong> <span className="ml-2">{location}</span>
               </p>
             </div>
           </CardContent>
