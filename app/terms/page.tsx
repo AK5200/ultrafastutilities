@@ -288,48 +288,12 @@ export default function TermsPage() {
           </CardHeader>
           <CardContent className="space-y-6 text-blue-900/90">
             <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">1. Digital Products - No Refunds</h2>
+              <h2 className="text-xl font-semibold mb-3 text-blue-900">Refunds</h2>
               <p className="text-sm leading-relaxed">
-                Due to the digital nature of our products (generated documents), all sales are final. We do not offer refunds for digital document purchases once the documents have been generated and made available for download.
+                Purchases made through this website are processed by Paddle, our authorized reseller and merchant of record.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                When you purchase our service, you are purchasing immediate access to generate and download digital documents. Since these are digital products that are delivered instantly and cannot be "returned," we do not provide refunds for completed purchases.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">2. What This Means</h2>
-              <p className="text-sm leading-relaxed mb-2">By purchasing our service, you acknowledge and agree that:</p>
-              <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-                <li>You have reviewed our service description and understand what you are purchasing</li>
-                <li>You understand that the documents are digital templates provided "as is"</li>
-                <li>You understand that we do not provide legal advice</li>
-                <li>You understand that all sales are final and non-refundable</li>
-                <li>You have had the opportunity to use our free preview before making a purchase</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">3. Technical Issues</h2>
-              <p className="text-sm leading-relaxed">
-                If you experience a technical issue that prevents you from accessing or downloading your purchased documents, please contact us at {contactEmail} within 7 days of your purchase. We will work to resolve the technical issue. However, this does not guarantee a refund, as we will make reasonable efforts to provide you with access to your purchased documents.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">4. Duplicate Charges</h2>
-              <p className="text-sm leading-relaxed">
-                If you are charged multiple times for a single purchase due to a processing error, please contact us immediately at {contactEmail}. We will investigate and refund any duplicate charges.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-900">5. Contact for Refund Inquiries</h2>
-              <p className="text-sm leading-relaxed">
-                If you have questions about this refund policy or believe you have a valid exception, please contact us at: <a href={`mailto:${contactEmail}`} className="text-blue-600 hover:underline">{contactEmail}</a>
-              </p>
-              <p className="text-sm leading-relaxed mt-2">
-                Please note that all refund decisions are at our sole discretion and will be evaluated on a case-by-case basis only for the limited exceptions outlined above.
+                Refund requests are handled in accordance with Paddle's refund policy. Customers may request a refund by contacting Paddle support or by reaching out to us, and we will assist in initiating the request where applicable.
               </p>
             </div>
           </CardContent>
