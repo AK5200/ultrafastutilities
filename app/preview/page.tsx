@@ -211,7 +211,7 @@ export default function PreviewPage() {
               <TabsContent value="privacy" className="mt-6">
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
-                    {getCurrentPolicyText().split("\n").map((line, i) => (
+                    {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
                       <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
                         {line}
                       </div>
@@ -230,7 +230,7 @@ export default function PreviewPage() {
               <TabsContent value="terms" className="mt-6">
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
-                    {getCurrentPolicyText().split("\n").map((line, i) => (
+                    {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
                       <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
                         {line}
                       </div>
@@ -249,7 +249,7 @@ export default function PreviewPage() {
               <TabsContent value="cookies" className="mt-6">
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
-                    {getCurrentPolicyText().split("\n").map((line, i) => (
+                    {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
                       <div key={i} className={line.match(/^[0-9]+\./) ? "font-bold mt-4 mb-2" : line.match(/^[A-Z]/) && line.length < 100 ? "font-semibold mt-3 mb-1" : "mb-2"}>
                         {line}
                       </div>
