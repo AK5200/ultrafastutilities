@@ -16,7 +16,7 @@ export default function Question6Page() {
 
   useEffect(() => {
     const saved = getFormState();
-    if (saved.cookieUsage) setCookieType(saved.cookieUsage);
+    if (saved.cookies) setCookieType(saved.cookies);
   }, []);
 
   const handleBack = () => {
@@ -24,7 +24,7 @@ export default function Question6Page() {
   };
 
   const handleNext = () => {
-    saveFormState({ cookieUsage: cookieType });
+    saveFormState({ cookies: cookieType });
     router.push("/generate/form/question7");
   };
 
