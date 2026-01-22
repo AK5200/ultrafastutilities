@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle2 } from "lucide-react";
 import { trackPaymentSuccess } from "@/lib/analytics";
 
-export default function SuccessPage() {
+function SuccessContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [countdown, setCountdown] = useState(3);
@@ -88,3 +88,27 @@ export default function SuccessPage() {
   );
 }
 
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen px-4 py-16 sm:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50/50 relative overflow-hidden">
+        <div className="relative max-w-2xl mx-auto">
+          <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md overflow-hidden">
+            <CardHeader>
+              <div className="flex items-center gap-2 text-blue-700">
+                <CheckCircle2 className="h-5 w-5" />
+                <span className="text-sm font-semibold tracking-wide">PAYMENT CONFIRMED</span>
+              </div>
+              <CardTitle className="text-3xl sm:text-4xl mt-2 text-blue-900 pb-2">Plus unlocked</CardTitle>
+              <CardDescription className="text-base text-blue-800/80">
+                Loading...
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </main>
+    }>
+      <SuccessContent />
+    </Suspense>
+  );
+}
