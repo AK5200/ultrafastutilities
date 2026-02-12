@@ -75,7 +75,7 @@ export default function PrivacyPage() {
                 We use the following third-party services:
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-                <li><strong>Dodo:</strong> Payment processing (privacy policy: <a href="https://dodo.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">dodo.com/privacy</a>)</li>
+                <li><strong>Dodo:</strong> Payment processing (privacy policy: <a href="https://docs.dodopayments.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">docs.dodopayments.com/privacy</a>)</li>
                 <li><strong>Google Analytics:</strong> Website analytics (if enabled)</li>
               </ul>
             </div>
