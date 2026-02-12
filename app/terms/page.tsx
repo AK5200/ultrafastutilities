@@ -289,16 +289,16 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-semibold mb-3 text-blue-900">Refund Policy</h2>
               <p className="text-sm leading-relaxed">
-                All sales are processed by Dodo, our authorized reseller and the merchant of record.
+                All sales are final. We do not offer refunds for purchases made through our Service.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                You may request a refund directly through Dodo within 30 days of your purchase.
+                This is a one-time digital product purchase that provides immediate access to our document generation service and premium features. Once you have completed your purchase and gained access to the Service, the transaction is considered complete.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                Dodo's refund policy applies uniformly, and we do not impose additional conditions, exceptions, or limitations.
+                Due to the digital nature of our product and the immediate access provided upon purchase, we are unable to offer refunds, exchanges, or cancellations. By completing your purchase, you acknowledge that you have read and understood this refund policy.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                To request a refund, please contact Dodo Support or reach out to us and we will assist you in initiating the request.
+                If you have any questions or concerns about your purchase, please contact us at {contactEmail} before completing your transaction.
               </p>
             </div>
           </CardContent>
