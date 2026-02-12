@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { generatePDF } from "@/lib/pdf-generator";
 import { trackPaymentSuccess } from "@/lib/analytics";
-import { loadDodo, openDodoCheckout, diagnoseDodoSetup } from "@/lib/dodo";
+import { initiateDodoCheckout, diagnoseDodoSetup } from "@/lib/dodo";
 
 export default function PreviewPage() {
   const [activeTab, setActiveTab] = useState("privacy");
@@ -30,16 +30,8 @@ export default function PreviewPage() {
     const paid = localStorage.getItem("isPaid") === "true";
     setIsPaid(paid);
 
-    // Load Dodo.js for overlay checkout
-    loadDodo()
-      .then(() => {
-        // Run diagnostics after loading
-        diagnoseDodoSetup();
-      })
-      .catch((err) => {
-        console.error("Failed to load Dodo:", err);
-        console.error("Run diagnoseDodoSetup() in console to check configuration");
-      });
+    // Run diagnostics on mount
+    diagnoseDodoSetup();
   }, []);
 
   const handleCopy = async () => {
@@ -85,39 +77,26 @@ export default function PreviewPage() {
     try {
       console.log('[Payment] Starting checkout process...');
       
-      // Run diagnostics first
-      diagnoseDodoSetup();
+      const productId = process.env.NEXT_PUBLIC_DODO_PRODUCT_ID;
       
-      // Ensure Dodo is loaded and initialized
-      await loadDodo();
-
-      // Double-check Dodo is ready
-      if (!window.Dodo) {
-        throw new Error("Dodo object not found. Please refresh the page and try again.");
+      if (!productId) {
+        throw new Error("Product ID is not configured. Please set NEXT_PUBLIC_DODO_PRODUCT_ID");
       }
       
-      if (!window.Dodo.Checkout) {
-        throw new Error("Dodo.Checkout not available. Dodo may not be initialized correctly.");
-      }
-      
-      if (typeof window.Dodo.Checkout.open !== 'function') {
-        throw new Error("Dodo.Checkout.open is not a function. Check Dodo.js version.");
-      }
-
-      const priceId = process.env.NEXT_PUBLIC_DODO_PRICE_ID || "";
-      
-      console.log('[Payment] Opening checkout with priceId:', priceId);
+      console.log('[Payment] Creating checkout session with productId:', productId);
       console.log('[Payment] Customer email:', policyData?.contactEmail);
       
       localStorage.setItem("pendingUpgrade", "plus");
       
-      openDodoCheckout({
-        priceId: priceId,
+      // Initiate checkout - this will create a session and redirect to Dodo checkout
+      await initiateDodoCheckout({
+        productId: productId,
         customerEmail: policyData?.contactEmail,
-        successUrl: `${window.location.origin}/success`,
+        customerName: policyData?.businessName,
+        quantity: 1,
+        returnUrl: `${window.location.origin}/success`,
       });
       
-      console.log('[Payment] Checkout.open() called. Waiting for overlay...');
     } catch (error: any) {
       console.error("Payment error:", error);
       console.error("Error details:", {
@@ -126,16 +105,16 @@ export default function PreviewPage() {
         name: error.name,
       });
       
-      // Provide more helpful error message
+      // Provide helpful error message
       let errorMessage = error.message || "Unknown error";
       
-      if (errorMessage.includes('token')) {
-        errorMessage += "\n\nPlease check:\n- NEXT_PUBLIC_DODO_CLIENT_TOKEN is set in .env.local\n- Token starts with 'test_' for sandbox or 'live_' for production\n- Token matches your environment setting";
-      } else if (errorMessage.includes('initialized')) {
-        errorMessage += "\n\nPlease:\n- Refresh the page\n- Check browser console for Dodo errors\n- Verify Dodo.js script loaded correctly";
+      if (errorMessage.includes('Product ID')) {
+        errorMessage += "\n\nPlease check:\n- NEXT_PUBLIC_DODO_PRODUCT_ID is set in .env.local\n- Product ID exists in your Dodo Dashboard";
+      } else if (errorMessage.includes('API')) {
+        errorMessage += "\n\nPlease check:\n- DODO_PAYMENTS_API_KEY is set in server environment\n- API key is valid and active";
       }
       
-      alert(`Failed to open checkout: ${errorMessage}\n\nCheck browser console (F12) for details.`);
+      alert(`Failed to start checkout: ${errorMessage}\n\nCheck browser console (F12) for details.`);
     }
   };
 
