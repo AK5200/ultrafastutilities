@@ -13,11 +13,11 @@ export default function Home() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
         
-        <div className="relative max-w-4xl w-full text-center z-10">
+        <div className="relative max-w-3xl w-full text-center z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight pb-4">
             Don't Guess Your Privacy Policy. Get It Right for $5.
           </h1>
-          <p className="text-xl md:text-2xl text-blue-600/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-blue-600/80 mb-10 max-w-xl mx-auto leading-relaxed">
             Free generators and AI tools often miss critical compliance details.
             Get a professionally structured, GDPR & CCPA-ready Privacy Policy, Cookie Policy, and Terms, built to reduce common legal mistakes and ready to ship instantly.
           </p>
