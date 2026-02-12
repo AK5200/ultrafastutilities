@@ -40,7 +40,7 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-4">
                 <li>Information you provide when using our policy generator (website URL, business details, etc.)</li>
-                <li>Payment information processed securely through our payment provider (Paddle)</li>
+                <li>Payment information processed securely through our payment provider (Dodo)</li>
                 <li>Technical data such as IP address, browser type, and device information</li>
                 <li>Usage data about how you interact with our service</li>
               </ul>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-semibold mb-3 text-blue-900">4. Data Storage and Security</h2>
               <p className="text-sm leading-relaxed">
                 We store your form data locally in your browser (localStorage) and do not transmit it to our servers 
-                except when generating your policies. Payment information is handled securely by Paddle, our payment processor. 
+                except when generating your policies. Payment information is handled securely by Dodo, our payment processor. 
                 We implement appropriate technical and organizational measures to protect your data.
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
                 We use the following third-party services:
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-                <li><strong>Paddle:</strong> Payment processing (privacy policy: <a href="https://paddle.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">paddle.com/privacy</a>)</li>
+                <li><strong>Dodo:</strong> Payment processing (privacy policy: <a href="https://dodo.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">dodo.com/privacy</a>)</li>
                 <li><strong>Google Analytics:</strong> Website analytics (if enabled)</li>
               </ul>
             </div>

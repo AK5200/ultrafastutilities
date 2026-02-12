@@ -205,7 +205,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                 <div>
                   <h3 className="font-semibold text-blue-900 mb-1">Named Third Party Services</h3>
                   <p className="text-blue-800/90">
-                    Structured documents include specific examples (Google Analytics, Stripe, Paddle, Cloudflare) instead of vague references, meeting <Link href="/gdpr-privacy-policy-template" className="font-semibold text-blue-900 hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
+                    Structured documents include specific examples (Google Analytics, Stripe, Dodo, Cloudflare) instead of vague references, meeting <Link href="/gdpr-privacy-policy-template" className="font-semibold text-blue-900 hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
                       GDPR
                       <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
                     </Link> transparency requirements.

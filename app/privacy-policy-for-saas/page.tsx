@@ -254,7 +254,7 @@ export default function PrivacyPolicyForSaaSPage() {
                 <div>
                   <h3 className="font-semibold text-blue-900 mb-1">Third Party Integrations</h3>
                   <p className="text-blue-800/90">
-                    SaaS platforms often integrate with payment processors (Stripe, Paddle), analytics tools (Google Analytics, Mixpanel), and cloud services (AWS, Google Cloud), requiring named disclosure.
+                    SaaS platforms often integrate with payment processors (Stripe, Dodo), analytics tools (Google Analytics, Mixpanel), and cloud services (AWS, Google Cloud), requiring named disclosure.
                   </p>
                 </div>
               </div>

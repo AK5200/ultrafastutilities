@@ -55,10 +55,10 @@ function getThirdPartyExamples(thirdPartySharing: string[]): string[] {
     examples.add("Google Analytics (analytics and performance)");
   }
 
-  if (lower.some((p) => p.includes("payment") || p.includes("stripe") || p.includes("paddle") || p.includes("paypal"))) {
-    examples.add("Paddle / Stripe / PayPal (payment processing)");
+  if (lower.some((p) => p.includes("payment") || p.includes("stripe") || p.includes("dodo") || p.includes("paypal"))) {
+    examples.add("Dodo / Stripe / PayPal (payment processing)");
   } else {
-    examples.add("Paddle / Stripe / PayPal (payment processing)");
+    examples.add("Dodo / Stripe / PayPal (payment processing)");
   }
 
   if (lower.some((p) => p.includes("cloudflare") || p.includes("cdn") || p.includes("security"))) {
@@ -129,7 +129,7 @@ We may collect the following personal information when you interact with our Ser
   // Always include common data types for realism
   policy += `\n\nIn addition, we may collect:
 - Email address (for account creation, communications, and support)
-- Billing information (processed securely by payment providers such as Paddle, Stripe, or PayPal)
+- Billing information (processed securely by payment providers such as Dodo, Stripe, or PayPal)
 - Account credentials (username, password, if you create an account)
 - Communications with our support team (emails, messages, feedback)`;
 

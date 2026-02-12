@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service, Privacy Policy & Refund Policy | ultrafastutilities",
-  description: "Terms of Service, Privacy Policy, and Refund Policy for ultrafastutilities. All policies in one place for Paddle verification.",
+  description: "Terms of Service, Privacy Policy, and Refund Policy for ultrafastutilities. All policies in one place for Dodo verification.",
   robots: {
     index: true,
     follow: true,
@@ -174,7 +174,7 @@ export default function TermsPage() {
               <ul className="list-disc list-inside text-sm space-y-1 ml-4 mt-2">
                 <li>Information you provide when creating an account (name, email address)</li>
                 <li>Information you provide when using our document generation service (business details, website information)</li>
-                <li>Payment information processed securely through Paddle (we do not store payment card details)</li>
+                <li>Payment information processed securely through Dodo (we do not store payment card details)</li>
                 <li>Communications you send to us (support requests, feedback)</li>
               </ul>
               <p className="text-sm leading-relaxed mt-2">
@@ -207,7 +207,7 @@ export default function TermsPage() {
                 We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-4 mt-2">
-                <li><strong>Service Providers:</strong> We may share information with third-party service providers who perform services on our behalf, such as payment processing (Paddle), hosting, analytics, and customer support.</li>
+                <li><strong>Service Providers:</strong> We may share information with third-party service providers who perform services on our behalf, such as payment processing (Dodo), hosting, analytics, and customer support.</li>
                 <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities.</li>
                 <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
                 <li><strong>With Your Consent:</strong> We may share your information with your consent or at your direction.</li>
@@ -289,16 +289,16 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-semibold mb-3 text-blue-900">Refund Policy</h2>
               <p className="text-sm leading-relaxed">
-                All sales are processed by Paddle, our authorized reseller and the merchant of record.
+                All sales are processed by Dodo, our authorized reseller and the merchant of record.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                You may request a refund directly through Paddle within 30 days of your purchase.
+                You may request a refund directly through Dodo within 30 days of your purchase.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                Paddle's refund policy applies uniformly, and we do not impose additional conditions, exceptions, or limitations.
+                Dodo's refund policy applies uniformly, and we do not impose additional conditions, exceptions, or limitations.
               </p>
               <p className="text-sm leading-relaxed mt-2">
-                To request a refund, please contact Paddle Support or reach out to us and we will assist you in initiating the request.
+                To request a refund, please contact Dodo Support or reach out to us and we will assist you in initiating the request.
               </p>
             </div>
           </CardContent>

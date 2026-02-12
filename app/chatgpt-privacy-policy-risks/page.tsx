@@ -117,7 +117,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                 <div>
                   <h3 className="font-semibold text-red-900 mb-1">Vague Third Party Disclosures</h3>
                   <p className="text-red-800/90">
-                    AI-generated policies use generic terms like "analytics services" or "payment processors" instead of naming specific services (Google Analytics, Stripe, Paddle, Cloudflare). This violates <Link href="/gdpr-privacy-policy-template" className="font-semibold text-red-900 hover:text-red-700 transition-colors relative inline-block pr-2.5 group">
+                    AI-generated policies use generic terms like "analytics services" or "payment processors" instead of naming specific services (Google Analytics, Stripe, Dodo, Cloudflare). This violates <Link href="/gdpr-privacy-policy-template" className="font-semibold text-red-900 hover:text-red-700 transition-colors relative inline-block pr-2.5 group">
                       GDPR
                       <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
                     </Link> transparency requirements.
@@ -233,7 +233,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                 <div>
                   <h3 className="font-semibold text-blue-900 mb-1">Named Third Party Services</h3>
                   <p className="text-blue-800/90">
-                    Structured documents include specific examples (Google Analytics, Stripe, Paddle, Cloudflare) instead of vague references.
+                    Structured documents include specific examples (Google Analytics, Stripe, Dodo, Cloudflare) instead of vague references.
                   </p>
                 </div>
               </div>

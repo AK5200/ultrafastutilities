@@ -35,8 +35,8 @@ function getCookieExamples(cookieType: string, thirdPartySharing: string[]): str
     }
   }
   
-  if (thirdPartySharing.some(p => p.toLowerCase().includes('stripe') || p.toLowerCase().includes('paddle') || p.toLowerCase().includes('payment'))) {
-    examples.push("Payment processor cookies (Stripe, Paddle, etc.)");
+  if (thirdPartySharing.some(p => p.toLowerCase().includes('stripe') || p.toLowerCase().includes('dodo') || p.toLowerCase().includes('payment'))) {
+    examples.push("Payment processor cookies (Stripe, Dodo, etc.)");
   }
   
   if (thirdPartySharing.some(p => p.toLowerCase().includes('cloudflare'))) {
@@ -63,8 +63,8 @@ function getThirdPartyServices(thirdPartySharing: string[], cookieType: string):
       services.push("Facebook Pixel (for advertising and analytics)");
     } else if (partyLower.includes('stripe')) {
       services.push("Stripe (for payment processing)");
-    } else if (partyLower.includes('paddle')) {
-      services.push("Paddle (for payment processing)");
+    } else if (partyLower.includes('dodo')) {
+      services.push("Dodo (for payment processing)");
     } else if (partyLower.includes('cloudflare')) {
       services.push("Cloudflare (for security and performance)");
     } else if (partyLower.includes('advertising') || partyLower.includes('advertising')) {
@@ -240,7 +240,7 @@ In addition to our own cookies, we may also use various third-party cookies to r
 Third-party services that may set cookies on our website:
 - ${getThirdPartyServices(thirdPartySharing, cookies)}
 
-Third-party cookies may be set by services such as Google Analytics (analytics), Paddle or Stripe (payment processing), Cloudflare (security), and advertising platforms like Google Ads or Meta Ads.
+Third-party cookies may be set by services such as Google Analytics (analytics), Dodo or Stripe (payment processing), Cloudflare (security), and advertising platforms like Google Ads or Meta Ads.
 
 These third parties may use cookies to collect information about your online activities across different websites. We do not control these third-party cookies, and they are subject to the respective third party's privacy policies.
 

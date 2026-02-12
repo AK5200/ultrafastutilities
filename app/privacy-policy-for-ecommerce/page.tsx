@@ -112,7 +112,7 @@ export default function PrivacyPolicyForEcommercePage() {
               <div>
                 <h3 className="font-semibold text-blue-900 mb-2">Payment Information</h3>
                 <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li>Payment details (processed securely by payment providers like Stripe, PayPal, Paddle)</li>
+                  <li>Payment details (processed securely by payment providers like Stripe, PayPal, Dodo)</li>
                   <li>Billing addresses and tax information</li>
                   <li>Payment method preferences</li>
                   <li>Transaction history and receipts</li>
@@ -253,7 +253,7 @@ export default function PrivacyPolicyForEcommercePage() {
                 <div>
                   <h3 className="font-semibold text-blue-900 mb-1">Payment Processing Cookies</h3>
                   <p className="text-blue-800/90">
-                    Security and fraud prevention cookies from payment providers (Stripe, PayPal, Paddle)
+                    Security and fraud prevention cookies from payment providers (Stripe, PayPal, Dodo)
                   </p>
                 </div>
               </div>

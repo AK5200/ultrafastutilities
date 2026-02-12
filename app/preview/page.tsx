@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { generatePDF } from "@/lib/pdf-generator";
 import { trackPaymentSuccess } from "@/lib/analytics";
-import { loadPaddle, openPaddleCheckout, diagnosePaddleSetup } from "@/lib/paddle";
+import { loadDodo, openDodoCheckout, diagnoseDodoSetup } from "@/lib/dodo";
 
 export default function PreviewPage() {
   const [activeTab, setActiveTab] = useState("privacy");
@@ -30,15 +30,15 @@ export default function PreviewPage() {
     const paid = localStorage.getItem("isPaid") === "true";
     setIsPaid(paid);
 
-    // Load Paddle.js for overlay checkout
-    loadPaddle()
+    // Load Dodo.js for overlay checkout
+    loadDodo()
       .then(() => {
         // Run diagnostics after loading
-        diagnosePaddleSetup();
+        diagnoseDodoSetup();
       })
       .catch((err) => {
-        console.error("Failed to load Paddle:", err);
-        console.error("Run diagnosePaddleSetup() in console to check configuration");
+        console.error("Failed to load Dodo:", err);
+        console.error("Run diagnoseDodoSetup() in console to check configuration");
       });
   }, []);
 
@@ -86,32 +86,32 @@ export default function PreviewPage() {
       console.log('[Payment] Starting checkout process...');
       
       // Run diagnostics first
-      diagnosePaddleSetup();
+      diagnoseDodoSetup();
       
-      // Ensure Paddle is loaded and initialized
-      await loadPaddle();
+      // Ensure Dodo is loaded and initialized
+      await loadDodo();
 
-      // Double-check Paddle is ready
-      if (!window.Paddle) {
-        throw new Error("Paddle object not found. Please refresh the page and try again.");
+      // Double-check Dodo is ready
+      if (!window.Dodo) {
+        throw new Error("Dodo object not found. Please refresh the page and try again.");
       }
       
-      if (!window.Paddle.Checkout) {
-        throw new Error("Paddle.Checkout not available. Paddle may not be initialized correctly.");
+      if (!window.Dodo.Checkout) {
+        throw new Error("Dodo.Checkout not available. Dodo may not be initialized correctly.");
       }
       
-      if (typeof window.Paddle.Checkout.open !== 'function') {
-        throw new Error("Paddle.Checkout.open is not a function. Check Paddle.js version.");
+      if (typeof window.Dodo.Checkout.open !== 'function') {
+        throw new Error("Dodo.Checkout.open is not a function. Check Dodo.js version.");
       }
 
-      const priceId = process.env.NEXT_PUBLIC_PADDLE_PRICE_ID || "pri_01kfg71m7d2hy7pc11rc29nwm3";
+      const priceId = process.env.NEXT_PUBLIC_DODO_PRICE_ID || "";
       
       console.log('[Payment] Opening checkout with priceId:', priceId);
       console.log('[Payment] Customer email:', policyData?.contactEmail);
       
       localStorage.setItem("pendingUpgrade", "plus");
       
-      openPaddleCheckout({
+      openDodoCheckout({
         priceId: priceId,
         customerEmail: policyData?.contactEmail,
         successUrl: `${window.location.origin}/success`,
@@ -130,9 +130,9 @@ export default function PreviewPage() {
       let errorMessage = error.message || "Unknown error";
       
       if (errorMessage.includes('token')) {
-        errorMessage += "\n\nPlease check:\n- NEXT_PUBLIC_PADDLE_CLIENT_TOKEN is set in .env.local\n- Token starts with 'test_' for sandbox or 'live_' for production\n- Token matches your environment setting";
+        errorMessage += "\n\nPlease check:\n- NEXT_PUBLIC_DODO_CLIENT_TOKEN is set in .env.local\n- Token starts with 'test_' for sandbox or 'live_' for production\n- Token matches your environment setting";
       } else if (errorMessage.includes('initialized')) {
-        errorMessage += "\n\nPlease:\n- Refresh the page\n- Check browser console for Paddle errors\n- Verify Paddle.js script loaded correctly";
+        errorMessage += "\n\nPlease:\n- Refresh the page\n- Check browser console for Dodo errors\n- Verify Dodo.js script loaded correctly";
       }
       
       alert(`Failed to open checkout: ${errorMessage}\n\nCheck browser console (F12) for details.`);

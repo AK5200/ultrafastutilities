@@ -18,7 +18,7 @@ function SuccessContent() {
   }, [searchParams]);
 
   useEffect(() => {
-    // Client-side unlock (sandbox/dev UX). In production this should be verified via Paddle webhooks.
+    // Client-side unlock (sandbox/dev UX). In production this should be verified via Dodo webhooks.
     localStorage.setItem("isPaid", "true");
     localStorage.setItem("paidPlan", "plus");
     localStorage.removeItem("pendingUpgrade");
