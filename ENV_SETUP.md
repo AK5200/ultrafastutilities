@@ -15,7 +15,7 @@ DODO_PAYMENTS_ENV=test_mode
 
 # Webhook Secret Key (required for webhook verification)
 # Get from: Dashboard → Developer → Webhooks
-# Set webhook URL to: https://yourdomain.com/api/dodo/webhook
+# Set webhook URL to: https://ultrafastutilities.com/api/dodo/webhook
 DODO_WEBHOOK_KEY=your_webhook_secret_key_here
 
 # Client-side Product ID (required)
@@ -23,7 +23,9 @@ DODO_WEBHOOK_KEY=your_webhook_secret_key_here
 NEXT_PUBLIC_DODO_PRODUCT_ID=prod_your_product_id_here
 
 # Site URL (used for return URLs)
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+# For local: http://localhost:3000
+# For production: https://ultrafastutilities.com
+NEXT_PUBLIC_SITE_URL=https://ultrafastutilities.com
 ```
 
 ## How to Get These Values:
@@ -35,7 +37,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 2. **DODO_WEBHOOK_KEY**
    - Go to: Developer → Webhooks
-   - Create a webhook endpoint: `https://yourdomain.com/api/dodo/webhook`
+   - Create a webhook endpoint: `https://ultrafastutilities.com/api/dodo/webhook`
    - Copy the webhook secret key
 
 3. **NEXT_PUBLIC_DODO_PRODUCT_ID**
@@ -49,7 +51,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 5. **NEXT_PUBLIC_SITE_URL**
    - Use `http://localhost:3000` for local development
-   - Use your production domain (e.g., `https://ultrafastutilities.com`) for production
+   - Use `https://ultrafastutilities.com` for production
 
 ## For Vercel Deployment:
 
