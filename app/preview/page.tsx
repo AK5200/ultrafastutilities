@@ -188,6 +188,13 @@ export default function PreviewPage() {
               </TabsList>
               
               <TabsContent value="privacy" className="mt-6">
+                <div className="flex gap-4 mb-6">
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
+                </div>
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
                     {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
@@ -207,6 +214,13 @@ export default function PreviewPage() {
               </TabsContent>
 
               <TabsContent value="terms" className="mt-6">
+                <div className="flex gap-4 mb-6">
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
+                </div>
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
                     {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
@@ -226,6 +240,13 @@ export default function PreviewPage() {
               </TabsContent>
 
               <TabsContent value="cookies" className="mt-6">
+                <div className="flex gap-4 mb-6">
+                  <Button onClick={handleCopy} className="bg-blue-600 hover:bg-blue-700">Copy</Button>
+                  <Button onClick={handleDownload} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download as Text</Button>
+                  {isPaid && (
+                    <Button onClick={handleDownloadPDF} variant="outline" className="border-blue-300 text-blue-700 hover:bg-blue-50">Download PDF</Button>
+                  )}
+                </div>
                 <div className="max-w-none mb-6 p-4 sm:p-6 border border-blue-200/50 rounded-xl bg-white/80 backdrop-blur-sm">
                   <div className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-blue-900">
                     {getCurrentPolicyText().split("\n").map((line: string, i: number) => (
