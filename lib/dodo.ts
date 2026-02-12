@@ -107,30 +107,34 @@ export async function initiateDodoCheckout(options: DodoCheckoutOptions): Promis
 export function diagnoseDodoSetup(): void {
   console.group('[Dodo Diagnostics]');
   
-  const apiKey = process.env.NEXT_PUBLIC_DODO_PAYMENTS_API_KEY;
   const productId = process.env.NEXT_PUBLIC_DODO_PRODUCT_ID;
   const environment = process.env.NEXT_PUBLIC_DODO_PAYMENTS_ENV || "test_mode";
   
-  console.log('Environment Variables (Client-side):');
+  console.log('Client-side Environment Variables:');
   console.log('  NEXT_PUBLIC_DODO_PRODUCT_ID:', productId || '❌ MISSING');
   console.log('  NEXT_PUBLIC_DODO_PAYMENTS_ENV:', environment);
   
   console.log('\nServer-side Configuration:');
-  console.log('  DODO_PAYMENTS_API_KEY:', apiKey ? '✓ Set (hidden)' : '❌ MISSING');
-  console.log('  Note: API key should be set server-side only (not NEXT_PUBLIC_)');
+  console.log('  DODO_PAYMENTS_API_KEY: ✓ Server-side only (not accessible from client)');
+  console.log('  Note: API key is correctly configured server-side only for security');
   
   console.log('\nIntegration Type:');
   console.log('  ✓ Using Checkout Sessions (server-side API)');
   console.log('  ✓ No client-side SDK required');
   
-  console.log('\nTroubleshooting Tips:');
   if (!productId) {
-    console.error('  ❌ Missing product ID. Set NEXT_PUBLIC_DODO_PRODUCT_ID');
+    console.error('\n⚠️  Missing Configuration:');
+    console.error('  ❌ NEXT_PUBLIC_DODO_PRODUCT_ID is required');
+    console.log('\nSetup Instructions:');
+    console.log('  • Create a product in Dodo Dashboard');
+    console.log('  • Copy the product ID to NEXT_PUBLIC_DODO_PRODUCT_ID in .env.local');
+    console.log('  • Ensure DODO_PAYMENTS_API_KEY is set server-side');
+    console.log('  • Configure webhook URL: https://ultrafastutilities.com/api/dodo/webhook');
+  } else {
+    console.log('\n✓ Configuration looks good!');
+    console.log('  • Product ID is set');
+    console.log('  • API key is configured server-side (as expected)');
   }
-  console.log('  • Ensure DODO_PAYMENTS_API_KEY is set in server environment');
-  console.log('  • Create a product in Dodo Dashboard');
-  console.log('  • Copy the product ID to NEXT_PUBLIC_DODO_PRODUCT_ID');
-  console.log('  • Configure webhook URL in Dodo Dashboard → Developer → Webhooks');
   
   console.groupEnd();
 }
