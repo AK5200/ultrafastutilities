@@ -145,20 +145,20 @@ export default function PreviewPage() {
           </p>
         </div>
 
-        {/* Subtle Top Upgrade Card */}
+        {/* Premium Top Upgrade Card */}
         {!isPaid && (
-          <div className="mb-6 p-4 rounded-lg bg-blue-50/40 border border-blue-200/40 backdrop-blur-sm">
+          <div className="mb-6 p-5 rounded-xl bg-gradient-to-r from-yellow-50 via-amber-50/90 to-yellow-50 border-2 border-yellow-300/60 shadow-lg shadow-yellow-500/20 backdrop-blur-sm">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <span className="text-xs font-semibold tracking-wide text-blue-700 bg-blue-100/60 px-2 py-1 rounded-full">
+                <span className="text-xs font-bold tracking-wide text-yellow-900 bg-gradient-to-r from-yellow-400 to-amber-400 px-3 py-1.5 rounded-full shadow-md shadow-yellow-500/30">
                   PLUS
                 </span>
-                <span className="text-sm text-blue-800/90">
+                <span className="text-sm font-medium text-yellow-900/90">
                   Unlock Terms of Service, Cookie Policy & PDF downloads
                 </span>
               </div>
               <Button
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-md shadow-blue-500/20 whitespace-nowrap text-sm"
+                className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white shadow-lg shadow-yellow-500/40 whitespace-nowrap text-sm font-semibold"
                 onClick={handlePayment}
                 disabled={!policyData}
               >
