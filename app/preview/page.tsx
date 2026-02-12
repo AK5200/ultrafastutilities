@@ -147,18 +147,18 @@ export default function PreviewPage() {
 
         {/* Premium Top Upgrade Card */}
         {!isPaid && (
-          <div className="mb-6 p-5 rounded-xl bg-gradient-to-r from-yellow-50 via-amber-50/90 to-yellow-50 border-2 border-yellow-300/60 shadow-lg shadow-yellow-500/20 backdrop-blur-sm">
+          <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-yellow-50/60 via-amber-50/50 to-yellow-50/60 border border-yellow-200/50 shadow-md shadow-yellow-500/10 backdrop-blur-sm">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <span className="text-xs font-bold tracking-wide text-yellow-900 bg-gradient-to-r from-yellow-400 to-amber-400 px-3 py-1.5 rounded-full shadow-md shadow-yellow-500/30">
+                <span className="text-xs font-semibold tracking-wide text-amber-800 bg-gradient-to-r from-yellow-200 to-amber-200 px-2.5 py-1 rounded-full shadow-sm">
                   PLUS
                 </span>
-                <span className="text-sm font-medium text-yellow-900/90">
+                <span className="text-sm text-amber-900/80">
                   Unlock Terms of Service, Cookie Policy & PDF downloads
                 </span>
               </div>
               <Button
-                className="bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white shadow-lg shadow-yellow-500/40 whitespace-nowrap text-sm font-semibold"
+                className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white shadow-md shadow-amber-500/20 whitespace-nowrap text-sm"
                 onClick={handlePayment}
                 disabled={!policyData}
               >
