@@ -13,7 +13,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https:",
               "font-src 'self' data:",
-              "connect-src 'self' https://*.dodopayments.com https://test.dodopayments.com https://api.dodopayments.com https://www.google-analytics.com",
+              "connect-src 'self' https://*.dodopayments.com https://test.dodopayments.com https://live.dodopayments.com https://www.google-analytics.com",
               "frame-src 'self' https://checkout.dodopayments.com",
               "frame-ancestors 'self' http://localhost:* https://localhost:*",
             ].join('; '),
