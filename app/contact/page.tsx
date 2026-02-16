@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, MessageSquare } from "lucide-react";
+import SeoIntro from "@/components/SeoIntro";
 
 export default function ContactPage() {
   return (
@@ -11,15 +12,12 @@ export default function ContactPage() {
         <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
       </div>
 
+      <SeoIntro
+        title="Contact Us"
+        description="Get in touch with the ultrafastutilities team for support and general inquiries."
+      />
+
       <div className="relative max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent pb-3">
-            Contact Us
-          </h1>
-          <p className="text-lg text-blue-800/90">
-            We're here to help. Get in touch with our team.
-          </p>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md">

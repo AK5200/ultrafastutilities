@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, X, CheckCircle, FileText, ArrowRight, HelpCircle, ArrowUpRight } from "lucide-react";
+import SeoIntro from "@/components/SeoIntro";
 
 export const metadata = {
   title: "ChatGPT Privacy Policy Risks Why Generic AI Policies Fall Short | ultrafastutilities",
@@ -22,14 +23,11 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
       </div>
 
       <div className="relative max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent pb-3">
-            ChatGPT Privacy Policy Risks
-          </h1>
-          <p className="text-lg text-blue-800/90">
-            Why generic AI-generated privacy policies create compliance gaps and legal risks
-          </p>
-        </div>
+        <SeoIntro
+          title="ChatGPT Privacy Policy Risks"
+          description="Learn requirements and generate a compliant policy using our tool."
+          audience="site owners and developers"
+        />
 
         {/* Quick Links Section - Top of Page */}
         <div className="mb-10">

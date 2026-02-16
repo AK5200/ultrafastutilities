@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useRouter } from "next/navigation";
 import { saveFormState } from "@/lib/form-state";
 import { Loader2 } from "lucide-react";
+import SeoIntro from "@/components/SeoIntro";
 
 export default function GeneratePage() {
   const [url, setUrl] = useState("");
@@ -65,13 +66,19 @@ export default function GeneratePage() {
         <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
       </div>
 
+      <SeoIntro
+        title="Free Privacy Policy Generator"
+        description="Answer a few questions and instantly create a legally structured privacy policy."
+        audience="websites, SaaS products and online businesses"
+      />
+
       <div className="relative max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 pb-3">
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 pb-3">
             <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
               Get started
             </span>
-          </h1>
+          </h2>
           <p className="text-lg text-blue-800/90">
             Add your website URL to auto-fill details (optional), then answer a few questions.
           </p>

@@ -2,10 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ShieldCheck, Zap, FileText, CheckCircle, X } from "lucide-react";
+import SeoIntro from "@/components/SeoIntro";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <SeoIntro
+        title="Privacy Policy Generator for Websites, SaaS and Apps"
+        description="Generate GDPR and CCPA compliant privacy policy, terms of service and cookie policy in minutes."
+        audience="startups, indie hackers, ecommerce stores and mobile apps"
+      />
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-[85vh] px-4 py-20 relative overflow-hidden">
         {/* Premium Blue Gradient Background */}
@@ -14,9 +20,9 @@ export default function Home() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
         
         <div className="relative max-w-3xl w-full text-center z-10">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight pb-4">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight pb-4">
             Don't Guess Your Privacy Policy. Get It Right for $5.
-          </h1>
+          </h2>
           <p className="text-xl md:text-2xl text-blue-600/80 mb-10 max-w-xl mx-auto leading-relaxed">
             Free generators and AI tools often miss critical compliance details.
             Get a professionally structured, GDPR & CCPA-ready Privacy Policy, Cookie Policy, and Terms, built to reduce common legal mistakes and ready to ship instantly.

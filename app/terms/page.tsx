@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import SeoIntro from "@/components/SeoIntro";
 
 export const metadata: Metadata = {
   title: "Terms of Service, Privacy Policy & Refund Policy | ultrafastutilities",
@@ -24,15 +25,12 @@ export default function TermsPage() {
         <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
       </div>
 
+      <SeoIntro
+        title="Terms of Service, Privacy Policy and Refund Policy"
+        description="Review the terms, privacy practices, and refund policy for ultrafastutilities."
+      />
+
       <div className="relative max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent pb-3">
-            Terms of Service, Privacy Policy & Refund Policy
-          </h1>
-          <p className="text-lg text-blue-800/90">
-            Last updated: {effectiveDate}
-          </p>
-        </div>
 
         {/* Terms of Service Section */}
         <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md mb-8">

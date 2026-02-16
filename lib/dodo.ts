@@ -23,9 +23,9 @@ export async function createDodoCheckoutSession(
 ): Promise<DodoCheckoutSession> {
   const apiKey = process.env.DODO_PAYMENTS_API_KEY;
   const environment = process.env.DODO_PAYMENTS_ENV || "test_mode";
-  const baseUrl = environment === "test_mode" 
-    ? "https://test.dodopayments.com" 
-    : "https://api.dodopayments.com";
+  const baseUrl = environment === "test_mode"
+    ? "https://test.dodopayments.com"
+    : "https://live.dodopayments.com";
 
   if (!apiKey) {
     throw new Error("DODO_PAYMENTS_API_KEY is not configured");

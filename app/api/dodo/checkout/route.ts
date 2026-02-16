@@ -53,8 +53,8 @@ export async function POST(request: NextRequest) {
         environment: process.env.DODO_PAYMENTS_ENV || "not set",
         hasApiKey: !!process.env.DODO_PAYMENTS_API_KEY,
         productId: productId,
-        apiEndpoint: process.env.DODO_PAYMENTS_ENV === "live_mode" 
-          ? "https://api.dodopayments.com" 
+        apiEndpoint: process.env.DODO_PAYMENTS_ENV === "live_mode"
+          ? "https://live.dodopayments.com"
           : "https://test.dodopayments.com",
       },
     };
