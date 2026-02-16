@@ -44,19 +44,19 @@ export async function POST(request: NextRequest) {
       name: error.name,
     });
     
-    // Return more detailed error for debugging
+    // Return detailed error message to client
     const errorMessage = error.message || "Failed to create checkout session";
     const errorDetails = {
       error: errorMessage,
-      details: process.env.NODE_ENV === "development" 
-        ? {
-            stack: error.stack,
-            name: error.name,
-            environment: process.env.DODO_PAYMENTS_ENV,
-            hasApiKey: !!process.env.DODO_PAYMENTS_API_KEY,
-            productId: productId,
-          }
-        : undefined,
+      // Always include helpful details (not just in development)
+      details: {
+        environment: process.env.DODO_PAYMENTS_ENV || "not set",
+        hasApiKey: !!process.env.DODO_PAYMENTS_API_KEY,
+        productId: productId,
+        apiEndpoint: process.env.DODO_PAYMENTS_ENV === "live_mode" 
+          ? "https://api.dodopayments.com" 
+          : "https://test.dodopayments.com",
+      },
     };
     
     return NextResponse.json(errorDetails, { status: 500 });

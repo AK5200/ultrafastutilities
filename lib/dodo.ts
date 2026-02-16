@@ -99,8 +99,25 @@ export async function initiateDodoCheckout(options: DodoCheckoutOptions): Promis
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error || "Failed to create checkout session");
+      // Try to parse error response
+      let errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      try {
+        const errorData = await response.json();
+        errorMessage = errorData.error || errorMessage;
+        
+        // Include details if available
+        if (errorData.details) {
+          console.error("[Dodo] Error details:", errorData.details);
+          errorMessage += `\n\nDetails: ${JSON.stringify(errorData.details, null, 2)}`;
+        }
+      } catch (parseError) {
+        // If JSON parsing fails, use status text
+        const text = await response.text().catch(() => "");
+        if (text) {
+          errorMessage += `\nResponse: ${text}`;
+        }
+      }
+      throw new Error(errorMessage);
     }
 
     const data = await response.json();
@@ -113,6 +130,10 @@ export async function initiateDodoCheckout(options: DodoCheckoutOptions): Promis
     }
   } catch (error: any) {
     console.error("[Dodo] Checkout initiation error:", error);
+    // Re-throw with more context if it's a network error
+    if (error.message === "fetch failed" || error.name === "TypeError") {
+      throw new Error(`Network error: Unable to connect to payment server. Please check your internet connection and try again.`);
+    }
     throw error;
   }
 }
