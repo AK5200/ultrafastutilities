@@ -31,33 +31,49 @@ export async function createDodoCheckoutSession(
     throw new Error("DODO_PAYMENTS_API_KEY is not configured");
   }
 
+  const requestBody = {
+    product_cart: [
+      {
+        product_id: options.productId,
+        quantity: options.quantity || 1,
+      },
+    ],
+    customer: options.customerEmail || options.customerName
+      ? {
+          email: options.customerEmail,
+          name: options.customerName,
+        }
+      : undefined,
+    return_url: options.returnUrl || `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/success`,
+  };
+
+  console.log(`[Dodo] Creating checkout session:`, {
+    baseUrl,
+    environment,
+    productId: options.productId,
+    hasApiKey: !!apiKey,
+  });
+
   const response = await fetch(`${baseUrl}/checkouts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "Authorization": `Bearer ${apiKey}`,
     },
-    body: JSON.stringify({
-      product_cart: [
-        {
-          product_id: options.productId,
-          quantity: options.quantity || 1,
-        },
-      ],
-      customer: options.customerEmail || options.customerName
-        ? {
-            email: options.customerEmail,
-            name: options.customerName,
-          }
-        : undefined,
-      return_url: options.returnUrl || `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/success`,
-    }),
+    body: JSON.stringify(requestBody),
   });
 
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({ message: "Unknown error" }));
+    const errorMessage = errorData.message || errorData.error || response.statusText;
+    console.error(`[Dodo] API Error (${response.status}):`, {
+      status: response.status,
+      statusText: response.statusText,
+      errorData,
+      url: `${baseUrl}/checkouts`,
+    });
     throw new Error(
-      `Failed to create checkout session: ${errorData.message || response.statusText}`
+      `Failed to create checkout session: ${errorMessage} (Status: ${response.status})`
     );
   }
 
