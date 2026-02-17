@@ -22,22 +22,6 @@ const nextConfig = {
       },
     ];
   },
-  async redirects() {
-    return [
-      // Redirect www to non-www
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.ultrafastutilities.com',
-          },
-        ],
-        destination: 'https://ultrafastutilities.com/:path*',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
