@@ -23,6 +23,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://ultrafastutilities.com/cookie-policy-for-websites",
+  },
 };
 
 const tocSections = [

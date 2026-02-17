@@ -22,6 +22,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://ultrafastutilities.com/privacy-policy-for-apps",
+  },
 };
 
 const tocSections = [

@@ -20,6 +20,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://ultrafastutilities.com/gdpr-privacy-policy-template",
+  },
 };
 
 const tocSections = [

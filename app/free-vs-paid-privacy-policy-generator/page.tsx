@@ -21,6 +21,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://ultrafastutilities.com/free-vs-paid-privacy-policy-generator",
+  },
 };
 
 const tocSections = [

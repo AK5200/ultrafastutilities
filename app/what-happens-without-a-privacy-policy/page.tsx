@@ -27,6 +27,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy",
+  },
 };
 
 const tocSections = [
