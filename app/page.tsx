@@ -1,244 +1,254 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { ShieldCheck, Zap, FileText, CheckCircle, X } from "lucide-react";
+import {
+  ShieldCheck,
+  Zap,
+  FileText,
+  CheckCircle,
+  X,
+  ArrowRight,
+  Clock,
+  CreditCard,
+  Globe,
+  Scale,
+  Cookie,
+  Smartphone,
+  ShoppingCart,
+  Cloud,
+} from "lucide-react";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center min-h-[85vh] px-4 py-20 relative overflow-hidden">
-        {/* Premium Blue Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-blue-400/5 to-transparent" />
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        
-        <div className="relative max-w-3xl w-full text-center z-10">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent leading-tight pb-4">
-            Don't Guess Your Privacy Policy. Get It Right for $5.
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-600/80 mb-10 max-w-xl mx-auto leading-relaxed">
-            Free generators and AI tools often miss critical compliance details.
-            Get a professionally structured, GDPR & CCPA-ready Privacy Policy, Cookie Policy, and Terms, built to reduce common legal mistakes and ready to ship instantly.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/generate">
-              <Button size="lg" className="text-lg px-8 py-6 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg shadow-blue-500/30">
-                Create Your Policy Now
-              </Button>
-            </Link>
+      <section className="relative overflow-hidden border-b border-slate-200/60">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white to-white" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 overflow-hidden"
+        >
+          <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-blue-100/40 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-blue-50/60 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-medium mb-6">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Trusted by 1,000+ businesses
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+              Don&apos;t Guess Your Privacy Policy.{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                Get It Right for $5.
+              </span>
+            </h1>
+
+            <p className="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              Free generators and AI tools miss critical compliance details. Get
+              a professionally structured, GDPR &amp; CCPA-ready Privacy Policy,
+              Cookie Policy, and Terms of Service — built to reduce common legal
+              mistakes and ready to ship instantly.
+            </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+              <Link href="/generate">
+                <Button
+                  size="lg"
+                  className="text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 h-auto bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg shadow-blue-600/20"
+                >
+                  Create Your Policy Now
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+
+            {/* Trust badges */}
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-sm text-slate-500">
+              <span className="inline-flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5 text-blue-500" />
+                60 seconds
+              </span>
+              <span className="w-1 h-1 rounded-full bg-slate-300" />
+              <span className="inline-flex items-center gap-1.5">
+                <CreditCard className="w-3.5 h-3.5 text-blue-500" />
+                One-time $4.99
+              </span>
+              <span className="w-1 h-1 rounded-full bg-slate-300" />
+              <span className="inline-flex items-center gap-1.5">
+                <FileText className="w-3.5 h-3.5 text-blue-500" />
+                Free preview
+              </span>
+            </div>
           </div>
-          <p className="text-base md:text-lg text-blue-600/80 mt-6">
-            Free preview available. One time payment. Instant access. No subscription.
-          </p>
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-20 px-4 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-medium text-blue-900 italic mb-6 leading-relaxed pb-3">
-            "This is the most reliable privacy policy generator I have used."
+      {/* Social Proof */}
+      <section className="py-14 sm:py-16 px-4 bg-white border-b border-slate-100">
+        <div className="max-w-3xl mx-auto text-center">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl font-medium text-slate-800 leading-relaxed">
+            &ldquo;This is the most reliable privacy policy generator I have
+            used.&rdquo;
           </blockquote>
-          <p className="text-xl text-blue-700/80">
-            Sarah Chen, Startup Founder • App Store review 2024
+          <p className="mt-4 text-sm text-slate-500">
+            Sarah Chen, Startup Founder
           </p>
         </div>
       </section>
 
-      {/* Compliance Standards Section */}
-      <section className="py-20 px-4 bg-white/30 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent leading-tight pb-4">
-            Structured around real privacy compliance standards
-          </h2>
-          <p className="text-xl md:text-2xl text-blue-800/90 max-w-3xl mx-auto leading-relaxed">
-            Our documents are built using widely accepted privacy disclosure practices, including GDPR and CCPA requirements, cookie classification, data retention, and user rights handling. Instead of generic text from AI or free generators, you get a clearly structured foundation designed to reduce common compliance mistakes and help you publish with confidence.
-          </p>
-        </div>
-      </section>
+      {/* Why ultrafastutilities */}
+      <section className="py-16 sm:py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+              Structured around real compliance standards
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+              GDPR and CCPA requirements, cookie classification, data retention,
+              and user rights handling — not generic AI text.
+            </p>
+          </div>
 
-      {/* Main Value Proposition */}
-      <section className="py-20 px-4 bg-white/30 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto">
-          {/* Feature Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <Card className="border-2 border-blue-200/50 bg-white/70 backdrop-blur-md hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-blue-500/20">
-                  <Zap className="w-8 h-8 text-white" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {[
+              {
+                icon: Zap,
+                title: "Generate in Real-Time",
+                desc: "Answer a few questions, instantly get your Privacy Policy, Terms of Service, and Cookie Policy. No waiting.",
+              },
+              {
+                icon: ShieldCheck,
+                title: "GDPR & CCPA-Ready",
+                desc: "Jurisdiction-aware sections, cookie classification, data retention disclosures, and controller/processor clarity.",
+              },
+              {
+                icon: FileText,
+                title: "Complete Document Suite",
+                desc: "Privacy Policy, Terms of Service, and Cookie Policy with lawful basis, user rights, and third-party disclosures.",
+              },
+              {
+                icon: Globe,
+                title: "Built for Confidence",
+                desc: "A structured, reliable starting point so you can publish without second-guessing whether something was missed.",
+              },
+            ].map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-2xl border border-slate-200/80 bg-white p-6 hover:border-blue-200 hover:shadow-md transition-all"
+              >
+                <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
+                  <feature.icon className="w-5 h-5" />
                 </div>
-                <CardTitle className="text-2xl mb-3 text-blue-900 pb-2">Generate Policies in Real-Time</CardTitle>
-                <CardDescription className="text-base text-blue-800/80">
-                  Answer a few straightforward questions and instantly generate your Privacy Policy, Terms of Service, and Cookie Policy. No waiting, no back and forth. Just clearly structured documents you can publish immediately.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-2 border-blue-200/50 bg-white/70 backdrop-blur-md hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-blue-500/20">
-                  <ShieldCheck className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-3 text-blue-900 pb-2">GDPR & CCPA-Ready Compliance</CardTitle>
-                <CardDescription className="text-base text-blue-800/80">
-                  Each document includes jurisdiction aware sections for GDPR and CCPA or CPRA, along with cookie classification, data retention disclosures, and data controller and processor clarity. You get compliance aware documents, not generic AI text.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-2 border-blue-200/50 bg-white/70 backdrop-blur-md hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-blue-500/20">
-                  <FileText className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-3 text-blue-900 pb-2">Stress-free: ultrafastutilities is here just for you</CardTitle>
-                <CardDescription className="text-base text-blue-800/80">
-                  Privacy compliance can feel confusing and risky when using free tools or copied templates. ultrafastutilities gives you a structured and reliable starting point so you can move forward without second guessing whether something important was missed.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-2 border-blue-200/50 bg-white/70 backdrop-blur-md hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-blue-500/20">
-                  <FileText className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-3 text-blue-900 pb-2">Premium Document Suite</CardTitle>
-                <CardDescription className="text-base text-blue-800/80">
-                  Generate a full set of Privacy Policy, Terms of Service, and Cookie Policy documents. Includes lawful basis disclosures, user rights handling, third party service examples, and clear data retention timelines in one place.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Comparison Section */}
-      <section className="py-20 px-4 bg-blue-50/50 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent pb-3">
-            Why choose ultrafastutilities over generic generators?
-          </h2>
-          <p className="text-xl text-center text-blue-800/90 mb-12">
-            Don't risk legal compliance with generic AI-generated policies.
-          </p>
+      <section className="py-16 sm:py-20 px-4 bg-slate-50/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+              Why not just use ChatGPT?
+            </h2>
+            <p className="mt-3 text-base text-slate-600">
+              Generic AI policies miss critical compliance requirements.
+            </p>
+          </div>
 
-          {/* Comparison Table */}
-          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 overflow-hidden">
+          <div className="rounded-2xl border border-slate-200/80 bg-white shadow-sm overflow-hidden">
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b-2 border-blue-200/50 bg-blue-50/30">
-                    <th className="text-left p-6 text-lg font-semibold text-blue-900"></th>
-                    <th className="text-center p-6 text-lg font-semibold text-blue-900">
+                  <tr className="border-b border-slate-200/60 bg-slate-50/50">
+                    <th className="text-left p-4 sm:p-5 font-medium text-slate-500 text-xs uppercase tracking-wider">
+                      Feature
+                    </th>
+                    <th className="text-center p-4 sm:p-5 font-semibold text-blue-700 text-xs uppercase tracking-wider">
                       ultrafastutilities
                     </th>
-                    <th className="text-center p-6 text-lg font-semibold text-blue-900">
-                      ChatGPT or Google generated
+                    <th className="text-center p-4 sm:p-5 font-medium text-slate-500 text-xs uppercase tracking-wider">
+                      ChatGPT / Free tools
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">GDPR and CCPA coverage</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Jurisdiction aware sections for GDPR and CCPA or CPRA</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Often generic and may miss regional requirements</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">Cookie classification</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Clearly defined categories with explanations</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Vague or missing classifications</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">Data retention disclosures</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Specific and realistic retention timeframes</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Commonly omitted or overly broad</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">Compliance risk</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Structured to reduce common compliance mistakes</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Higher risk due to missing disclosures</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">Third party services</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Named examples such as Google Analytics and Stripe</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Generic references like analytics or advertising</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">Controller and processor roles</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Clear distinction between data controller and processors</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Frequently unclear or not addressed</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">International data transfers</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Safeguards and transfer mechanisms explained</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Rarely covered properly</p>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-blue-100/50">
-                    <td className="p-6 font-medium text-blue-900">User rights handling</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Clear contact method and response process</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Rights listed without procedural guidance</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-6 font-medium text-blue-900">Overall quality</td>
-                    <td className="p-6 text-center">
-                      <CheckCircle className="w-6 h-6 text-blue-600 mx-auto" />
-                      <p className="text-xs text-blue-600/70 mt-1">Professionally structured and ready to publish</p>
-                    </td>
-                    <td className="p-6 text-center">
-                      <X className="w-6 h-6 text-red-500 mx-auto" />
-                      <p className="text-xs text-red-600/70 mt-1">Requires heavy review and manual correction</p>
-                    </td>
-                  </tr>
+                  {[
+                    {
+                      feature: "GDPR & CCPA coverage",
+                      us: "Jurisdiction-aware sections",
+                      them: "Often generic",
+                    },
+                    {
+                      feature: "Cookie classification",
+                      us: "Defined categories",
+                      them: "Vague or missing",
+                    },
+                    {
+                      feature: "Data retention",
+                      us: "Specific timeframes",
+                      them: "Commonly omitted",
+                    },
+                    {
+                      feature: "Third-party services",
+                      us: "Named examples",
+                      them: "Generic references",
+                    },
+                    {
+                      feature: "Controller/processor roles",
+                      us: "Clear distinction",
+                      them: "Not addressed",
+                    },
+                    {
+                      feature: "International transfers",
+                      us: "Safeguards explained",
+                      them: "Rarely covered",
+                    },
+                    {
+                      feature: "User rights handling",
+                      us: "Contact & process",
+                      them: "Listed without guidance",
+                    },
+                    {
+                      feature: "Overall quality",
+                      us: "Ready to publish",
+                      them: "Needs heavy review",
+                    },
+                  ].map((row, i) => (
+                    <tr
+                      key={row.feature}
+                      className={
+                        i < 7
+                          ? "border-b border-slate-100"
+                          : ""
+                      }
+                    >
+                      <td className="p-4 sm:p-5 font-medium text-slate-800">
+                        {row.feature}
+                      </td>
+                      <td className="p-4 sm:p-5 text-center">
+                        <CheckCircle className="w-5 h-5 text-blue-600 mx-auto" />
+                        <p className="text-xs text-slate-500 mt-1 hidden sm:block">
+                          {row.us}
+                        </p>
+                      </td>
+                      <td className="p-4 sm:p-5 text-center">
+                        <X className="w-5 h-5 text-red-400 mx-auto" />
+                        <p className="text-xs text-slate-400 mt-1 hidden sm:block">
+                          {row.them}
+                        </p>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -246,114 +256,275 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-500/10 to-blue-400/5 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent pb-4">
-            Stop guessing. Get your privacy policies done properly.
-          </h2>
-          <p className="text-xl md:text-2xl text-blue-800/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            For a one time payment of $4.99, generate a complete Privacy Policy, Cookie Policy, and Terms of Service with clear structure and key compliance considerations built in. Publish with confidence and move forward without worrying whether something important was missed.
-          </p>
-          <Link href="/generate">
-            <Button size="lg" className="text-lg px-10 py-6 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg shadow-blue-500/30 mb-4">
-              Get ultrafastutilities Now
-            </Button>
-          </Link>
-          <p className="text-lg text-blue-700/80 mb-2">
-            One time payment. Instant access. No subscription.
-          </p>
-          <p className="text-sm text-blue-600/70">
-            Secure checkout. Documents provided as structured templates, not legal advice.
-          </p>
+      {/* SEO Pages / Resources */}
+      <section className="py-16 sm:py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+              Privacy compliance guides
+            </h2>
+            <p className="mt-3 text-base text-slate-600">
+              In-depth resources for every platform and regulation.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                href: "/privacy-policy-for-websites",
+                icon: Globe,
+                title: "Privacy Policy for Websites",
+              },
+              {
+                href: "/privacy-policy-for-apps",
+                icon: Smartphone,
+                title: "Privacy Policy for Apps",
+              },
+              {
+                href: "/privacy-policy-for-ecommerce",
+                icon: ShoppingCart,
+                title: "Privacy Policy for E-commerce",
+              },
+              {
+                href: "/privacy-policy-for-saas",
+                icon: Cloud,
+                title: "Privacy Policy for SaaS",
+              },
+              {
+                href: "/privacy-policy-for-shopify",
+                icon: ShoppingCart,
+                title: "Privacy Policy for Shopify",
+              },
+              {
+                href: "/privacy-policy-for-mobile-apps",
+                icon: Smartphone,
+                title: "Privacy Policy for Mobile Apps",
+              },
+              {
+                href: "/gdpr-privacy-policy-template",
+                icon: Scale,
+                title: "GDPR Privacy Policy Template",
+              },
+              {
+                href: "/ccpa-privacy-policy-example",
+                icon: Scale,
+                title: "CCPA Privacy Policy Example",
+              },
+              {
+                href: "/cookie-policy-for-websites",
+                icon: Cookie,
+                title: "Cookie Policy for Websites",
+              },
+              {
+                href: "/what-happens-without-a-privacy-policy",
+                icon: ShieldCheck,
+                title: "What Happens Without a Privacy Policy?",
+              },
+              {
+                href: "/chatgpt-privacy-policy-risks",
+                icon: FileText,
+                title: "ChatGPT Privacy Policy Risks",
+              },
+              {
+                href: "/free-vs-paid-privacy-policy-generator",
+                icon: FileText,
+                title: "Free vs Paid Generators",
+              },
+            ].map((page) => (
+              <Link key={page.href} href={page.href} className="group">
+                <div className="h-full rounded-xl border border-slate-200/80 p-4 hover:border-blue-200 hover:shadow-sm transition-all bg-white">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-slate-50 group-hover:bg-blue-50 flex items-center justify-center flex-shrink-0 transition-colors">
+                      <page.icon className="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                    </div>
+                    <h3 className="font-medium text-slate-800 group-hover:text-blue-700 transition-colors text-sm flex-1">
+                      {page.title}
+                    </h3>
+                    <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all flex-shrink-0" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 sm:py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 sm:p-12 text-center relative overflow-hidden">
+            <div
+              aria-hidden
+              className="absolute inset-0 pointer-events-none"
+            >
+              <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-white/5 blur-2xl" />
+              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
+            </div>
+
+            <div className="relative">
+              <ShieldCheck className="w-10 h-10 text-blue-200 mx-auto mb-4" />
+              <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Stop guessing. Get it done properly.
+              </h2>
+              <p className="mt-3 text-blue-100 text-base max-w-lg mx-auto">
+                Privacy Policy, Cookie Policy, and Terms of Service — structured,
+                compliant, and ready to publish. One-time $4.99.
+              </p>
+
+              <Link href="/generate">
+                <Button
+                  size="lg"
+                  className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                >
+                  Get ultrafastutilities Now
+                </Button>
+              </Link>
+
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-blue-200">
+                <span>Free preview</span>
+                <span className="w-1 h-1 rounded-full bg-blue-300/50" />
+                <span>One-time payment</span>
+                <span className="w-1 h-1 rounded-full bg-blue-300/50" />
+                <span>Instant access</span>
+              </div>
+
+              <p className="text-xs text-blue-300/80 mt-3">
+                Structured templates, not legal advice.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-50/50 backdrop-blur-sm border-t border-blue-200/50 py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <footer className="border-t border-slate-200/60 bg-white py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
             <div>
-              <h3 className="font-semibold text-blue-900 mb-4">Company</h3>
-              <ul className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                Company
+              </h3>
+              <ul className="space-y-2.5">
                 <li>
-                  <Link href="/contact" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
+                  <Link
+                    href="/contact"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
+                  <Link
+                    href="/privacy"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    Terms & Conditions
+                  <Link
+                    href="/terms"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    Terms &amp; Conditions
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-blue-900 mb-4">Resources</h3>
-              <ul className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                Product
+              </h3>
+              <ul className="space-y-2.5">
                 <li>
-                  <Link href="/generate" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
+                  <Link
+                    href="/generate"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
                     Generate Policy
                   </Link>
                 </li>
                 <li>
-                  <span className="text-blue-700/80 text-sm">Help Center</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-blue-900 mb-4">Legal Documents</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/privacy-policy-for-websites" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    Privacy Policy for Websites
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/cookie-policy-for-websites" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    Cookie Policy for Websites
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy-policy-for-apps" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    Privacy Policy for Apps
+                  <Link
+                    href="/free-vs-paid-privacy-policy-generator"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    Free vs Paid
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-blue-900 mb-4">Legal Compliance</h3>
-              <ul className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                Guides
+              </h3>
+              <ul className="space-y-2.5">
                 <li>
-                  <Link href="/gdpr-privacy-policy-template" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    GDPR Privacy Policy Template
+                  <Link
+                    href="/privacy-policy-for-websites"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    For Websites
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ccpa-privacy-policy-example" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    CCPA Privacy Policy Example
+                  <Link
+                    href="/privacy-policy-for-apps"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    For Apps
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy-for-saas" className="text-blue-700/80 hover:text-blue-900 text-sm transition-colors">
-                    Privacy Policy for SaaS
+                  <Link
+                    href="/cookie-policy-for-websites"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    Cookie Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                Compliance
+              </h3>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="/gdpr-privacy-policy-template"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    GDPR Template
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/ccpa-privacy-policy-example"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    CCPA Example
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/what-happens-without-a-privacy-policy"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    No Policy? Risks
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-blue-200/50 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-blue-700/80 text-sm mb-4 md:mb-0">
-                © {new Date().getFullYear()} ultrafastutilities. All rights reserved.
+          <div className="border-t border-slate-200/60 pt-8">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
+              <p className="text-slate-400 text-xs">
+                &copy; {new Date().getFullYear()} ultrafastutilities. All
+                rights reserved.
               </p>
-              <p className="text-blue-700/80 text-sm">
-                Legal documents for everyone
+              <p className="text-slate-400 text-xs">
+                Legal documents for everyone.
               </p>
             </div>
           </div>
