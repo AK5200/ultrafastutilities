@@ -164,7 +164,7 @@ export default function PrivacyPolicyForEcommercePage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     Ecommerce stores handle payments, shipping, marketing, and
                     repeat customer data, often across multiple third-party
@@ -223,7 +223,7 @@ export default function PrivacyPolicyForEcommercePage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-6">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-6">
                   {/* Payment Information */}
                   <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
                     <div className="flex items-center gap-3 mb-3">
@@ -389,7 +389,7 @@ export default function PrivacyPolicyForEcommercePage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* GDPR */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -513,7 +513,7 @@ export default function PrivacyPolicyForEcommercePage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-6">
                     Ecommerce stores rely heavily on{" "}
                     <Link
@@ -606,7 +606,7 @@ export default function PrivacyPolicyForEcommercePage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate My Policy — $4.99
                       </Button>

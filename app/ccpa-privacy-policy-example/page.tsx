@@ -155,7 +155,7 @@ export default function CCPAPrivacyPolicyExamplePage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     The California Consumer Privacy Act (CCPA) and California
                     Privacy Rights Act (CPRA) grant California residents specific
@@ -230,7 +230,7 @@ export default function CCPAPrivacyPolicyExamplePage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-6">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-6">
                   <div className="flex items-start gap-3 text-base leading-7">
                     <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
                     <div>
@@ -318,7 +318,7 @@ export default function CCPAPrivacyPolicyExamplePage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-6">
                     This page provides an example structure for educational
                     purposes. A complete{" "}
@@ -438,7 +438,7 @@ export default function CCPAPrivacyPolicyExamplePage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate Full CCPA Privacy Policy — $4.99
                       </Button>

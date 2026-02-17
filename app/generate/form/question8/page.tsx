@@ -3,15 +3,20 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 import { saveFormState, getFormState } from "@/lib/form-state";
 import { PolicyData } from "@/lib/types";
 import { ProgressIndicator } from "@/components/progress-indicator";
 import { trackGeneratePolicy } from "@/lib/analytics";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Building2, Loader2, ShieldCheck } from "lucide-react";
 
 export default function Question8Page() {
   const [businessName, setBusinessName] = useState("");
@@ -22,7 +27,6 @@ export default function Question8Page() {
   const router = useRouter();
 
   useEffect(() => {
-    // Load saved state
     const saved = getFormState();
     if (saved.businessName) setBusinessName(saved.businessName);
     if (saved.contactEmail) setContactEmail(saved.contactEmail);
@@ -31,11 +35,34 @@ export default function Question8Page() {
   }, []);
 
   const indianStates = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
-    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
-    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
-    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal",
   ];
 
   const handleBack = () => {
@@ -45,7 +72,6 @@ export default function Question8Page() {
   const handleGenerate = async () => {
     setIsGenerating(true);
     try {
-      // Collect all form data from previous questions
       const savedState = getFormState();
       const allData: PolicyData = {
         ...savedState,
@@ -61,34 +87,31 @@ export default function Question8Page() {
         cookies: savedState.cookies || "",
         userRights: savedState.userRights || [],
       } as PolicyData;
-      
-      // Save current question data
+
       saveFormState({
         businessName,
         contactEmail,
         country,
         state: country === "India" ? state : undefined,
       });
-      
-      // Store in localStorage for preview page
+
       localStorage.setItem("policyData", JSON.stringify(allData));
-      
-      // Generate policy via API
+
       const response = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(allData)
+        body: JSON.stringify(allData),
       });
-      
+
       if (!response.ok) {
         throw new Error("Failed to generate policy");
       }
-      
+
       const generated = await response.json();
       localStorage.setItem("generatedPolicies", JSON.stringify(generated));
-      
+
       trackGeneratePolicy();
-      
+
       router.push("/preview");
     } catch (error) {
       console.error("Error generating policy:", error);
@@ -99,25 +122,31 @@ export default function Question8Page() {
   };
 
   return (
-    <main className="min-h-screen px-4 py-12 sm:py-16 bg-gradient-to-b from-blue-50 via-white to-blue-50/50 relative overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
-        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
-      </div>
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-white">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+        <ProgressIndicator currentStep={8} totalSteps={8} />
 
-      <div className="relative max-w-2xl mx-auto">
-        <Card className="w-full border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md">
-        <CardHeader>
-          <ProgressIndicator currentStep={8} totalSteps={8} />
-          <CardTitle className="text-2xl mb-1 text-blue-900 pb-2">Business details</CardTitle>
-          <CardDescription className="text-base text-blue-800/80">
-            Enter your business information
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-6">
+        <div className="rounded-2xl border border-slate-200/80 bg-white shadow-lg shadow-slate-200/30 p-5 sm:p-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0">
+              <Building2 className="w-5 h-5" />
+            </div>
             <div>
-              <Label htmlFor="business-name" className="block text-sm font-medium mb-2 text-blue-900">
+              <h2 className="text-lg font-semibold text-slate-900">
+                Business details
+              </h2>
+              <p className="text-sm text-slate-500">
+                Enter your business information
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-5">
+            <div>
+              <Label
+                htmlFor="business-name"
+                className="block text-sm font-medium mb-1.5 text-slate-700"
+              >
                 Business/Website Name *
               </Label>
               <Input
@@ -126,13 +155,16 @@ export default function Question8Page() {
                 placeholder="Enter business name"
                 value={businessName}
                 onChange={(e) => setBusinessName(e.target.value)}
-                className="w-full border-blue-300 text-blue-900 placeholder:text-blue-400 focus-visible:ring-blue-500 focus-visible:border-blue-500"
+                className="w-full h-11 border-slate-200 text-slate-900 placeholder:text-slate-400 focus-visible:ring-blue-500 rounded-lg"
                 required
               />
             </div>
 
             <div>
-              <Label htmlFor="contact-email" className="block text-sm font-medium mb-2 text-blue-900">
+              <Label
+                htmlFor="contact-email"
+                className="block text-sm font-medium mb-1.5 text-slate-700"
+              >
                 Contact Email *
               </Label>
               <Input
@@ -141,17 +173,23 @@ export default function Question8Page() {
                 placeholder="contact@example.com"
                 value={contactEmail}
                 onChange={(e) => setContactEmail(e.target.value)}
-                className="w-full border-blue-300 text-blue-900 placeholder:text-blue-400 focus-visible:ring-blue-500 focus-visible:border-blue-500"
+                className="w-full h-11 border-slate-200 text-slate-900 placeholder:text-slate-400 focus-visible:ring-blue-500 rounded-lg"
                 required
               />
             </div>
 
             <div>
-              <Label htmlFor="country" className="block text-sm font-medium mb-2 text-blue-900">
+              <Label
+                htmlFor="country"
+                className="block text-sm font-medium mb-1.5 text-slate-700"
+              >
                 Country *
               </Label>
               <Select value={country} onValueChange={setCountry}>
-                <SelectTrigger id="country" className="w-full border-blue-300 text-blue-900 focus:ring-blue-500">
+                <SelectTrigger
+                  id="country"
+                  className="w-full h-11 border-slate-200 text-slate-900 focus:ring-blue-500 rounded-lg"
+                >
                   <SelectValue placeholder="Select country" />
                 </SelectTrigger>
                 <SelectContent>
@@ -167,45 +205,66 @@ export default function Question8Page() {
 
             {country === "India" && (
               <div>
-                <Label htmlFor="state" className="block text-sm font-medium mb-2 text-blue-900">
+                <Label
+                  htmlFor="state"
+                  className="block text-sm font-medium mb-1.5 text-slate-700"
+                >
                   State *
                 </Label>
                 <Select value={state} onValueChange={setState}>
-                  <SelectTrigger id="state" className="w-full border-blue-300 text-blue-900 focus:ring-blue-500">
+                  <SelectTrigger
+                    id="state"
+                    className="w-full h-11 border-slate-200 text-slate-900 focus:ring-blue-500 rounded-lg"
+                  >
                     <SelectValue placeholder="Select state" />
                   </SelectTrigger>
                   <SelectContent>
                     {indianStates.map((s) => (
-                      <SelectItem key={s} value={s}>{s}</SelectItem>
+                      <SelectItem key={s} value={s}>
+                        {s}
+                      </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
               </div>
             )}
 
-                <div className="flex gap-3">
-                  <Button 
-                    onClick={handleBack} 
-                    variant="outline"
-                    className="flex-1 h-auto py-4 text-base border-blue-300 text-blue-700 hover:bg-blue-50" 
-                    size="lg"
-                    disabled={isGenerating}
-                  >
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back
-                  </Button>
-                  <Button
-                    onClick={handleGenerate}
-                    className="flex-1 h-auto py-4 text-base bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg shadow-blue-500/30"
-                    size="lg"
-                    disabled={!businessName || !contactEmail || !country || (country === "India" && !state) || isGenerating}
-                  >
-                    {isGenerating ? "Generating..." : "Generate Policy"}
-                  </Button>
-                </div>
+            <div className="flex gap-3 pt-3">
+              <Button
+                onClick={handleBack}
+                variant="outline"
+                className="flex-1 h-11 text-sm border-slate-200 text-slate-600 hover:bg-slate-50 rounded-lg"
+                disabled={isGenerating}
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back
+              </Button>
+              <Button
+                onClick={handleGenerate}
+                className="flex-1 h-11 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-sm"
+                disabled={
+                  !businessName ||
+                  !contactEmail ||
+                  !country ||
+                  (country === "India" && !state) ||
+                  isGenerating
+                }
+              >
+                {isGenerating ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Generating...
+                  </>
+                ) : (
+                  <>
+                    <ShieldCheck className="mr-2 h-4 w-4" />
+                    Generate Policy
+                  </>
+                )}
+              </Button>
+            </div>
           </div>
-        </CardContent>
-        </Card>
+        </div>
       </div>
     </main>
   );

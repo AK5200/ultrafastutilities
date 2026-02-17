@@ -160,7 +160,7 @@ export default function PrivacyPolicyForMobileAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-6">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-6">
                   {/* Device Permissions */}
                   <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
                     <div className="flex items-center gap-3 mb-3">
@@ -268,7 +268,7 @@ export default function PrivacyPolicyForMobileAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* Apple App Store */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -355,7 +355,7 @@ export default function PrivacyPolicyForMobileAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* GDPR */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -458,7 +458,7 @@ export default function PrivacyPolicyForMobileAppsPage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate My Mobile App Privacy Policy – $4.99
                       </Button>

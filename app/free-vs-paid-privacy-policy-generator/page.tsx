@@ -155,7 +155,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     Free{" "}
                     <Link
@@ -188,7 +188,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-5">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-5">
                   {/* Item 1: Generic and Vague Content */}
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -354,7 +354,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-5">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-5">
                   {/* Item 1: Jurisdiction-Aware Sections */}
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -519,7 +519,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate Structured Privacy Policy $4.99
                       </Button>

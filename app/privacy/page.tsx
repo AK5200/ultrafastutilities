@@ -116,7 +116,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     Welcome to ultrafastutilities. We respect your privacy and
                     are committed to protecting your personal data. This privacy
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-4">
                     We collect the following types of information:
                   </p>
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-4">
                     We use your information to:
                   </p>
@@ -226,7 +226,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     We store your form data locally in your browser
                     (localStorage) and do not transmit it to our servers except
@@ -252,7 +252,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-4">
                     We use the following third-party services:
                   </p>
@@ -302,7 +302,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-4">
                     You have the right to:
                   </p>
@@ -345,7 +345,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     We use essential cookies to maintain your session and
                     preferences. We do not use tracking cookies for advertising
@@ -369,7 +369,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     We retain your form data only as long as necessary to provide
                     our service. Since data is stored locally in your browser,
@@ -393,7 +393,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     Our service is not intended for children under 13 years of
                     age. We do not knowingly collect personal information from
@@ -416,7 +416,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     We may update this privacy policy from time to time. We will
                     notify you of any changes by posting the new policy on this
@@ -439,7 +439,7 @@ export default function PrivacyPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     If you have questions about this privacy policy, please
                     contact us at:{" "}

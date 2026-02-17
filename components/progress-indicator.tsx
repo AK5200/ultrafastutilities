@@ -8,35 +8,37 @@ interface ProgressIndicatorProps {
   onStepClick?: (step: number) => void;
 }
 
-export function ProgressIndicator({ currentStep, totalSteps, onStepClick }: ProgressIndicatorProps) {
+export function ProgressIndicator({
+  currentStep,
+  totalSteps,
+  onStepClick,
+}: ProgressIndicatorProps) {
   return (
     <div className="w-full mb-8">
-      <div className="flex items-center justify-between">
+      {/* Progress bar */}
+      <div className="flex items-center gap-1 sm:gap-0">
         {Array.from({ length: totalSteps }, (_, i) => i + 1).map((step) => {
           const isComplete = step < currentStep;
           const isCurrent = step === currentStep;
-          
+
           return (
-            <div key={step} className="flex items-center flex-1">
-              <div className="flex flex-col items-center flex-1">
-                <button
-                  onClick={() => onStepClick?.(step)}
-                  className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-colors ${
-                    isComplete
-                      ? "bg-green-500 border-green-500 text-white"
-                      : isCurrent
-                      ? "bg-blue-500 border-blue-500 text-white"
-                      : "bg-gray-200 border-gray-300 text-gray-600"
-                  }`}
-                >
-                  {isComplete ? <Check className="w-5 h-5" /> : step}
-                </button>
-                <span className="text-xs mt-2 text-gray-600">Step {step}</span>
-              </div>
+            <div key={step} className="flex items-center flex-1 last:flex-none">
+              <button
+                onClick={() => onStepClick?.(step)}
+                className={`relative flex-shrink-0 w-7 h-7 sm:w-9 sm:h-9 rounded-full flex items-center justify-center text-xs sm:text-sm font-medium transition-all ${
+                  isComplete
+                    ? "bg-blue-600 text-white shadow-sm"
+                    : isCurrent
+                    ? "bg-blue-600 text-white ring-4 ring-blue-100 shadow-sm"
+                    : "bg-slate-100 text-slate-400 border border-slate-200"
+                }`}
+              >
+                {isComplete ? <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : step}
+              </button>
               {step < totalSteps && (
                 <div
-                  className={`h-1 flex-1 mx-2 ${
-                    isComplete ? "bg-green-500" : "bg-gray-200"
+                  className={`h-[2px] flex-1 mx-0.5 sm:mx-1 rounded-full transition-colors ${
+                    isComplete ? "bg-blue-600" : "bg-slate-200"
                   }`}
                 />
               )}
@@ -44,9 +46,11 @@ export function ProgressIndicator({ currentStep, totalSteps, onStepClick }: Prog
           );
         })}
       </div>
-      <div className="text-center mt-4 text-sm text-gray-600">
+
+      {/* Step label */}
+      <p className="text-center mt-4 text-xs sm:text-sm text-slate-500">
         Step {currentStep} of {totalSteps}
-      </div>
+      </p>
     </div>
   );
 }

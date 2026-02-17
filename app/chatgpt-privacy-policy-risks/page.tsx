@@ -160,7 +160,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-6">
                     AI tools like ChatGPT can be helpful for drafting text, but{" "}
                     <Link
@@ -355,7 +355,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* GDPR Violations */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -439,7 +439,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-4">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-4">
                   {/* CheckCircle Item 1 */}
                   <div className="flex items-start gap-3 text-base leading-7">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
@@ -569,7 +569,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate My Policy — $4.99
                       </Button>

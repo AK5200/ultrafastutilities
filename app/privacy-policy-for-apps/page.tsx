@@ -165,7 +165,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     Mobile apps collect a significant amount of personal data, from
                     device identifiers to location data, making privacy policies not
@@ -240,7 +240,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   {/* Warning callout */}
                   <div className="rounded-xl border border-red-200/60 bg-red-50/30 p-5 mb-8">
                     <div className="flex gap-3">
@@ -349,7 +349,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* GDPR */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -457,7 +457,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   {/* Warning box */}
                   <div className="rounded-xl border border-red-200/60 bg-red-50/30 p-5 space-y-6">
                     <div>
@@ -561,7 +561,7 @@ export default function PrivacyPolicyForAppsPage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate My App Privacy Policy — $4.99
                       </Button>
@@ -598,7 +598,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </div>
                 </div>
 
-                <div className="pl-[52px] space-y-8">
+                <div className="pl-0 sm:pl-[52px] space-y-8">
                   <div>
                     <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       Is a privacy policy required to publish an app on the App

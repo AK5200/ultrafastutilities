@@ -161,7 +161,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px]">
+                <div className="mt-8 pl-0 sm:pl-[52px]">
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">
                     Key GDPR Principles
                   </h3>
@@ -202,7 +202,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-6">
                     GDPR requires specific sections and disclosures. A generic
                     template won&apos;t suffice — you need a structured document
@@ -295,7 +295,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700 mb-4">
                     This page provides an example structure and educational
                     guidance. A complete, customized privacy policy requires
@@ -475,7 +475,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate Full GDPR Privacy Policy $4.99
                       </Button>

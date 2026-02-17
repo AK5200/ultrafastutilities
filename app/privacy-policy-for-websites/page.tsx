@@ -158,7 +158,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                     </h2>
                   </div>
                 </div>
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <p className="text-base leading-7 text-slate-700">
                     A privacy policy is a legal document that explains how your
                     website collects, uses, stores, and protects user data. It's
@@ -229,7 +229,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px]">
+                <div className="mt-6 pl-0 sm:pl-[52px]">
                   <div className="rounded-xl border border-red-200/60 bg-red-50/30 p-5">
                     <div className="flex gap-3 mb-4">
                       <AlertTriangle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
@@ -319,7 +319,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pl-[52px] space-y-8">
+                <div className="mt-8 pl-0 sm:pl-[52px] space-y-8">
                   {/* GDPR */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -407,7 +407,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 pl-[52px] space-y-5">
+                <div className="mt-6 pl-0 sm:pl-[52px] space-y-5">
                   {[
                     {
                       title: "Information Collection",
@@ -499,7 +499,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                     <Link href="/generate">
                       <Button
                         size="lg"
-                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                        className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
                         Generate My Privacy Policy — $4.99
                       </Button>
@@ -536,7 +536,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                   </div>
                 </div>
 
-                <div className="pl-[52px] space-y-8">
+                <div className="pl-0 sm:pl-[52px] space-y-8">
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">
                       Is a privacy policy legally required for websites?
