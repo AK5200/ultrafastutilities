@@ -1,8 +1,19 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ShieldCheck, Cloud, AlertTriangle, CheckCircle, FileText, ArrowRight, HelpCircle, ArrowUpRight } from "lucide-react";
-import SeoIntro from "@/components/SeoIntro";
+import {
+  ShieldCheck,
+  Cloud,
+  CheckCircle,
+  FileText,
+  ArrowRight,
+  ArrowUpRight,
+  CreditCard,
+  User,
+  BarChart3,
+  FolderOpen,
+} from "lucide-react";
+import ReadingProgress from "@/components/ReadingProgress";
+import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title: "Privacy Policy for SaaS (GDPR & CCPA) Free Preview | ultrafastutilities",
@@ -14,321 +25,682 @@ export const metadata = {
   },
 };
 
+const tocSections = [
+  { id: "why-different", title: "Why SaaS Is Different" },
+  { id: "data-collection", title: "SaaS Data Collection" },
+  { id: "gdpr-ccpa", title: "GDPR & CCPA Rights" },
+  { id: "more-detail", title: "Why More Detail" },
+  { id: "generate", title: "Generate Your Policy" },
+  { id: "resources", title: "Related Resources" },
+];
+
 export default function PrivacyPolicyForSaaSPage() {
   return (
-    <main className="min-h-screen px-4 py-16 sm:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50/50 relative overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
-        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-400/30 blur-3xl" />
-      </div>
+    <>
+      <ReadingProgress />
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <header className="relative overflow-hidden border-b border-slate-200/60">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white to-white" />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 overflow-hidden"
+          >
+            <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-blue-100/40 blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-blue-50/60 blur-3xl" />
+          </div>
 
-      <div className="relative max-w-4xl mx-auto">
-        <SeoIntro
-          title="Privacy Policy for SaaS"
-          description="Learn requirements and generate a compliant policy using our tool."
-          audience="site owners and developers"
-        />
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+              <Link
+                href="/"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Home
+              </Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-600">Privacy Policy for SaaS</span>
+            </nav>
 
-        {/* Quick Links Section - Top of Page */}
-        <div className="mb-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/privacy-policy-for-websites" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-3 pr-8">
-                    <FileText className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">Privacy Policy for Websites</h3>
-                      <p className="text-sm text-blue-700/70 mt-1">Website compliance guide</p>
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-medium mb-6">
+                <Cloud className="w-3.5 h-3.5" />
+                SaaS Compliance
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                Privacy Policy for{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  SaaS
+                </span>
+              </h1>
+
+              <p className="mt-5 text-lg text-slate-600 leading-relaxed max-w-xl">
+                Everything you need to know about privacy compliance for your
+                SaaS platform. Covering user accounts, billing, analytics, GDPR
+                lawful basis, and CCPA requirements.
+              </p>
+
+              <p className="mt-3 text-sm text-slate-400">
+                Ideal for site owners and developers.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                href="/privacy-policy-for-websites"
+                className="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:border-blue-300 hover:text-blue-700 hover:shadow-sm transition-all"
+              >
+                <FileText className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+                Privacy Policy for Websites
+                <ArrowRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all" />
+              </Link>
+              <Link
+                href="/gdpr-privacy-policy-template"
+                className="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:border-blue-300 hover:text-blue-700 hover:shadow-sm transition-all"
+              >
+                <ShieldCheck className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+                GDPR Template
+                <ArrowRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all" />
+              </Link>
+              <Link
+                href="/generate"
+                className="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-sm font-medium text-white hover:bg-blue-700 shadow-sm transition-all"
+              >
+                <ShieldCheck className="w-4 h-4" />
+                Policy Generator
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </div>
+          </div>
+        </header>
+
+        {/* Content Area with Sidebar */}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-16">
+            {/* Sticky Sidebar - Table of Contents */}
+            <aside className="hidden lg:block">
+              <div className="sticky top-24">
+                <TableOfContents sections={tocSections} />
+
+                {/* Sidebar CTA */}
+                <div className="mt-8 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100/80">
+                  <p className="text-sm font-semibold text-slate-800">
+                    Need your own policy?
+                  </p>
+                  <p className="text-xs text-slate-500 mt-1">
+                    Generate in under 60 seconds
+                  </p>
+                  <Link href="/generate">
+                    <Button
+                      size="sm"
+                      className="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-lg"
+                    >
+                      Generate Policy
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </aside>
+
+            {/* Main Content */}
+            <article className="max-w-[720px]">
+              {/* Section 1: Why SaaS Privacy Policies Are Different */}
+              <section id="why-different" className="scroll-mt-24">
+                <div className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">
+                    1
+                  </span>
+                  <div>
+                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                      Why SaaS Privacy Policies Are Different
+                    </h2>
+                  </div>
+                </div>
+                <div className="mt-6 pl-[52px]">
+                  <p className="text-base leading-7 text-slate-700">
+                    SaaS platforms handle ongoing user accounts, subscription
+                    billing, long-term data storage, and third-party
+                    integrations. This makes generic website privacy policies
+                    insufficient for SaaS businesses, especially under{" "}
+                    <Link
+                      href="/gdpr-privacy-policy-template"
+                      className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                    >
+                      GDPR
+                      <ArrowUpRight className="w-3 h-3" />
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      href="/ccpa-privacy-policy-example"
+                      className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                    >
+                      CCPA
+                      <ArrowUpRight className="w-3 h-3" />
+                    </Link>
+                    .
+                  </p>
+
+                  {/* Key difference callout */}
+                  <div className="mt-6 rounded-xl border border-amber-200/80 bg-amber-50/50 p-5">
+                    <div className="flex gap-3">
+                      <Cloud className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <div className="text-sm leading-relaxed text-slate-700">
+                        <strong className="text-slate-900">Key difference:</strong>{" "}
+                        Unlike simple websites, SaaS platforms process data
+                        continuously through cloud infrastructure, manage
+                        multi-tenant environments, and handle complex data
+                        flows across APIs, databases, and third-party
+                        integrations — each requiring specific disclosures.
+                      </div>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/gdpr-privacy-policy-template" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-3 pr-8">
-                    <ShieldCheck className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">GDPR Template</h3>
-                      <p className="text-sm text-blue-700/70 mt-1">EU compliance guide</p>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* Section 2: SaaS-Specific Data Collection */}
+              <section id="data-collection" className="scroll-mt-24">
+                <div className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">
+                    2
+                  </span>
+                  <div>
+                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                      SaaS-Specific Data Collection
+                    </h2>
+                    <p className="mt-2 text-base text-slate-500">
+                      SaaS platforms collect extensive user data that requires
+                      comprehensive privacy disclosures.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8 pl-[52px] space-y-6">
+                  {/* User Account Data */}
+                  <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 rounded-lg bg-violet-50 flex items-center justify-center">
+                        <User className="w-4 h-4 text-violet-600" />
+                      </div>
+                      <h3 className="font-semibold text-slate-900">
+                        User Account Data
+                      </h3>
+                    </div>
+                    <ul className="space-y-2 text-base leading-7 text-slate-600 ml-11">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Email addresses and usernames
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Password hashes (never stored in plain text)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Profile information and preferences
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Account settings and configurations
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Billing and Payment Information */}
+                  <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center">
+                        <CreditCard className="w-4 h-4 text-emerald-600" />
+                      </div>
+                      <h3 className="font-semibold text-slate-900">
+                        Billing and Payment Information
+                      </h3>
+                    </div>
+                    <ul className="space-y-2 text-base leading-7 text-slate-600 ml-11">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Payment method details (processed by payment providers)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Billing addresses and tax information
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Subscription plans and renewal dates
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Transaction history and invoices
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Usage and Analytics Data */}
+                  <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center">
+                        <BarChart3 className="w-4 h-4 text-orange-600" />
+                      </div>
+                      <h3 className="font-semibold text-slate-900">
+                        Usage and Analytics Data
+                      </h3>
+                    </div>
+                    <ul className="space-y-2 text-base leading-7 text-slate-600 ml-11">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Feature usage and interaction patterns
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        API calls and performance metrics
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Error logs and crash reports
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Session duration and login history
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Content and User-Generated Data */}
+                  <div className="group rounded-xl border border-slate-200/80 p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                        <FolderOpen className="w-4 h-4 text-blue-600" />
+                      </div>
+                      <h3 className="font-semibold text-slate-900">
+                        Content and User-Generated Data
+                      </h3>
+                    </div>
+                    <ul className="space-y-2 text-base leading-7 text-slate-600 ml-11">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Files, documents, and data uploaded to the platform
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Collaboration data and shared content
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Comments, notes, and annotations
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 flex-shrink-0 mt-[10px]" />
+                        Integration data from third-party services
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* Section 3: GDPR Lawful Basis and CCPA Rights */}
+              <section id="gdpr-ccpa" className="scroll-mt-24">
+                <div className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">
+                    3
+                  </span>
+                  <div>
+                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                      <Link
+                        href="/gdpr-privacy-policy-template"
+                        className="hover:text-blue-700 transition-colors inline-flex items-center gap-1"
+                      >
+                        GDPR
+                        <ArrowUpRight className="w-4 h-4 text-slate-400" />
+                      </Link>{" "}
+                      Lawful Basis and{" "}
+                      <Link
+                        href="/ccpa-privacy-policy-example"
+                        className="hover:text-blue-700 transition-colors inline-flex items-center gap-1"
+                      >
+                        CCPA
+                        <ArrowUpRight className="w-4 h-4 text-slate-400" />
+                      </Link>{" "}
+                      Rights
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="mt-8 pl-[52px] space-y-8">
+                  {/* GDPR */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-4">
+                      <ShieldCheck className="w-5 h-5 text-blue-600" />
+                      <h3 className="text-lg font-semibold text-slate-900">
+                        <Link
+                          href="/gdpr-privacy-policy-template"
+                          className="hover:text-blue-700 transition-colors inline-flex items-center gap-1"
+                        >
+                          GDPR
+                          <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                        </Link>{" "}
+                        Lawful Basis for SaaS
+                      </h3>
+                    </div>
+                    <p className="text-base leading-7 text-slate-600 mb-4">
+                      SaaS platforms typically rely on multiple lawful bases:
+                    </p>
+                    <div className="space-y-3">
+                      {[
+                        {
+                          label: "Contractual necessity",
+                          text: "Processing data to provide the service (account creation, billing)",
+                        },
+                        {
+                          label: "Consent",
+                          text: "Marketing emails, optional analytics, third-party integrations",
+                        },
+                        {
+                          label: "Legitimate interests",
+                          text: "Fraud prevention, security monitoring, product improvement",
+                        },
+                        {
+                          label: "Legal obligation",
+                          text: "Tax reporting, compliance with court orders",
+                        },
+                      ].map((item) => (
+                        <div
+                          key={item.label}
+                          className="flex items-start gap-3 text-base leading-7"
+                        >
+                          <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
+                          <p className="text-slate-600">
+                            <strong className="text-slate-800 font-medium">
+                              {item.label}:
+                            </strong>{" "}
+                            {item.text}
+                          </p>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/generate" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-3 pr-8">
-                    <ShieldCheck className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">Policy Generator</h3>
-                      <p className="text-sm text-blue-700/70 mt-1">Create your policy</p>
+
+                  {/* CCPA */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-4">
+                      <ShieldCheck className="w-5 h-5 text-blue-600" />
+                      <h3 className="text-lg font-semibold text-slate-900">
+                        <Link
+                          href="/ccpa-privacy-policy-example"
+                          className="hover:text-blue-700 transition-colors inline-flex items-center gap-1"
+                        >
+                          CCPA
+                          <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+                        </Link>{" "}
+                        Rights for SaaS Users
+                      </h3>
+                    </div>
+                    <p className="text-base leading-7 text-slate-600 mb-4">
+                      California users have specific rights:
+                    </p>
+                    <div className="space-y-3">
+                      {[
+                        {
+                          label: "Right to know",
+                          text: "What personal information is collected, used, and shared",
+                        },
+                        {
+                          label: "Right to delete",
+                          text: "Request deletion of personal information (with exceptions)",
+                        },
+                        {
+                          label: "Right to opt out",
+                          text: "Opt out of sale or sharing of personal information",
+                        },
+                        {
+                          label: "Right to correct",
+                          text: "Request correction of inaccurate information",
+                        },
+                        {
+                          label: "Non-discrimination",
+                          text: "Cannot be penalized for exercising rights",
+                        },
+                      ].map((item) => (
+                        <div
+                          key={item.label}
+                          className="flex items-start gap-3 text-base leading-7"
+                        >
+                          <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
+                          <p className="text-slate-600">
+                            <strong className="text-slate-800 font-medium">
+                              {item.label}:
+                            </strong>{" "}
+                            {item.text}
+                          </p>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* Section 4: Why SaaS Policies Need More Detail */}
+              <section id="more-detail" className="scroll-mt-24">
+                <div className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">
+                    4
+                  </span>
+                  <div>
+                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                      Why SaaS Policies Need More Detail
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="mt-6 pl-[52px] space-y-5">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-1">
+                        Data Processing Complexity
+                      </h3>
+                      <p className="text-base leading-7 text-slate-700">
+                        SaaS platforms process data across multiple systems
+                        (databases, CDNs, analytics tools), requiring clear
+                        disclosure of data flows and third-party processors.
+                        This is often overlooked in generic or{" "}
+                        <Link
+                          href="/chatgpt-privacy-policy-risks"
+                          className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                        >
+                          AI-generated policies
+                          <ArrowUpRight className="w-3 h-3" />
+                        </Link>
+                        .
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-1">
+                        International Data Transfers
+                      </h3>
+                      <p className="text-base leading-7 text-slate-700">
+                        SaaS platforms often use cloud infrastructure in
+                        multiple countries, requiring explicit disclosure of
+                        transfer mechanisms (Standard Contractual Clauses) and
+                        safeguards.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-1">
+                        Data Controller vs. Processor Roles
+                      </h3>
+                      <p className="text-base leading-7 text-slate-700">
+                        SaaS platforms must clearly distinguish between data
+                        they control (user accounts) and data they process on
+                        behalf of customers (customer data), especially for
+                        B2B SaaS.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-1">
+                        Data Retention and Deletion
+                      </h3>
+                      <p className="text-base leading-7 text-slate-700">
+                        SaaS platforms must specify retention periods for
+                        different data types (active accounts, cancelled
+                        accounts, trial accounts, backups) and explain
+                        deletion procedures.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900 mb-1">
+                        Third-Party Integrations
+                      </h3>
+                      <p className="text-base leading-7 text-slate-700">
+                        SaaS platforms often integrate with payment processors
+                        (Stripe, Dodo), analytics tools (Google Analytics,
+                        Mixpanel), and cloud services (AWS, Google Cloud),
+                        requiring named disclosure. Using{" "}
+                        <Link
+                          href="/chatgpt-privacy-policy-risks"
+                          className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                        >
+                          ChatGPT to write these sections
+                          <ArrowUpRight className="w-3 h-3" />
+                        </Link>{" "}
+                        risks missing critical vendor-specific disclosures.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* CTA Section */}
+              <section id="generate" className="scroll-mt-24">
+                <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 sm:p-10 text-center relative overflow-hidden">
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 pointer-events-none"
+                  >
+                    <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-white/5 blur-2xl" />
+                    <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
+                  </div>
+
+                  <div className="relative">
+                    <Cloud className="w-10 h-10 text-blue-200 mx-auto mb-4" />
+                    <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                      Generate My SaaS Privacy Policy
+                    </h2>
+                    <p className="mt-3 text-blue-100 text-base max-w-md mx-auto">
+                      Create a customized, legally compliant privacy policy for
+                      your SaaS platform in under 60 seconds.
+                    </p>
+
+                    <Link href="/generate">
+                      <Button
+                        size="lg"
+                        className="mt-6 text-base px-8 py-6 h-auto bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
+                      >
+                        Generate My SaaS Privacy Policy — $4.99
+                      </Button>
+                    </Link>
+
+                    <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-blue-200">
+                      <span>Free preview</span>
+                      <span className="w-1 h-1 rounded-full bg-blue-300/50" />
+                      <span>One-time payment</span>
+                      <span className="w-1 h-1 rounded-full bg-blue-300/50" />
+                      <span>SaaS-ready structure</span>
+                    </div>
+
+                    <p className="text-xs text-blue-300/80 mt-3 max-w-lg mx-auto">
+                      Structured around widely accepted GDPR and CCPA
+                      requirements. Not legal advice.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* Related Resources */}
+              <section id="resources" className="scroll-mt-24">
+                <h2 className="text-xl font-semibold text-slate-900 mb-6">
+                  Related Resources
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    {
+                      href: "/privacy-policy-for-websites",
+                      icon: FileText,
+                      title: "Privacy Policy for Websites",
+                      desc: "Website compliance guide",
+                    },
+                    {
+                      href: "/gdpr-privacy-policy-template",
+                      icon: ShieldCheck,
+                      title: "GDPR Privacy Policy Template",
+                      desc: "EU compliance guide and template structure",
+                    },
+                    {
+                      href: "/ccpa-privacy-policy-example",
+                      icon: ShieldCheck,
+                      title: "CCPA Privacy Policy Example",
+                      desc: "California privacy rights and disclosures",
+                    },
+                    {
+                      href: "/generate",
+                      icon: ShieldCheck,
+                      title: "Policy Generator",
+                      desc: "Create your compliant privacy policy",
+                    },
+                  ].map((item) => (
+                    <Link key={item.href} href={item.href} className="group">
+                      <div className="h-full rounded-xl border border-slate-200/80 p-4 hover:border-blue-200 hover:shadow-sm transition-all bg-white/50">
+                        <div className="flex items-start gap-3">
+                          <div className="w-8 h-8 rounded-lg bg-slate-50 group-hover:bg-blue-50 flex items-center justify-center flex-shrink-0 transition-colors">
+                            <item.icon className="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="font-medium text-slate-800 group-hover:text-blue-700 transition-colors text-sm">
+                              {item.title}
+                            </h3>
+                            <p className="text-xs text-slate-400 mt-0.5">
+                              {item.desc}
+                            </p>
+                          </div>
+                          <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all flex-shrink-0 mt-0.5" />
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            </article>
           </div>
         </div>
-
-        {/* Why SaaS Privacy Policies Are Different */}
-        <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl text-blue-900 pb-2">Why SaaS Privacy Policies Are Different</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-blue-900/90">
-              SaaS platforms handle ongoing user accounts, subscription billing, long-term data storage, and third-party integrations. This makes generic website privacy policies insufficient for SaaS businesses, especially under <Link href="/gdpr-privacy-policy-template" className="font-semibold text-blue-900 hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                GDPR
-                <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-              </Link> and <Link href="/ccpa-privacy-policy-example" className="font-semibold text-blue-900 hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                CCPA
-                <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-              </Link>.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md mb-8">
-          <CardHeader>
-            <div className="flex items-center gap-3 mb-2">
-              <Cloud className="w-8 h-8 text-blue-600" />
-              <CardTitle className="text-2xl text-blue-900 pb-2">SaaS-Specific Data Collection</CardTitle>
-            </div>
-            <CardDescription className="text-base text-blue-800/80">
-              SaaS platforms collect extensive user data that requires comprehensive privacy disclosures.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2">User Account Data</h3>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li>Email addresses and usernames</li>
-                  <li>Password hashes (never stored in plain text)</li>
-                  <li>Profile information and preferences</li>
-                  <li>Account settings and configurations</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2">Billing and Payment Information</h3>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li>Payment method details (processed by payment providers)</li>
-                  <li>Billing addresses and tax information</li>
-                  <li>Subscription plans and renewal dates</li>
-                  <li>Transaction history and invoices</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2">Usage and Analytics Data</h3>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li>Feature usage and interaction patterns</li>
-                  <li>API calls and performance metrics</li>
-                  <li>Error logs and crash reports</li>
-                  <li>Session duration and login history</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2">Content and User-Generated Data</h3>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li>Files, documents, and data uploaded to the platform</li>
-                  <li>Collaboration data and shared content</li>
-                  <li>Comments, notes, and annotations</li>
-                  <li>Integration data from third-party services</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl text-blue-900 pb-2">
-              <Link href="/gdpr-privacy-policy-template" className="hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                GDPR
-                <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-              </Link> Lawful Basis and <Link href="/ccpa-privacy-policy-example" className="hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                CCPA
-                <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-              </Link> Rights
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5" />
-                  <Link href="/gdpr-privacy-policy-template" className="hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                    GDPR
-                    <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-                  </Link> Lawful Basis for SaaS
-                </h3>
-                <p className="text-blue-800/90 mb-2">
-                  SaaS platforms typically rely on multiple lawful bases:
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li><strong>Contractual necessity:</strong> Processing data to provide the service (account creation, billing)</li>
-                  <li><strong>Consent:</strong> Marketing emails, optional analytics, third-party integrations</li>
-                  <li><strong>Legitimate interests:</strong> Fraud prevention, security monitoring, product improvement</li>
-                  <li><strong>Legal obligation:</strong> Tax reporting, compliance with court orders</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5" />
-                  <Link href="/ccpa-privacy-policy-example" className="hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                    CCPA
-                    <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-                  </Link> Rights for SaaS Users
-                </h3>
-                <p className="text-blue-800/90 mb-2">
-                  California users have specific rights:
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-blue-800/90 ml-4">
-                  <li><strong>Right to know:</strong> What personal information is collected, used, and shared</li>
-                  <li><strong>Right to delete:</strong> Request deletion of personal information (with exceptions)</li>
-                  <li><strong>Right to opt out:</strong> Opt out of sale or sharing of personal information</li>
-                  <li><strong>Right to correct:</strong> Request correction of inaccurate information</li>
-                  <li><strong>Non-discrimination:</strong> Cannot be penalized for exercising rights</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="border-2 border-blue-200/50 shadow-xl rounded-2xl bg-white/70 backdrop-blur-md mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl text-blue-900 pb-2">Why SaaS Policies Need More Detail</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-1">Data Processing Complexity</h3>
-                  <p className="text-blue-800/90">
-                    SaaS platforms process data across multiple systems (databases, CDNs, analytics tools), requiring clear disclosure of data flows and third-party processors. This is often overlooked in generic or <Link href="/chatgpt-privacy-policy-risks" className="font-semibold text-blue-900 hover:text-blue-700 transition-colors relative inline-block pr-2.5 group">
-                      AI-generated policies
-                      <ArrowUpRight className="w-2.5 h-2.5 absolute top-0 right-0 opacity-50 group-hover:opacity-100 transition-opacity" />
-                    </Link>.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-1">International Data Transfers</h3>
-                  <p className="text-blue-800/90">
-                    SaaS platforms often use cloud infrastructure in multiple countries, requiring explicit disclosure of transfer mechanisms (Standard Contractual Clauses) and safeguards.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-1">Data Controller vs. Processor Roles</h3>
-                  <p className="text-blue-800/90">
-                    SaaS platforms must clearly distinguish between data they control (user accounts) and data they process on behalf of customers (customer data), especially for B2B SaaS.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-1">Data Retention and Deletion</h3>
-                  <p className="text-blue-800/90">
-                    SaaS platforms must specify retention periods for different data types (active accounts, cancelled accounts, trial accounts, backups) and explain deletion procedures.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-1">Third Party Integrations</h3>
-                  <p className="text-blue-800/90">
-                    SaaS platforms often integrate with payment processors (Stripe, Dodo), analytics tools (Google Analytics, Mixpanel), and cloud services (AWS, Google Cloud), requiring named disclosure.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <div className="text-center mb-8">
-          <Link href="/generate">
-            <Button size="lg" className="text-lg px-10 py-6 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg shadow-blue-500/30">
-              Generate My SaaS Privacy Policy $4.99
-            </Button>
-          </Link>
-          <p className="text-sm font-medium text-blue-700/90 mt-3">
-            Free preview • One time payment • SaaS-ready structure
-          </p>
-          <p className="text-xs text-blue-600/70 mt-2 max-w-2xl mx-auto">
-            Structured around widely accepted GDPR and CCPA requirements. Not legal advice.
-          </p>
-        </div>
-
-        {/* Related Resources Section - Enhanced Design */}
-        <div className="border-t border-blue-200/50 pt-8 mt-8">
-          <h2 className="text-xl font-semibold text-blue-900 mb-6">Related Resources</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/privacy-policy-for-websites" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-2 mb-2 pr-8">
-                    <FileText className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">Privacy Policy for Websites</h3>
-                  </div>
-                  <p className="text-sm text-blue-700/70">Website compliance guide</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/gdpr-privacy-policy-template" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-2 mb-2 pr-8">
-                    <ShieldCheck className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">GDPR Privacy Policy Template</h3>
-                  </div>
-                  <p className="text-sm text-blue-700/70">EU compliance guide and template structure</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/ccpa-privacy-policy-example" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-2 mb-2 pr-8">
-                    <ShieldCheck className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">CCPA Privacy Policy Example</h3>
-                  </div>
-                  <p className="text-sm text-blue-700/70">California privacy rights and disclosures</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/generate" className="group">
-              <Card className="h-full border-2 border-blue-200/50 hover:border-blue-400/70 transition-all duration-200 hover:shadow-lg bg-white/80 backdrop-blur-sm cursor-pointer relative">
-                <CardContent className="p-4">
-                  <ArrowRight className="w-5 h-5 text-blue-600/70 group-hover:text-blue-600 absolute top-4 right-4 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                  <div className="flex items-start gap-2 mb-2 pr-8">
-                    <ShieldCheck className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-0.5" />
-                    <h3 className="font-semibold text-blue-900 group-hover:text-blue-700 transition-colors">Policy Generator</h3>
-                  </div>
-                  <p className="text-sm text-blue-700/70">Create your compliant privacy policy</p>
-                </CardContent>
-              </Card>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

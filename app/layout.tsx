@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Free Privacy Policy Generator - ultrafastutilities",
@@ -63,7 +69,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className="bg-gradient-to-b from-blue-50 via-white to-blue-50/50 text-blue-900 min-h-screen">
+      <body className={`${inter.className} bg-gradient-to-b from-blue-50 via-white to-blue-50/50 text-blue-900 min-h-screen antialiased`}>
         <Navbar />
         {children}
       </body>
