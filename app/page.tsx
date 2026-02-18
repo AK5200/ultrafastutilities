@@ -15,6 +15,7 @@ import {
   Smartphone,
   ShoppingCart,
   Cloud,
+  Code,
 } from "lucide-react";
 
 export default function Home() {
@@ -301,6 +302,11 @@ export default function Home() {
                 title: "Privacy Policy for Mobile Apps",
               },
               {
+                href: "/privacy-policy-for-wordpress",
+                icon: Code,
+                title: "Privacy Policy for WordPress",
+              },
+              {
                 href: "/gdpr-privacy-policy-template",
                 icon: Scale,
                 title: "GDPR Privacy Policy Template",
@@ -481,6 +487,14 @@ export default function Home() {
                     className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
                   >
                     Cookie Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/privacy-policy-for-wordpress"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    For WordPress
                   </Link>
                 </li>
               </ul>
