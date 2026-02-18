@@ -336,6 +336,11 @@ export default function Home() {
                 icon: FileText,
                 title: "Free vs Paid Generators",
               },
+              {
+                href: "/terms-of-service-for-online-business",
+                icon: Scale,
+                title: "Terms of Service for Online Business",
+              },
             ].map((page) => (
               <Link key={page.href} href={page.href} className="group">
                 <div className="h-full rounded-xl border border-slate-200/80 p-4 hover:border-blue-200 hover:shadow-sm transition-all bg-white">
