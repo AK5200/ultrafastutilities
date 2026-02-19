@@ -17,6 +17,7 @@ import {
   Cloud,
   Code,
   Briefcase,
+  Mail,
 } from "lucide-react";
 
 export default function Home() {
@@ -346,6 +347,11 @@ export default function Home() {
                 href: "/privacy-policy-for-small-business",
                 icon: Briefcase,
                 title: "Privacy Policy for Small Business",
+              },
+              {
+                href: "/do-i-need-a-privacy-policy-for-collecting-emails",
+                icon: Mail,
+                title: "Privacy Policy for Collecting Emails",
               },
             ].map((page) => (
               <Link key={page.href} href={page.href} className="group">
