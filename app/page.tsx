@@ -16,6 +16,7 @@ import {
   ShoppingCart,
   Cloud,
   Code,
+  Briefcase,
 } from "lucide-react";
 
 export default function Home() {
@@ -341,6 +342,11 @@ export default function Home() {
                 icon: Scale,
                 title: "Terms of Service for Online Business",
               },
+              {
+                href: "/privacy-policy-for-small-business",
+                icon: Briefcase,
+                title: "Privacy Policy for Small Business",
+              },
             ].map((page) => (
               <Link key={page.href} href={page.href} className="group">
                 <div className="h-full rounded-xl border border-slate-200/80 p-4 hover:border-blue-200 hover:shadow-sm transition-all bg-white">
@@ -500,6 +506,14 @@ export default function Home() {
                     className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
                   >
                     For WordPress
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/privacy-policy-for-small-business"
+                    className="text-sm text-slate-600 hover:text-blue-700 transition-colors"
+                  >
+                    For Small Business
                   </Link>
                 </li>
               </ul>

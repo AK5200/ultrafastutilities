@@ -101,7 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/privacy-policy-for-google-adsense`,
+      url: `${baseUrl}/privacy-policy-for-small-business`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
