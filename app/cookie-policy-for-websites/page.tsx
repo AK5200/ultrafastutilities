@@ -11,6 +11,7 @@ import {
   HelpCircle,
   Lock,
   BarChart3,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
@@ -25,6 +26,21 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://ultrafastutilities.com/cookie-policy-for-websites",
+  },
+  openGraph: {
+    title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
+    description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+    url: "https://ultrafastutilities.com/cookie-policy-for-websites",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
+    description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -42,6 +58,69 @@ const tocSections = [
 export default function CookiePolicyForWebsitesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
+            description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ultrafastutilities.com" },
+              { "@type": "ListItem", position: 2, name: "Cookie Policy for Websites", item: "https://ultrafastutilities.com/cookie-policy-for-websites" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is a cookie policy legally required for websites?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, if your website uses cookies (especially non-essential cookies like analytics or advertising), you're legally required to have a cookie policy under GDPR and EU cookie law (ePrivacy Directive).",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need a separate cookie policy if I already have a privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "While you can include cookie information in your privacy policy, many websites benefit from a dedicated cookie policy page for better user clarity and GDPR compliance.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What happens if I don't comply with cookie consent requirements?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Non-compliance with GDPR cookie requirements can result in regulatory fines up to 4% of annual revenue or 20 million euros, whichever is higher. Additionally, users may file complaints with data protection authorities.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -152,6 +231,32 @@ export default function CookiePolicyForWebsitesPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1: What is a Cookie Policy? */}
               <section id="what-is" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
@@ -577,7 +682,7 @@ export default function CookiePolicyForWebsitesPage() {
                         size="lg"
                         className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-3 sm:py-6 h-auto max-w-full whitespace-normal text-center bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
-                        Generate My Cookie Policy — $4.99
+                        Generate My Cookie Policy - $4.99
                       </Button>
                     </Link>
 

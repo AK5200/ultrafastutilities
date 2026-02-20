@@ -11,6 +11,7 @@ import {
   Truck,
   User,
   BarChart3,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
@@ -26,6 +27,21 @@ export const metadata = {
   alternates: {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-shopify",
   },
+  openGraph: {
+    title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
+    description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+    url: "https://ultrafastutilities.com/privacy-policy-for-shopify",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Shopify | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
+    description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+    images: ["/og-image.png"],
+  },
 };
 
 const tocSections = [
@@ -39,6 +55,34 @@ const tocSections = [
 export default function PrivacyPolicyForShopifyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
+            description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ultrafastutilities.com" },
+              { "@type": "ListItem", position: 2, name: "Privacy Policy for Shopify", item: "https://ultrafastutilities.com/privacy-policy-for-shopify" },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -149,6 +193,32 @@ export default function PrivacyPolicyForShopifyPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1: Why Shopify Privacy Policies Are Different */}
               <section id="why-different" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
@@ -523,7 +593,7 @@ export default function PrivacyPolicyForShopifyPage() {
                         size="lg"
                         className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-3 sm:py-6 h-auto max-w-full whitespace-normal text-center bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
-                        Generate My Shopify Privacy Policy — $4.99
+                        Generate My Shopify Privacy Policy - $4.99
                       </Button>
                     </Link>
 

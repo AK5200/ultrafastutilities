@@ -12,13 +12,14 @@ import {
   Ban,
   CreditCard,
   Users,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Terms of Service for Online Business — What to Include | ultrafastutilities",
+    "Terms of Service for Online Business - What to Include | ultrafastutilities",
   description:
     "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
   keywords:
@@ -30,6 +31,25 @@ export const metadata = {
   alternates: {
     canonical:
       "https://ultrafastutilities.com/terms-of-service-for-online-business",
+  },
+  openGraph: {
+    title:
+      "Terms of Service for Online Business - What to Include | ultrafastutilities",
+    description:
+      "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+    url: "https://ultrafastutilities.com/terms-of-service-for-online-business",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Terms of Service for Online Business | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Terms of Service for Online Business - What to Include | ultrafastutilities",
+    description:
+      "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -47,6 +67,101 @@ const tocSections = [
 export default function TermsOfServiceForOnlineBusinessPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline:
+              "Terms of Service for Online Business - What to Include | ultrafastutilities",
+            description:
+              "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: {
+              "@type": "Organization",
+              name: "ultrafastutilities",
+              url: "https://ultrafastutilities.com",
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://ultrafastutilities.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Terms of Service for Online Business",
+                item: "https://ultrafastutilities.com/terms-of-service-for-online-business",
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is a Terms of Service legally required?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Unlike a privacy policy, a Terms of Service is not legally mandated in most jurisdictions. However, it is strongly recommended because it's your primary tool for limiting liability, protecting intellectual property, and establishing the rules of your platform. Payment processors and app stores often require one.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I copy another company's Terms of Service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. Another company's ToS is their copyrighted document and won't reflect your specific business model, jurisdiction, or services. Using ChatGPT or generic AI tools also produces generic text that misses critical clauses. A properly structured generator tailored to your business type is a more reliable starting point.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need Terms of Service for a small business website?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Small businesses are often more vulnerable to legal disputes because they lack in-house legal teams. A ToS protects you from frivolous claims, defines refund policies, and gives you the right to manage how people use your site. It's one of the lowest-cost forms of legal protection available.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do I make my Terms of Service enforceable?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Display it prominently with a link in your website footer. For stronger enforceability, use a clickwrap approach: require users to check a box agreeing to your terms before completing a purchase or creating an account. Keep a record of when users accepted.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What's included in the generated Terms of Service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our generator creates a complete Terms of Service covering acceptance of terms, user responsibilities, payment and refund policies, intellectual property, limitation of liability, termination rights, and governing law, all customized to your business type. It's bundled with a Privacy Policy and Cookie Policy for $4.99.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -160,6 +275,32 @@ export default function TermsOfServiceForOnlineBusinessPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1 */}
               <section id="why-tos" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
@@ -194,9 +335,9 @@ export default function TermsOfServiceForOnlineBusinessPage() {
 
                   <ul className="mt-4 space-y-2.5">
                     {[
-                      "Unlimited liability for damages — users can claim without agreed-upon limits",
+                      "Unlimited liability for damages: users can claim without agreed-upon limits",
                       "No legal basis to terminate abusive users or fraudulent accounts",
-                      "Unprotected intellectual property — your content, brand, and code have no stated ownership",
+                      "Unprotected intellectual property: your content, brand, and code have no stated ownership",
                       "Chargebacks and refund disputes with no documented policy to reference",
                       "No defined process for handling disputes or choosing jurisdiction",
                     ].map((item) => (
@@ -222,7 +363,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                   </span>
                   <div>
                     <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                      Terms of Service vs Privacy Policy — You Need Both
+                      Terms of Service vs Privacy Policy: You Need Both
                     </h2>
                   </div>
                 </div>
@@ -289,7 +430,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                   <p className="text-base leading-7 text-slate-700 mt-6">
                     Together, they form the legal foundation of any online
                     business. Our generator creates both documents as part of a
-                    complete suite — Privacy Policy, Terms of Service, and{" "}
+                    complete suite: Privacy Policy, Terms of Service, and{" "}
                     <Link
                       href="/cookie-policy-for-websites"
                       className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
@@ -399,7 +540,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                   {[
                     {
                       title: "Acceptance of Terms",
-                      desc: 'How users agree to your terms — by using the site, creating an account, or making a purchase. This is the foundation that makes your ToS legally binding ("by accessing this site, you agree to these terms").',
+                      desc: 'How users agree to your terms: by using the site, creating an account, or making a purchase. This is the foundation that makes your ToS legally binding ("by accessing this site, you agree to these terms").',
                     },
                     {
                       title: "User Eligibility & Accounts",
@@ -407,7 +548,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                     },
                     {
                       title: "Acceptable Use Policy",
-                      desc: "What users can and cannot do on your platform — prohibited activities like scraping, spamming, harassment, or using your service for illegal purposes.",
+                      desc: "What users can and cannot do on your platform. Prohibited activities include scraping, spamming, harassment, or using your service for illegal purposes.",
                     },
                     {
                       title: "Payment Terms & Refund Policy",
@@ -486,7 +627,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                       items: [
                         "Service level expectations and uptime disclaimers",
                         "Subscription billing, auto-renewal, and cancellation terms",
-                        "Data ownership — who owns content created using your service",
+                        "Data ownership: who owns content created using your service",
                         "API usage limits and fair use policies",
                       ],
                     },
@@ -554,7 +695,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                     </h2>
                     <p className="mt-3 text-blue-100 text-base max-w-md mx-auto">
                       Get a complete Terms of Service, Privacy Policy, and
-                      Cookie Policy for your online business — customized in
+                      Cookie Policy for your online business, customized in
                       under 60 seconds.
                     </p>
 
@@ -563,7 +704,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                         size="lg"
                         className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-3 sm:py-6 h-auto max-w-full whitespace-normal text-center bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
-                        Generate My Legal Documents — $4.99
+                        Generate My Legal Documents for $4.99
                       </Button>
                     </Link>
 
@@ -647,7 +788,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                       Do I need Terms of Service for a small business website?
                     </h3>
                     <p className="text-base leading-7 text-slate-700">
-                      Yes — small businesses are often more vulnerable to legal
+                      Yes. Small businesses are often more vulnerable to legal
                       disputes because they lack in-house legal teams. A ToS
                       protects you from frivolous claims, defines refund
                       policies, and gives you the right to manage how people use
@@ -663,7 +804,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                     <p className="text-base leading-7 text-slate-700">
                       Display it prominently with a link in your website footer.
                       For stronger enforceability, use a &ldquo;clickwrap&rdquo;
-                      approach — require users to check a box agreeing to your
+                      approach: require users to check a box agreeing to your
                       terms before completing a purchase or creating an account.
                       Keep a record of when users accepted.
                     </p>
@@ -677,7 +818,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                       Our generator creates a complete Terms of Service covering
                       acceptance of terms, user responsibilities, payment and
                       refund policies, intellectual property, limitation of
-                      liability, termination rights, and governing law — all
+                      liability, termination rights, and governing law, all
                       customized to your business type. It&apos;s bundled with a{" "}
                       <Link
                         href="/privacy-policy-for-websites"

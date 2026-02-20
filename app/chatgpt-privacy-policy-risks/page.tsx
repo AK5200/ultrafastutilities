@@ -8,6 +8,7 @@ import {
   FileText,
   ArrowRight,
   ArrowUpRight,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
@@ -23,6 +24,21 @@ export const metadata = {
   alternates: {
     canonical: "https://ultrafastutilities.com/chatgpt-privacy-policy-risks",
   },
+  openGraph: {
+    title: "ChatGPT Privacy Policy Risks Why Generic AI Policies Fall Short | ultrafastutilities",
+    description: "Understand the limitations and risks of using ChatGPT or generic AI to generate privacy policies. Learn about compliance gaps and why structured documents are essential.",
+    url: "https://ultrafastutilities.com/chatgpt-privacy-policy-risks",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChatGPT Privacy Policy Risks | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ChatGPT Privacy Policy Risks Why Generic AI Policies Fall Short | ultrafastutilities",
+    description: "Understand the limitations and risks of using ChatGPT or generic AI to generate privacy policies. Learn about compliance gaps and why structured documents are essential.",
+    images: ["/og-image.png"],
+  },
 };
 
 const tocSections = [
@@ -36,6 +52,34 @@ const tocSections = [
 export default function ChatGPTPrivacyPolicyRisksPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "ChatGPT Privacy Policy Risks Why Generic AI Policies Fall Short | ultrafastutilities",
+            description: "Understand the limitations and risks of using ChatGPT or generic AI to generate privacy policies. Learn about compliance gaps and why structured documents are essential.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ultrafastutilities.com" },
+              { "@type": "ListItem", position: 2, name: "ChatGPT Privacy Policy Risks", item: "https://ultrafastutilities.com/chatgpt-privacy-policy-risks" },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -146,6 +190,32 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1: Limitations of Generic AI */}
               <section id="limitations" className="scroll-mt-24">
                 <div className="flex items-start gap-4">

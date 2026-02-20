@@ -12,6 +12,7 @@ import {
   Code,
   Settings,
   Puzzle,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
@@ -30,6 +31,25 @@ export const metadata = {
   alternates: {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-wordpress",
   },
+  openGraph: {
+    title:
+      "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+    description:
+      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+    url: "https://ultrafastutilities.com/privacy-policy-for-wordpress",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for WordPress | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+    description:
+      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+    images: ["/og-image.png"],
+  },
 };
 
 const tocSections = [
@@ -46,6 +66,101 @@ const tocSections = [
 export default function PrivacyPolicyForWordPressPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline:
+              "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+            description:
+              "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: {
+              "@type": "Organization",
+              name: "ultrafastutilities",
+              url: "https://ultrafastutilities.com",
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://ultrafastutilities.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Privacy Policy for WordPress",
+                item: "https://ultrafastutilities.com/privacy-policy-for-wordpress",
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Doesn't WordPress already generate a privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "WordPress includes a suggested privacy policy template since version 4.9.6, but it's only a generic starting point. It doesn't customize content for your specific plugins, services, or jurisdictional requirements. You need a policy tailored to what your site actually does.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need a privacy policy for a personal WordPress blog?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Even a basic blog with comments enabled collects names, emails, and IP addresses. If you use Google Analytics, social sharing buttons, or any advertising, you're collecting additional data that must be disclosed under GDPR and CCPA.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What about WooCommerce stores - do they need a different policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "WooCommerce stores need more comprehensive coverage because they process payment information, billing addresses, and order data. Your policy should address e-commerce-specific requirements including payment processor disclosures, order data retention, and abandoned cart tracking.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do I handle cookies on WordPress?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "WordPress sets several cookies by default (session, comment, and login cookies), and plugins add many more. You need a cookie policy that classifies all cookies (necessary, analytics, marketing, functional) and a consent mechanism that blocks non-essential cookies until the user opts in.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I use a privacy policy plugin instead?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Privacy policy plugins can help display and manage your policy, but most generate generic text that doesn't properly cover all your plugins, services, and regulatory requirements. It's better to generate a proper policy tailored to your setup, then use a plugin simply to display it.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -159,6 +274,32 @@ export default function PrivacyPolicyForWordPressPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1: Why WordPress Sites Need a Privacy Policy */}
               <section id="why-wordpress" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
@@ -213,7 +354,7 @@ export default function PrivacyPolicyForWordPressPage() {
 
                   <p className="text-base leading-7 text-slate-700 mt-4">
                     WordPress itself added a built-in Privacy Policy page tool in
-                    version 4.9.6 — but it only provides a starter template.
+                    version 4.9.6, but it only provides a starter template.
                     It&apos;s not customized to your site, your plugins, or the
                     regulations that apply to your audience.
                   </p>
@@ -292,7 +433,7 @@ export default function PrivacyPolicyForWordPressPage() {
                           WooCommerce & Payment Data
                         </h3>
                         <p className="text-base leading-7 text-slate-700">
-                          WooCommerce stores collect extensive personal data —
+                          WooCommerce stores collect extensive personal data:
                           billing addresses, shipping details, order history, and
                           payment tokens. If you run an online store, your policy
                           needs to cover{" "}
@@ -313,7 +454,7 @@ export default function PrivacyPolicyForWordPressPage() {
                         <p className="text-base leading-7 text-slate-700">
                           WordPress themes often include Google Fonts (which
                           sends visitor IP addresses to Google), social media
-                          embeds, and external resource loading — all of which
+                          embeds, and external resource loading, all of which
                           constitute data sharing with third parties under{" "}
                           <Link
                             href="/gdpr-privacy-policy-template"
@@ -357,40 +498,40 @@ export default function PrivacyPolicyForWordPressPage() {
                       icon: Settings,
                       title: "Analytics & Tracking",
                       items: [
-                        "Google Analytics / GA4 — page views, demographics, device data, IP addresses",
-                        "Jetpack Stats — page views, referrers, search terms (via Automattic servers)",
-                        "Facebook Pixel / Meta — browsing behavior, conversion tracking",
-                        "Hotjar / Clarity — session recordings, heatmaps, user interactions",
+                        "Google Analytics / GA4: page views, demographics, device data, IP addresses",
+                        "Jetpack Stats: page views, referrers, search terms (via Automattic servers)",
+                        "Facebook Pixel / Meta: browsing behavior, conversion tracking",
+                        "Hotjar / Clarity: session recordings, heatmaps, user interactions",
                       ],
                     },
                     {
                       icon: Puzzle,
                       title: "Forms & Communication",
                       items: [
-                        "Contact Form 7 / WPForms / Gravity Forms — names, emails, message content",
-                        "Mailchimp / ConvertKit — email addresses, subscription preferences",
-                        "Akismet — commenter names, emails, IPs, and user agent strings (sent to Automattic for spam detection)",
-                        "LiveChat / Tidio — visitor conversations, email, browsing history",
+                        "Contact Form 7 / WPForms / Gravity Forms: names, emails, message content",
+                        "Mailchimp / ConvertKit: email addresses, subscription preferences",
+                        "Akismet: commenter names, emails, IPs, and user agent strings (sent to Automattic for spam detection)",
+                        "LiveChat / Tidio: visitor conversations, email, browsing history",
                       ],
                     },
                     {
                       icon: Globe,
                       title: "Performance & Security",
                       items: [
-                        "Cloudflare — IP addresses, request headers, geographic data",
-                        "Wordfence / Sucuri — IP logging, login attempt tracking, security scans",
-                        "WP Super Cache / W3 Total Cache — may store visitor-specific cached content",
-                        "Google Fonts — visitor IP addresses sent to Google servers",
+                        "Cloudflare: IP addresses, request headers, geographic data",
+                        "Wordfence / Sucuri: IP logging, login attempt tracking, security scans",
+                        "WP Super Cache / W3 Total Cache: may store visitor-specific cached content",
+                        "Google Fonts: visitor IP addresses sent to Google servers",
                       ],
                     },
                     {
                       icon: FileText,
                       title: "E-commerce (WooCommerce)",
                       items: [
-                        "WooCommerce — billing/shipping addresses, order history, account data",
-                        "Stripe / PayPal — payment card details, transaction records",
-                        "WooCommerce Subscriptions — recurring billing data, subscription status",
-                        "Abandoned Cart plugins — email, cart contents, browsing behavior",
+                        "WooCommerce: billing/shipping addresses, order history, account data",
+                        "Stripe / PayPal: payment card details, transaction records",
+                        "WooCommerce Subscriptions: recurring billing data, subscription status",
+                        "Abandoned Cart plugins: email, cart contents, browsing behavior",
                       ],
                     },
                   ].map((group) => (
@@ -450,7 +591,7 @@ export default function PrivacyPolicyForWordPressPage() {
                     </div>
                     <p className="text-base leading-7 text-slate-700 mb-4">
                       If any of your visitors are in the EU or UK, GDPR applies
-                      — regardless of where your site is hosted. WordPress sites
+                      regardless of where your site is hosted. WordPress sites
                       must specifically address:
                     </p>
                     <div className="space-y-3">
@@ -549,11 +690,11 @@ export default function PrivacyPolicyForWordPressPage() {
                     },
                     {
                       title: "Third-Party Services",
-                      desc: "Every plugin and external service that receives data — name the specific services (Google Analytics, Automattic, Stripe, Cloudflare, etc.)",
+                      desc: "Every plugin and external service that receives data. Name the specific services (Google Analytics, Automattic, Stripe, Cloudflare, etc.)",
                     },
                     {
                       title: "Data Retention Periods",
-                      desc: "How long you keep comments, form submissions, analytics data, order records, and security logs — with specific timeframes",
+                      desc: "How long you keep comments, form submissions, analytics data, order records, and security logs, with specific timeframes",
                     },
                     {
                       title: "User Rights & How to Exercise Them",
@@ -561,7 +702,7 @@ export default function PrivacyPolicyForWordPressPage() {
                     },
                     {
                       title: "International Data Transfers",
-                      desc: "Many WordPress plugins (Jetpack, Akismet, Google services) transfer data to US servers — disclose safeguards like Standard Contractual Clauses",
+                      desc: "Many WordPress plugins (Jetpack, Akismet, Google services) transfer data to US servers. Disclose safeguards like Standard Contractual Clauses",
                     },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-3">
@@ -630,7 +771,7 @@ export default function PrivacyPolicyForWordPressPage() {
                         size="lg"
                         className="mt-6 text-sm sm:text-base px-5 sm:px-8 py-3 sm:py-6 h-auto max-w-full whitespace-normal text-center bg-white text-blue-700 hover:bg-blue-50 font-semibold rounded-xl shadow-lg shadow-blue-900/20"
                       >
-                        Generate My Privacy Policy — $4.99
+                        Generate My Privacy Policy for $4.99
                       </Button>
                     </Link>
 
@@ -711,7 +852,7 @@ export default function PrivacyPolicyForWordPressPage() {
 
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">
-                      What about WooCommerce stores — do they need a different
+                      What about WooCommerce stores: do they need a different
                       policy?
                     </h3>
                     <p className="text-base leading-7 text-slate-700">

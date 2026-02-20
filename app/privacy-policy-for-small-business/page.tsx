@@ -11,13 +11,14 @@ import {
   Briefcase,
   Globe,
   Users,
+  Clock,
 } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Small Business — What You Need & Why | ultrafastutilities",
+    "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
   description:
     "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
   keywords:
@@ -29,6 +30,21 @@ export const metadata = {
   alternates: {
     canonical:
       "https://ultrafastutilities.com/privacy-policy-for-small-business",
+  },
+  openGraph: {
+    title: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
+    description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+    url: "https://ultrafastutilities.com/privacy-policy-for-small-business",
+    siteName: "ultrafastutilities",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Small Business | ultrafastutilities" }],
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
+    description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -46,6 +62,85 @@ const tocSections = [
 export default function PrivacyPolicyForSmallBusinessPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
+            description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+            author: { "@type": "Person", name: "Anupam Kumar" },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ultrafastutilities.com" },
+              { "@type": "ListItem", position: 2, name: "Privacy Policy for Small Business", item: "https://ultrafastutilities.com/privacy-policy-for-small-business" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Do I need a privacy policy if I only have a small website?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. If your website uses Google Analytics, has a contact form, collects email addresses, or uses cookies of any kind, you need a privacy policy. California's CalOPPA law requires it for any website that collects personal information from California residents — and since you can't control who visits your site, this effectively means every website.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What happens if my small business doesn't have a privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Consequences range from regulatory fines (GDPR fines can reach 4% of annual revenue) to customer complaints and loss of trust. Some platforms like Shopify, Apple's App Store, and Google Play require one before you can list products or apps.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need a lawyer to write my privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Not necessarily. Many small businesses use privacy policy generators that ask about your specific data practices and produce a policy tailored to your answers. This is significantly more affordable than hiring a lawyer (who may charge $500-$2,000+) while still covering the key requirements. For businesses with complex data practices or those in regulated industries (healthcare, finance), legal review is recommended.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is a privacy policy the same as Terms of Service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. A privacy policy covers how you handle personal data. Terms of Service cover the rules for using your website or service — liability limits, refund policies, intellectual property, and dispute resolution. Most businesses need both.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How often should I update my privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Review your privacy policy at least once a year, and update it whenever you add new tools (a new email service, analytics platform, or payment processor), change how you collect or use data, or expand to new markets. Privacy laws are also evolving, so staying current is important.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -158,6 +253,32 @@ export default function PrivacyPolicyForSmallBusinessPage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <span>8 min read</span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for compliance</span>
+                </div>
+              </div>
               {/* Section 1: Why Small Businesses Need a Privacy Policy */}
               <section id="why-small-business" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
