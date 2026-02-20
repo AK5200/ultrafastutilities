@@ -194,6 +194,9 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                 For website owners, app developers, and small businesses serving
                 UK or EU users.
               </p>
+              <p className="mt-2 text-xs text-slate-400">
+                Last updated: February 2026 &middot; Reviewed for UK &amp; EU GDPR alignment
+              </p>
             </div>
 
             {/* Quick Links */}
@@ -300,11 +303,11 @@ export default function GDPRPrivacyPolicyTemplatePage() {
 
                 <div className="mt-6 space-y-4 text-base leading-7 text-slate-700">
                   <p>
-                    A GDPR privacy policy (formally called a{" "}
+                    This free GDPR privacy policy template (formally called a{" "}
                     <strong className="text-slate-900">privacy notice</strong>{" "}
-                    under the regulation) is a legally required document that
-                    explains to individuals how your organisation collects, uses,
-                    stores, and shares their personal data. Unlike a{" "}
+                    under the regulation) covers every section legally required
+                    to explain how your organisation collects, uses, stores, and
+                    shares personal data. Unlike a{" "}
                     <Link
                       href="/privacy-policy-for-websites"
                       className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
@@ -440,6 +443,36 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                       copied from another site will not reflect this specific
                       setup and will not be compliant.
                     </p>
+                  </div>
+
+                  {/* Mini FAQ */}
+                  <div className="mt-6 space-y-3">
+                    {[
+                      {
+                        q: "Do I need a GDPR policy if I am based outside Europe?",
+                        a: "Yes. If you target or collect data from EU or UK users, GDPR applies to you regardless of where your business is registered.",
+                      },
+                      {
+                        q: "Can I copy a privacy policy from another website?",
+                        a: "No. A copied policy describes another business's data practices, not yours. This actively misrepresents how you handle data and creates legal exposure rather than reducing it.",
+                      },
+                      {
+                        q: "How long does it take to create a GDPR-compliant policy?",
+                        a: "Under 60 seconds with a structured generator that asks about your specific tools, data types, and jurisdiction.",
+                      },
+                    ].map((item) => (
+                      <div
+                        key={item.q}
+                        className="rounded-lg bg-slate-50 border border-slate-200/70 px-4 py-3"
+                      >
+                        <p className="text-sm font-semibold text-slate-900">
+                          {item.q}
+                        </p>
+                        <p className="text-sm text-slate-600 mt-1 leading-relaxed">
+                          {item.a}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </section>
