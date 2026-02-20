@@ -428,7 +428,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   {/* Real-world example */}
                   <div className="mt-5 rounded-xl bg-blue-50/60 border border-blue-100 p-5">
                     <p className="text-sm leading-relaxed text-slate-700">
-                      <strong className="text-slate-900">Real example:</strong>{" "}
+                      <strong className="text-slate-900">In Practice:</strong>{" "}
                       A UK ecommerce store using Stripe for payments, Google
                       Analytics for traffic data, and Mailchimp for email
                       marketing collects personal data through all three
