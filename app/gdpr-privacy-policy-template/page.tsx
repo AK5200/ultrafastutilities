@@ -123,6 +123,30 @@ export default function GDPRPrivacyPolicyTemplatePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline:
+              "Free GDPR Privacy Policy Template: UK and EU Compliant (2025)",
+            description:
+              "Free GDPR privacy policy template for UK and EU websites covering all 12 required sections including lawful basis, user rights, data retention, and international transfers.",
+            author: {
+              "@type": "Person",
+              name: "Anupam Kumar",
+            },
+            datePublished: "2025-01-01",
+            dateModified: "2026-02-20",
+            publisher: {
+              "@type": "Organization",
+              name: "ultrafastutilities",
+              url: "https://ultrafastutilities.com",
+            },
+          }),
+        }}
+      />
       <ReadingProgress />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -238,6 +262,28 @@ export default function GDPRPrivacyPolicyTemplatePage() {
 
             {/* Main Content */}
             <article className="max-w-[720px]">
+
+              {/* Author + Trust Signals */}
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">
+                    AK
+                  </div>
+                  <span>
+                    Written by{" "}
+                    <span className="font-semibold text-slate-800">
+                      Anupam Kumar
+                    </span>
+                  </span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: February 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
+                  <span>Reviewed for UK &amp; EU GDPR alignment</span>
+                </div>
+              </div>
 
               {/* ── Section 1: What Is a GDPR Privacy Policy ── */}
               <section id="what-is-gdpr-privacy-policy" className="scroll-mt-24">
@@ -375,6 +421,26 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                     , GDPR applies to you and you need a free GDPR-compliant
                     privacy policy template structured around its requirements.
                   </p>
+
+                  {/* Real-world example */}
+                  <div className="mt-5 rounded-xl bg-blue-50/60 border border-blue-100 p-5">
+                    <p className="text-sm leading-relaxed text-slate-700">
+                      <strong className="text-slate-900">Real example:</strong>{" "}
+                      A UK ecommerce store using Stripe for payments, Google
+                      Analytics for traffic data, and Mailchimp for email
+                      marketing collects personal data through all three
+                      services simultaneously. Under GDPR, it must disclose
+                      each tool in its privacy policy with the specific lawful
+                      basis for each (contract performance for Stripe,
+                      legitimate interests for Analytics, consent for
+                      Mailchimp), specify how long it retains each type of
+                      data, confirm it uses Standard Contractual Clauses for
+                      US data transfers, and tell customers exactly how to
+                      request deletion or access their data. A generic template
+                      copied from another site will not reflect this specific
+                      setup and will not be compliant.
+                    </p>
+                  </div>
                 </div>
               </section>
 
