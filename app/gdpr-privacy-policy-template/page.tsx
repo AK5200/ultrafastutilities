@@ -164,7 +164,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
               name: "Anupam Kumar",
             },
             datePublished: "2025-01-01",
-            dateModified: "2026-02-20",
+            dateModified: "2026-02-22",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -390,6 +390,13 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   <ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
                   <span>Reviewed for UK &amp; EU GDPR alignment</span>
                 </div>
+              </div>
+
+              {/* Featured Snippet Box */}
+              <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-base leading-7 text-slate-800">
+                  <strong>A GDPR privacy policy template</strong> is a pre-structured document that covers every disclosure required under the General Data Protection Regulation, including lawful basis for processing, data retention periods, user rights, cookie usage, international transfers, and breach notification procedures. It applies to any website or app that collects personal data from UK or EU residents.
+                </p>
               </div>
 
               {/* ── Section 1: What Is a GDPR Privacy Policy ── */}
