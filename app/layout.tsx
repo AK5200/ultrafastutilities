@@ -19,14 +19,6 @@ export const metadata: Metadata = {
     description: "Generate a professional privacy policy in 60 seconds. Free privacy policy generator with Terms of Service and Cookie Policy.",
     url: "https://ultrafastutilities.com",
     siteName: "ultrafastutilities",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "ultrafastutilities - Privacy Policy Generator"
-      }
-    ],
     locale: "en_US",
     type: "website"
   },
@@ -34,7 +26,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Privacy Policy Generator - ultrafastutilities",
     description: "Generate a professional privacy policy in 60 seconds.",
-    images: ["/og-image.png"]
   },
   robots: {
     index: true,
@@ -48,10 +39,47 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ultrafastutilities.com";
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ultrafastutilities",
+    url: siteUrl,
+    logo: `${siteUrl}/logo.svg`,
+    sameAs: [],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ultrafastutilities",
+    url: siteUrl,
+    publisher: {
+      "@type": "Organization",
+      name: "ultrafastutilities",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.svg`,
+      },
+    },
+  };
+
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
         {gaId && (
           <>
             <Script
