@@ -55,6 +55,7 @@ const tocSections = [
   { id: "who-needs-one", title: "Who Needs a Privacy Policy" },
   { id: "common-excuses", title: "Common Excuses Debunked" },
   { id: "generate", title: "Fix It Now" },
+  { id: "faq", title: "FAQ" },
   { id: "resources", title: "Related Resources" },
 ];
 
@@ -71,7 +72,7 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
             description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-02-20",
+            dateModified: "2026-02-22",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -85,6 +86,49 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://ultrafastutilities.com" },
               { "@type": "ListItem", position: 2, name: "What Happens Without a Privacy Policy", item: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is a privacy policy legally required?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Every major privacy law, including GDPR, CCPA, CalOPPA, and PIPEDA, requires any website or app that collects personal data to publish a privacy policy. This includes sites that use analytics, contact forms, cookies, or payment processing.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the fine for not having a privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Under GDPR, fines can reach up to €20 million or 4% of global annual revenue. Under CCPA, fines are $2,500 per unintentional violation and $7,500 per intentional violation. Consumers can also sue directly for data breaches, with damages of $100 to $750 per incident per consumer.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can my app be removed for not having a privacy policy?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Both Apple's App Store and Google Play require a valid privacy policy URL before listing any app. Submitting without one results in rejection. Apps already listed without one can be pulled at any time without warning.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need a privacy policy even if my website is small?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Size does not matter under privacy law. A personal blog with Google Analytics and a contact form collects IP addresses, browser data, and email addresses, which triggers GDPR and CalOPPA requirements regardless of traffic volume.",
+                },
+              },
             ],
           }),
         }}
@@ -227,6 +271,14 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
                   <span>Reviewed for compliance</span>
                 </div>
               </div>
+
+              {/* Featured Snippet Box */}
+              <div className="mb-10 rounded-xl border border-red-200/80 bg-red-50/40 p-5">
+                <p className="text-base leading-7 text-slate-800">
+                  <strong>Without a privacy policy</strong>, your website or app faces GDPR fines up to €20 million, CCPA penalties of $7,500 per violation, app store removal, ad account suspension, payment processor bans, and loss of customer trust. Privacy laws apply the moment you collect any personal data, regardless of your business size or location.
+                </p>
+              </div>
+
               {/* Section 1: Legal Penalties & Fines */}
               <section id="legal-penalties" className="scroll-mt-24">
                 <div className="flex items-start gap-4">
@@ -884,6 +936,101 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
                         CCPA
                       </Link>{" "}
                       requirements. Not legal advice.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <hr className="border-slate-200/60 my-14" />
+
+              {/* FAQ Section */}
+              <section id="faq" className="scroll-mt-24">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900 mb-8">
+                  Frequently Asked Questions
+                </h2>
+
+                <div className="space-y-6">
+                  <div className="rounded-xl border border-slate-200/80 bg-white/60 p-5">
+                    <h3 className="font-semibold text-slate-900 text-base leading-snug">
+                      Is a privacy policy legally required?
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Yes. Every major privacy law, including{" "}
+                      <Link
+                        href="/gdpr-privacy-policy-template"
+                        className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                      >
+                        GDPR
+                        <ArrowUpRight className="w-3 h-3" />
+                      </Link>
+                      ,{" "}
+                      <Link
+                        href="/ccpa-privacy-policy-example"
+                        className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                      >
+                        CCPA
+                        <ArrowUpRight className="w-3 h-3" />
+                      </Link>
+                      , CalOPPA, and PIPEDA, requires any website or app that
+                      collects personal data to publish a privacy policy. This
+                      includes sites that use analytics, contact forms, cookies,
+                      or payment processing.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl border border-slate-200/80 bg-white/60 p-5">
+                    <h3 className="font-semibold text-slate-900 text-base leading-snug">
+                      What is the fine for not having a privacy policy?
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Under GDPR, fines can reach up to &euro;20 million or 4%
+                      of global annual revenue. Under CCPA, fines are $2,500 per
+                      unintentional violation and $7,500 per intentional
+                      violation. Consumers can also sue directly for data
+                      breaches, with damages of $100 to $750 per incident per
+                      consumer.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl border border-slate-200/80 bg-white/60 p-5">
+                    <h3 className="font-semibold text-slate-900 text-base leading-snug">
+                      Can my app be removed for not having a privacy policy?
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Yes. Both Apple&apos;s App Store and Google Play require a
+                      valid privacy policy URL before listing any app. Submitting
+                      without one results in rejection. Apps already listed
+                      without one can be pulled at any time without warning. See
+                      the full{" "}
+                      <Link
+                        href="/privacy-policy-for-mobile-apps"
+                        className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                      >
+                        mobile app privacy policy guide
+                        <ArrowUpRight className="w-3 h-3" />
+                      </Link>
+                      .
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl border border-slate-200/80 bg-white/60 p-5">
+                    <h3 className="font-semibold text-slate-900 text-base leading-snug">
+                      Do I need a privacy policy even if my website is small?
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                      Yes. Size does not matter under privacy law. A personal
+                      blog with Google Analytics and a contact form collects IP
+                      addresses, browser data, and email addresses, which
+                      triggers GDPR and CalOPPA requirements regardless of
+                      traffic volume. Read the{" "}
+                      <Link
+                        href="/privacy-policy-for-small-business"
+                        className="font-medium text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-0.5"
+                      >
+                        small business privacy policy guide
+                        <ArrowUpRight className="w-3 h-3" />
+                      </Link>
+                      .
                     </p>
                   </div>
                 </div>
