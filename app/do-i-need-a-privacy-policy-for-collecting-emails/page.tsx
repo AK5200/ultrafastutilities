@@ -79,7 +79,7 @@ export default function DoINeedPrivacyPolicyForCollectingEmailsPage() {
               "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-02-20",
+            dateModified: "2026-03-02",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -289,7 +289,7 @@ export default function DoINeedPrivacyPolicyForCollectingEmailsPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: February 2026</span>
+                <span>Last updated: March 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
