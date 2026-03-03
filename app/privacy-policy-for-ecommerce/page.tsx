@@ -71,7 +71,7 @@ export default function PrivacyPolicyForEcommercePage() {
             description: "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

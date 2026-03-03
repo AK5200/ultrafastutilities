@@ -79,7 +79,7 @@ export default function DoINeedPrivacyPolicyForCollectingEmailsPage() {
               "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

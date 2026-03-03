@@ -79,7 +79,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
               "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

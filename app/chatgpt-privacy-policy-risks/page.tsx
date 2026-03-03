@@ -62,7 +62,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
             description: "Understand the limitations and risks of using ChatGPT or generic AI to generate privacy policies. Learn about compliance gaps and why structured documents are essential.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

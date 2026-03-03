@@ -72,7 +72,7 @@ export default function PrivacyPolicyForSmallBusinessPage() {
             description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

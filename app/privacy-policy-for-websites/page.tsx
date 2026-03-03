@@ -65,7 +65,7 @@ export default function PrivacyPolicyForWebsitesPage() {
             description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

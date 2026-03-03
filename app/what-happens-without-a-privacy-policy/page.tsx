@@ -72,7 +72,7 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
             description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

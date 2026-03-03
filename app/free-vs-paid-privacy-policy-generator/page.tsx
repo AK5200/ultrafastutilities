@@ -63,7 +63,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
             description: "Compare free and paid privacy policy generators. Understand tradeoffs of free tools and value of structured documents. Generate compliant policies for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-02",
+            dateModified: "2026-03-03",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
