@@ -20,9 +20,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Ecommerce (GDPR & CCPA) Free Preview | ultrafastutilities",
+    "Privacy Policy for Ecommerce: GDPR & CCPA Compliant (2026) | ultrafastutilities",
   description:
-    "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
+    "Create a privacy policy for your ecommerce store. Covers payment processing, shipping data, marketing emails, cookies, GDPR, and CCPA requirements. Generate compliant documents for $4.99.",
   keywords:
     "privacy policy for ecommerce, ecommerce privacy policy, online store privacy policy, ecommerce GDPR, ecommerce CCPA",
   robots: {
@@ -33,8 +33,8 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-ecommerce",
   },
   openGraph: {
-    title: "Privacy Policy for Ecommerce (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Ecommerce: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your ecommerce store. Covers payment processing, shipping data, marketing emails, cookies, GDPR, and CCPA requirements. Generate compliant documents for $4.99.",
     url: "https://ultrafastutilities.com/privacy-policy-for-ecommerce",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Ecommerce | ultrafastutilities" }],
@@ -43,8 +43,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Ecommerce (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Ecommerce: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your ecommerce store. Covers payment processing, shipping data, marketing emails, cookies, GDPR, and CCPA requirements. Generate compliant documents for $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -67,8 +67,8 @@ export default function PrivacyPolicyForEcommercePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Ecommerce (GDPR & CCPA) Free Preview | ultrafastutilities",
-            description: "Create a privacy policy for your ecommerce store. Cover payments, shipping, marketing, GDPR, CCPA, and cookie requirements. Generate compliant documents for $4.99.",
+            headline: "Privacy Policy for Ecommerce: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+            description: "Create a privacy policy for your ecommerce store. Covers payment processing, shipping data, marketing emails, cookies, GDPR, and CCPA requirements. Generate compliant documents for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

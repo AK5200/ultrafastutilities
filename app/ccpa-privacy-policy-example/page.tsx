@@ -14,8 +14,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities",
-  description: "Get a CCPA/CPRA-compliant privacy policy example. Understand California privacy rights, required disclosures, and example structure. Generate your full policy for $4.99.",
+  title: "CCPA Privacy Policy Example: California Consumer Rights (2026) | ultrafastutilities",
+  description: "CCPA and CPRA-compliant privacy policy example with all required California disclosures. Covers consumer rights, data categories, opt-out requirements, and sale of personal information. Generate yours for $4.99.",
   keywords: "CCPA privacy policy, CPRA privacy policy, California privacy policy, CCPA compliance, California privacy rights",
   robots: {
     index: true,
@@ -25,18 +25,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/ccpa-privacy-policy-example",
   },
   openGraph: {
-    title: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities",
-    description: "Get a CCPA/CPRA-compliant privacy policy example. Understand California privacy rights, required disclosures, and example structure. Generate your full policy for $4.99.",
+    title: "CCPA Privacy Policy Example: California Consumer Rights (2026) | ultrafastutilities",
+    description: "CCPA and CPRA-compliant privacy policy example with all required California disclosures. Covers consumer rights, data categories, opt-out requirements, and sale of personal information. Generate yours for $4.99.",
     url: "https://ultrafastutilities.com/ccpa-privacy-policy-example",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "CCPA Privacy Policy Example: California Consumer Rights (2026) | ultrafastutilities" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities",
-    description: "Get a CCPA/CPRA-compliant privacy policy example. Understand California privacy rights, required disclosures, and example structure. Generate your full policy for $4.99.",
+    title: "CCPA Privacy Policy Example: California Consumer Rights (2026) | ultrafastutilities",
+    description: "CCPA and CPRA-compliant privacy policy example with all required California disclosures. Covers consumer rights, data categories, opt-out requirements, and sale of personal information. Generate yours for $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -58,8 +58,8 @@ export default function CCPAPrivacyPolicyExamplePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "CCPA Privacy Policy Example California Consumer Privacy Rights | ultrafastutilities",
-            description: "Get a CCPA/CPRA-compliant privacy policy example. Understand California privacy rights, required disclosures, and example structure. Generate your full policy for $4.99.",
+            headline: "CCPA Privacy Policy Example: California Consumer Rights (2026) | ultrafastutilities",
+            description: "CCPA and CPRA-compliant privacy policy example with all required California disclosures. Covers consumer rights, data categories, opt-out requirements, and sale of personal information. Generate yours for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

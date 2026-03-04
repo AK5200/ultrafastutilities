@@ -18,8 +18,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Mobile Apps - iOS & Android App Store Ready | ultrafastutilities",
-  description: "Create a privacy policy for your mobile app. Meet Apple App Store and Google Play Store requirements. Cover permissions, tracking, GDPR, and CCPA compliance.",
+  title: "Privacy Policy for Mobile Apps: iOS & Android App Store Ready (2026) | ultrafastutilities",
+  description: "Create a privacy policy for your mobile app that meets Apple App Store and Google Play Store requirements. Covers permissions, tracking, push notifications, GDPR, and CCPA compliance.",
   keywords: "privacy policy for mobile apps, iOS privacy policy, Android privacy policy, app store privacy policy, mobile app GDPR",
   robots: {
     index: true,
@@ -29,8 +29,8 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-mobile-apps",
   },
   openGraph: {
-    title: "Privacy Policy for Mobile Apps - iOS & Android App Store Ready | ultrafastutilities",
-    description: "Create a privacy policy for your mobile app. Meet Apple App Store and Google Play Store requirements. Cover permissions, tracking, GDPR, and CCPA compliance.",
+    title: "Privacy Policy for Mobile Apps: iOS & Android App Store Ready (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your mobile app that meets Apple App Store and Google Play Store requirements. Covers permissions, tracking, push notifications, GDPR, and CCPA compliance.",
     url: "https://ultrafastutilities.com/privacy-policy-for-mobile-apps",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Mobile Apps | ultrafastutilities" }],
@@ -39,8 +39,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Mobile Apps - iOS & Android App Store Ready | ultrafastutilities",
-    description: "Create a privacy policy for your mobile app. Meet Apple App Store and Google Play Store requirements. Cover permissions, tracking, GDPR, and CCPA compliance.",
+    title: "Privacy Policy for Mobile Apps: iOS & Android App Store Ready (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your mobile app that meets Apple App Store and Google Play Store requirements. Covers permissions, tracking, push notifications, GDPR, and CCPA compliance.",
     images: ["/og-image.png"],
   },
 };
@@ -62,8 +62,8 @@ export default function PrivacyPolicyForMobileAppsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Mobile Apps - iOS & Android App Store Ready | ultrafastutilities",
-            description: "Create a privacy policy for your mobile app. Meet Apple App Store and Google Play Store requirements. Cover permissions, tracking, GDPR, and CCPA compliance.",
+            headline: "Privacy Policy for Mobile Apps: iOS & Android App Store Ready (2026) | ultrafastutilities",
+            description: "Create a privacy policy for your mobile app that meets Apple App Store and Google Play Store requirements. Covers permissions, tracking, push notifications, GDPR, and CCPA compliance.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

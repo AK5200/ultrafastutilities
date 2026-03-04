@@ -17,8 +17,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
-  description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+  title: "Cookie Policy for Websites: GDPR Cookie Requirements (2026) | ultrafastutilities",
+  description: "Create a GDPR-compliant cookie policy for your website. Covers cookie categories, consent banners, EU ePrivacy rules, and third-party tracking disclosures. Generate your policy for $4.99.",
   keywords: "cookie policy, cookie policy for websites, GDPR cookies, EU cookie law, cookie consent, cookie policy generator",
   robots: {
     index: true,
@@ -28,18 +28,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/cookie-policy-for-websites",
   },
   openGraph: {
-    title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
-    description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+    title: "Cookie Policy for Websites: GDPR Cookie Requirements (2026) | ultrafastutilities",
+    description: "Create a GDPR-compliant cookie policy for your website. Covers cookie categories, consent banners, EU ePrivacy rules, and third-party tracking disclosures. Generate your policy for $4.99.",
     url: "https://ultrafastutilities.com/cookie-policy-for-websites",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Cookie Policy for Websites: GDPR Cookie Requirements (2026) | ultrafastutilities" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
-    description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+    title: "Cookie Policy for Websites: GDPR Cookie Requirements (2026) | ultrafastutilities",
+    description: "Create a GDPR-compliant cookie policy for your website. Covers cookie categories, consent banners, EU ePrivacy rules, and third-party tracking disclosures. Generate your policy for $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -64,8 +64,8 @@ export default function CookiePolicyForWebsitesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Cookie Policy for Websites GDPR Cookie Requirements | ultrafastutilities",
-            description: "Create a compliant cookie policy for your website. Understand cookie categories, GDPR consent requirements, and EU cookie rules. Generate your policy for $4.99.",
+            headline: "Cookie Policy for Websites: GDPR Cookie Requirements (2026) | ultrafastutilities",
+            description: "Create a GDPR-compliant cookie policy for your website. Covers cookie categories, consent banners, EU ePrivacy rules, and third-party tracking disclosures. Generate your policy for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

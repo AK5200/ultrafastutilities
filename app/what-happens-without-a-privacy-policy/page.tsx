@@ -19,7 +19,7 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks | ultrafastutilities",
+    "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
   description:
     "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
   keywords:
@@ -32,17 +32,17 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy",
   },
   openGraph: {
-    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks | ultrafastutilities",
+    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
     description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
     url: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks | ultrafastutilities",
+    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
     description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
     images: ["/og-image.png"],
   },
@@ -68,7 +68,7 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks | ultrafastutilities",
+            headline: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
             description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",

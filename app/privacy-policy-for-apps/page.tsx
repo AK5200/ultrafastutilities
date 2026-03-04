@@ -16,8 +16,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Mobile Apps (iOS & Android) GDPR & CCPA | ultrafastutilities",
-  description: "Create a privacy policy for your mobile app. Meet App Store and Play Store requirements. Get GDPR & CCPA-ready documents for iOS and Android apps.",
+  title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
+  description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
   keywords: "privacy policy for apps, mobile app privacy policy, iOS privacy policy, Android privacy policy, app store privacy policy",
   robots: {
     index: true,
@@ -27,8 +27,8 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-apps",
   },
   openGraph: {
-    title: "Privacy Policy for Mobile Apps (iOS & Android) GDPR & CCPA | ultrafastutilities",
-    description: "Create a privacy policy for your mobile app. Meet App Store and Play Store requirements. Get GDPR & CCPA-ready documents for iOS and Android apps.",
+    title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
     url: "https://ultrafastutilities.com/privacy-policy-for-apps",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Mobile Apps | ultrafastutilities" }],
@@ -37,8 +37,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Mobile Apps (iOS & Android) GDPR & CCPA | ultrafastutilities",
-    description: "Create a privacy policy for your mobile app. Meet App Store and Play Store requirements. Get GDPR & CCPA-ready documents for iOS and Android apps.",
+    title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -62,8 +62,8 @@ export default function PrivacyPolicyForAppsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Mobile Apps (iOS & Android) GDPR & CCPA | ultrafastutilities",
-            description: "Create a privacy policy for your mobile app. Meet App Store and Play Store requirements. Get GDPR & CCPA-ready documents for iOS and Android apps.",
+            headline: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
+            description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

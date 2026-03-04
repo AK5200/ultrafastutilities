@@ -18,9 +18,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
+    "Privacy Policy for Small Business: What You Need & Why (2026) | ultrafastutilities",
   description:
-    "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+    "Small businesses that collect customer data need a privacy policy. Learn exactly what to include, which laws apply (GDPR, CCPA, CalOPPA), and how to create one in 60 seconds without a lawyer.",
   keywords:
     "privacy policy for small business, do small businesses need a privacy policy, small business privacy policy template, privacy policy for llc, small business data protection",
   robots: {
@@ -32,8 +32,8 @@ export const metadata = {
       "https://ultrafastutilities.com/privacy-policy-for-small-business",
   },
   openGraph: {
-    title: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
-    description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+    title: "Privacy Policy for Small Business: What You Need & Why (2026) | ultrafastutilities",
+    description: "Small businesses that collect customer data need a privacy policy. Learn exactly what to include, which laws apply (GDPR, CCPA, CalOPPA), and how to create one in 60 seconds without a lawyer.",
     url: "https://ultrafastutilities.com/privacy-policy-for-small-business",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Small Business | ultrafastutilities" }],
@@ -42,8 +42,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
-    description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+    title: "Privacy Policy for Small Business: What You Need & Why (2026) | ultrafastutilities",
+    description: "Small businesses that collect customer data need a privacy policy. Learn exactly what to include, which laws apply (GDPR, CCPA, CalOPPA), and how to create one in 60 seconds without a lawyer.",
     images: ["/og-image.png"],
   },
 };
@@ -68,8 +68,8 @@ export default function PrivacyPolicyForSmallBusinessPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Small Business: What You Need & Why | ultrafastutilities",
-            description: "Small businesses that collect customer data need a privacy policy. Learn what to include, which laws apply to you, and how to create one without hiring a lawyer.",
+            headline: "Privacy Policy for Small Business: What You Need & Why (2026) | ultrafastutilities",
+            description: "Small businesses that collect customer data need a privacy policy. Learn exactly what to include, which laws apply (GDPR, CCPA, CalOPPA), and how to create one in 60 seconds without a lawyer.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

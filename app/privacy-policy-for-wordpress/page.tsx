@@ -19,9 +19,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+    "Privacy Policy for WordPress: GDPR & CCPA Compliant (2026) | ultrafastutilities",
   description:
-    "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+    "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, popular plugins, cookies, contact forms, and user data collection. Free preview, one-time $4.99.",
   keywords:
     "privacy policy for wordpress, wordpress privacy policy, wordpress GDPR, wordpress cookie policy, WooCommerce privacy policy, wordpress privacy policy generator",
   robots: {
@@ -33,9 +33,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+      "Privacy Policy for WordPress: GDPR & CCPA Compliant (2026) | ultrafastutilities",
     description:
-      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, popular plugins, cookies, contact forms, and user data collection. Free preview, one-time $4.99.",
     url: "https://ultrafastutilities.com/privacy-policy-for-wordpress",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for WordPress | ultrafastutilities" }],
@@ -45,9 +45,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+      "Privacy Policy for WordPress: GDPR & CCPA Compliant (2026) | ultrafastutilities",
     description:
-      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+      "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, popular plugins, cookies, contact forms, and user data collection. Free preview, one-time $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -73,9 +73,9 @@ export default function PrivacyPolicyForWordPressPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline:
-              "Privacy Policy for WordPress (GDPR & CCPA) Free Preview | ultrafastutilities",
+              "Privacy Policy for WordPress: GDPR & CCPA Compliant (2026) | ultrafastutilities",
             description:
-              "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, plugins, cookies, and user data. Free preview. One-time $4.99.",
+              "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, popular plugins, cookies, contact forms, and user data collection. Free preview, one-time $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

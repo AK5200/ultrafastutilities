@@ -19,9 +19,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Terms of Service for Online Business - What to Include | ultrafastutilities",
+    "Terms of Service for Online Business: What to Include (2026) | ultrafastutilities",
   description:
-    "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+    "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
   keywords:
     "terms of service for online business, terms and conditions for small business website, do i need terms of service for my website, terms of service generator, online business terms and conditions",
   robots: {
@@ -34,9 +34,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Terms of Service for Online Business - What to Include | ultrafastutilities",
+      "Terms of Service for Online Business: What to Include (2026) | ultrafastutilities",
     description:
-      "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+      "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
     url: "https://ultrafastutilities.com/terms-of-service-for-online-business",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Terms of Service for Online Business | ultrafastutilities" }],
@@ -46,9 +46,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Terms of Service for Online Business - What to Include | ultrafastutilities",
+      "Terms of Service for Online Business: What to Include (2026) | ultrafastutilities",
     description:
-      "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+      "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -74,9 +74,9 @@ export default function TermsOfServiceForOnlineBusinessPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline:
-              "Terms of Service for Online Business - What to Include | ultrafastutilities",
+              "Terms of Service for Online Business: What to Include (2026) | ultrafastutilities",
             description:
-              "Learn what your online business Terms of Service must cover: liability limits, refund policies, user conduct, IP protection, and dispute resolution. Generate yours in 60 seconds.",
+              "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

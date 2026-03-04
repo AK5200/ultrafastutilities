@@ -17,8 +17,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
-  description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+  title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+  description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
   keywords: "privacy policy for Shopify, Shopify privacy policy, Shopify store privacy policy, Shopify GDPR, Shopify CCPA",
   robots: {
     index: true,
@@ -28,8 +28,8 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-shopify",
   },
   openGraph: {
-    title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
     url: "https://ultrafastutilities.com/privacy-policy-for-shopify",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Shopify | ultrafastutilities" }],
@@ -38,8 +38,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
     images: ["/og-image.png"],
   },
 };
@@ -61,8 +61,8 @@ export default function PrivacyPolicyForShopifyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Shopify Stores (GDPR & CCPA) Free Preview | ultrafastutilities",
-            description: "Create a privacy policy for your Shopify store. Cover Shopify data collection, payments, cookies, analytics, and compliance. Generate compliant documents for $4.99.",
+            headline: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+            description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

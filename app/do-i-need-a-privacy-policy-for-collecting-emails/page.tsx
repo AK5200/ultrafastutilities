@@ -18,9 +18,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Do I Need a Privacy Policy If I Only Collect Emails? Yes, Here's Why | ultrafastutilities",
+    "Do I Need a Privacy Policy for Collecting Emails? Yes, Here's Why (2026) | ultrafastutilities",
   description:
-    "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
+    "If you collect email addresses through newsletters, contact forms, or lead magnets, you legally need a privacy policy under GDPR, CCPA, and CAN-SPAM. Learn which laws apply and what to include.",
   keywords:
     "do i need a privacy policy for collecting emails, privacy policy for email collection, privacy policy for newsletter, email marketing privacy policy, do i need a privacy policy for mailchimp, privacy policy for email list",
   robots: {
@@ -33,9 +33,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Do I Need a Privacy Policy If I Only Collect Emails? Yes, Here's Why | ultrafastutilities",
+      "Do I Need a Privacy Policy for Collecting Emails? Yes, Here's Why (2026) | ultrafastutilities",
     description:
-      "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
+      "If you collect email addresses through newsletters, contact forms, or lead magnets, you legally need a privacy policy under GDPR, CCPA, and CAN-SPAM. Learn which laws apply and what to include.",
     url: "https://ultrafastutilities.com/do-i-need-a-privacy-policy-for-collecting-emails",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Do I Need a Privacy Policy If I Only Collect Emails? | ultrafastutilities" }],
@@ -45,9 +45,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Do I Need a Privacy Policy If I Only Collect Emails? Yes, Here's Why | ultrafastutilities",
+      "Do I Need a Privacy Policy for Collecting Emails? Yes, Here's Why (2026) | ultrafastutilities",
     description:
-      "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
+      "If you collect email addresses through newsletters, contact forms, or lead magnets, you legally need a privacy policy under GDPR, CCPA, and CAN-SPAM. Learn which laws apply and what to include.",
     images: ["/og-image.png"],
   },
 };
@@ -76,7 +76,7 @@ export default function DoINeedPrivacyPolicyForCollectingEmailsPage() {
             headline:
               "Do I Need a Privacy Policy If I Only Collect Emails? Yes - Here's Why | ultrafastutilities",
             description:
-              "If you collect email addresses through a newsletter, contact form, or lead magnet, you legally need a privacy policy. Learn which laws require it and what to include.",
+              "If you collect email addresses through newsletters, contact forms, or lead magnets, you legally need a privacy policy under GDPR, CCPA, and CAN-SPAM. Learn which laws apply and what to include.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",

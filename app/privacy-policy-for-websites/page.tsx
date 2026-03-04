@@ -15,8 +15,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities",
-  description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
+  title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+  description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
   keywords: "privacy policy for websites, website privacy policy, GDPR privacy policy, CCPA privacy policy, privacy policy generator",
   robots: {
     index: true,
@@ -26,18 +26,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-websites",
   },
   openGraph: {
-    title: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
+    title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
     url: "https://ultrafastutilities.com/privacy-policy-for-websites",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities",
-    description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
+    title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+    description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
     images: ["/og-image.png"],
   },
 };
@@ -61,8 +61,8 @@ export default function PrivacyPolicyForWebsitesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Websites (GDPR & CCPA) Free Preview | ultrafastutilities",
-            description: "Create a compliant privacy policy for your website. Structured for GDPR & CCPA, includes cookie categories and user rights. Free preview. One-time $4.99.",
+            headline: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
+            description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-03-03",
