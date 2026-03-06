@@ -62,7 +62,7 @@ export default function ChatGPTPrivacyPolicyRisksPage() {
             description: "ChatGPT and AI tools generate generic privacy policies that miss GDPR and CCPA requirements. Learn the specific compliance gaps, legal risks, and why structured generators produce accurate policies.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-03",
+            dateModified: "2026-03-06",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

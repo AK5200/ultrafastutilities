@@ -164,7 +164,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
               name: "Anupam Kumar",
             },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-03",
+            dateModified: "2026-03-06",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

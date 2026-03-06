@@ -79,7 +79,7 @@ export default function DoINeedPrivacyPolicyForCollectingEmailsPage() {
               "If you collect email addresses through newsletters, contact forms, or lead magnets, you legally need a privacy policy under GDPR, CCPA, and CAN-SPAM. Learn which laws apply and what to include.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-03",
+            dateModified: "2026-03-06",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

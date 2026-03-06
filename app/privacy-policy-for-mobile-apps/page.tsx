@@ -66,7 +66,7 @@ export default function PrivacyPolicyForMobileAppsPage() {
             description: "Create a privacy policy for your mobile app that meets Apple App Store and Google Play Store requirements. Covers permissions, tracking, push notifications, GDPR, and CCPA compliance.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-03",
+            dateModified: "2026-03-06",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
