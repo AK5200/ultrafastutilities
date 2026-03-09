@@ -62,7 +62,7 @@ export default function CCPAPrivacyPolicyExamplePage() {
             description: "CCPA and CPRA-compliant privacy policy example with all required California disclosures. Covers consumer rights, data categories, opt-out requirements, and sale of personal information. Generate yours for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-06",
+            dateModified: "2026-03-09",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
