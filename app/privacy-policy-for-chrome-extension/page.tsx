@@ -205,7 +205,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -1544,19 +1544,24 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     {
-                      href: "/privacy-policy-for-apps",
-                      title: "Privacy Policy for Apps",
-                      desc: "App store requirements for mobile and desktop applications",
+                      href: "/chrome-extension-privacy-policy-template",
+                      title: "Chrome Extension Privacy Policy Template",
+                      desc: "Free, copy-paste ready template for your extension",
                     },
                     {
-                      href: "/privacy-policy-for-discord-bot",
-                      title: "Privacy Policy for Discord Bots",
-                      desc: "Discord's requirements for bot developers",
+                      href: "/chrome-web-store-privacy-policy-requirements",
+                      title: "Chrome Web Store Requirements",
+                      desc: "Full checklist of what Google checks during review",
                     },
                     {
-                      href: "/privacy-policy-for-slack-app",
-                      title: "Privacy Policy for Slack Apps",
-                      desc: "Slack App Directory privacy requirements",
+                      href: "/do-chrome-extensions-need-a-privacy-policy",
+                      title: "Do Chrome Extensions Need a Privacy Policy?",
+                      desc: "When a privacy policy is required and when it is not",
+                    },
+                    {
+                      href: "/chrome-extension-gdpr-compliance",
+                      title: "Chrome Extension GDPR Compliance",
+                      desc: "Complete GDPR guide for extension developers",
                     },
                     {
                       href: "/privacy-policy-for-google-play",
@@ -1569,19 +1574,14 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                       desc: "All 12 required GDPR sections with a compliant template",
                     },
                     {
+                      href: "/privacy-policy-for-apps",
+                      title: "Privacy Policy for Apps",
+                      desc: "App store requirements for mobile and desktop applications",
+                    },
+                    {
                       href: "/what-happens-without-a-privacy-policy",
                       title: "What Happens Without a Privacy Policy",
                       desc: "Real consequences of operating without one",
-                    },
-                    {
-                      href: "/privacy-policy-for-websites",
-                      title: "Privacy Policy for Websites",
-                      desc: "Complete guide to website privacy requirements",
-                    },
-                    {
-                      href: "/can-i-copy-someone-elses-privacy-policy",
-                      title: "Can I Copy Someone Else's Privacy Policy?",
-                      desc: "Why copying creates copyright and compliance risk",
                     },
                   ].map((item) => (
                     <Link

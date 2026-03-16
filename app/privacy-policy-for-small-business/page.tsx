@@ -72,7 +72,7 @@ export default function PrivacyPolicyForSmallBusinessPage() {
             description: "Small businesses that collect customer data need a privacy policy. Learn exactly what to include, which laws apply (GDPR, CCPA, CalOPPA), and how to create one in 60 seconds without a lawyer.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

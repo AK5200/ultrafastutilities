@@ -202,7 +202,7 @@ export default function PrivacyPolicyForWixPage() {
               "Create a compliant privacy policy for your Wix website. Covers Wix Analytics, Wix Payments, Wix Forms, App Market integrations, and GDPR requirements. Generate yours for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

@@ -164,6 +164,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/privacy-policy-for-chrome-extension`,
       lastModified: new Date(),
       changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/chrome-extension-privacy-policy-template`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/chrome-web-store-privacy-policy-requirements`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/do-chrome-extensions-need-a-privacy-policy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/chrome-extension-gdpr-compliance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
@@ -222,6 +246,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/is-a-privacy-policy-legally-required`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy-policy-for-shopify-app`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy-policy-for-wordpress-plugin`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

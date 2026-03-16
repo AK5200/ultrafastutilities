@@ -201,7 +201,7 @@ export default function PrivacyPolicyForEtsyPage() {
               "Etsy sellers who collect buyer data need their own privacy policy. Learn what Etsy's Seller Handbook requires, how to handle EU buyer data under GDPR, and what your shop policy must include.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

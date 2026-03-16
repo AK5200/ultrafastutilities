@@ -66,7 +66,7 @@ export default function PrivacyPolicyForSaaSPage() {
             description: "Create a privacy policy for your SaaS platform. Covers user accounts, billing data, analytics, API access, GDPR lawful basis, and CCPA user rights. Generate compliant documents for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

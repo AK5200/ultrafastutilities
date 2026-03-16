@@ -79,7 +79,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
               "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

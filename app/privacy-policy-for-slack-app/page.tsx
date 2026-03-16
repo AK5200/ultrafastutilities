@@ -202,7 +202,7 @@ export default function PrivacyPolicyForSlackAppPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-09",
+            dateModified: "2026-03-16",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
