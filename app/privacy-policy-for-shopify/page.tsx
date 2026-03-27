@@ -65,7 +65,7 @@ export default function PrivacyPolicyForShopifyPage() {
             description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-16",
+            dateModified: "2026-03-27",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}

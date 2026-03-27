@@ -78,7 +78,7 @@ export default function PrivacyPolicyForWordPressPage() {
               "Create a compliant privacy policy for your WordPress site. Covers GDPR, CCPA, WooCommerce, popular plugins, cookies, contact forms, and user data collection. Free preview, one-time $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-16",
+            dateModified: "2026-03-27",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

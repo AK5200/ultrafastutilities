@@ -205,7 +205,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-16",
+            dateModified: "2026-03-27",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",

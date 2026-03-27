@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:docs.dodopayments.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "WebFetch(domain:stripe.com)",
+      "WebFetch(domain:vercel.com)",
+      "WebFetch(domain:linear.app)",
+      "WebFetch(domain:notion.so)",
+      "Bash(find:*)",
+      "Bash(npx next build:*)",
+      "Bash(git checkout:*)",
+      "Bash(git reset:*)",
+      "Bash(git status:*)",
+      "Bash(test:*)",
+      "Bash(git log:*)",
+      "Bash(for url in \"https://ultrafastutilities.com/gdpr-privacy-policy-template\" \"https://ultrafastutilities.com/privacy-policy-for-saas\" \"https://ultrafastutilities.com/generate\" \"https://ultrafastutilities.com/privacy-policy-for-websites\")",
+      "Bash(do echo \"=== $url ===\")",
+      "Bash(done)"
+    ]
+  }
+}
