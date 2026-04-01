@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
   Shield,
+  ShieldCheck,
   AlertTriangle,
   Ban,
   ChevronRight,
@@ -142,58 +143,70 @@ export default function AffiliateMarketingPrivacyPolicyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ReadingProgress />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen">
 
-        {/* Hero */}
-        <section className="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 text-white py-16 px-4">
-          <div className="max-w-5xl mx-auto">
-            <nav className="flex items-center gap-2 text-slate-400 text-sm mb-6">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-slate-200">Privacy Policy for Affiliate Marketing</span>
+        {/* Hero Section */}
+        <header className="relative overflow-hidden border-b border-slate-200/60">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white to-white" />
+          <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+            <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-blue-100/40 blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-blue-50/60 blur-3xl" />
+          </div>
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
+            <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-600">Privacy Policy for Affiliate Marketing</span>
             </nav>
-            <div className="flex items-center gap-3 mb-4">
-              <Link2 className="w-8 h-8 text-emerald-400" />
-              <span className="text-emerald-400 font-semibold text-sm uppercase tracking-wide">Affiliate Marketing Guide</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Privacy Policy for Affiliate Marketing Websites: Complete 2026 Guide
-            </h1>
-            <p className="text-xl text-slate-300 mb-6 max-w-3xl">
-              Affiliate sites have unique privacy policy requirements - from FTC disclosure rules and cookie tracking transparency to Amazon Associates terms and GDPR consent for EU visitors. Here is exactly what your policy must cover.
-            </p>
-            <p className="text-slate-400 text-sm">Last updated: March 2026</p>
-          </div>
-        </section>
-
-        {/* Author trust bar */}
-        <div className="border-b bg-slate-50 py-3 px-4">
-          <div className="max-w-5xl mx-auto flex flex-wrap items-center gap-6 text-sm text-slate-600">
-            <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4 text-green-600" />
-              <span>Covers FTC, GDPR, and affiliate network requirements</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FileText className="w-4 h-4 text-blue-600" />
-              <span>Amazon Associates, ShareASale, CJ Affiliate, Impact</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Globe className="w-4 h-4 text-purple-600" />
-              <span>Updated March 2026</span>
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-medium mb-6">
+                <Link2 className="w-3.5 h-3.5" />
+                Affiliate Marketing Guide
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                Privacy Policy for{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  Affiliate Marketing
+                </span>
+              </h1>
+              <p className="mt-5 text-lg text-slate-600 leading-relaxed max-w-xl">
+                Affiliate sites have unique privacy policy requirements - from FTC disclosure rules and cookie tracking transparency to Amazon Associates terms and GDPR consent for EU visitors. Here is exactly what your policy must cover.
+              </p>
             </div>
           </div>
-        </div>
+        </header>
 
         {/* Two-column layout */}
-        <div className="max-w-5xl mx-auto px-4 py-12 grid grid-cols-4 gap-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-16">
 
           {/* TOC Sidebar */}
-          <aside className="col-span-1">
-            <TableOfContents sections={tocSections} />
+          <aside className="hidden lg:block">
+            <div className="sticky top-24">
+              <TableOfContents sections={tocSections} />
+              <div className="mt-8 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100/80">
+                <p className="text-sm font-semibold text-slate-800">Need your own policy?</p>
+                <p className="text-xs text-slate-500 mt-1">Generate in under 60 seconds</p>
+                <Link href="/generate">
+                  <Button size="sm" className="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-lg">Generate Policy</Button>
+                </Link>
+              </div>
+            </div>
           </aside>
 
           {/* Article */}
-          <article className="col-span-3 prose prose-slate max-w-none">
+          <article className="max-w-[720px] prose prose-slate">
+            {/* Author + Trust Signals */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500 not-prose">
+              <div className="flex items-center gap-2">
+                <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">AK</div>
+                <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
+              </div>
+              <span className="text-slate-300 hidden sm:inline">&middot;</span>
+              <span>Last updated: March 2026</span>
+              <span className="text-slate-300 hidden sm:inline">&middot;</span>
+              <div className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" /><span>Reviewed for compliance</span></div>
+            </div>
 
             {/* Featured snippet */}
             <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 mb-8 not-prose">
@@ -549,6 +562,7 @@ export default function AffiliateMarketingPrivacyPolicyPage() {
             </section>
 
           </article>
+          </div>
         </div>
       </main>
     </>

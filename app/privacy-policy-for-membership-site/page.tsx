@@ -137,55 +137,64 @@ export default function PrivacyPolicyMembershipSite() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ReadingProgress />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <ArrowRight className="w-3 h-3" />
-              <span>Privacy Policy for Membership Site</span>
-            </div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-blue-500/20 p-3 rounded-xl">
-                <Users className="w-8 h-8 text-blue-400" />
+      <main className="min-h-screen">
+        <header className="relative overflow-hidden border-b border-slate-200/60">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white to-white" />
+          <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+            <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-blue-100/40 blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-blue-50/60 blur-3xl" />
+          </div>
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
+            <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-600">Privacy Policy for Membership Site</span>
+            </nav>
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-medium mb-6">
+                <Users className="w-3.5 h-3.5" />
+                Membership Site Privacy Requirements 2026
               </div>
-              <div>
-                <h1 className="text-3xl sm:text-4xl font-bold">
-                  Privacy Policy for Membership Sites and Subscription Communities
-                </h1>
-                <p className="text-slate-400 mt-1">Membership Site Privacy Requirements 2026</p>
-              </div>
-            </div>
-            <p className="text-xl text-slate-300 max-w-2xl">
-              Membership sites collect far more data than standard websites: profile information, recurring payment history,
-              community posts, direct messages, and detailed behavioral analytics. Your privacy policy must address each of
-              these categories to stay compliant with GDPR and payment processor requirements.
-            </p>
-            <div className="flex items-center gap-4 mt-6 text-sm text-slate-400">
-              <span className="flex items-center gap-1"><Clock className="w-4 h-4" />Last updated: March 2026</span>
-              <span className="flex items-center gap-1"><FileText className="w-4 h-4" />13 min read</span>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                Privacy Policy for{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  Membership Sites
+                </span>
+              </h1>
+              <p className="mt-5 text-lg text-slate-600 leading-relaxed max-w-xl">
+                Membership sites collect far more data than standard websites: profile information, recurring payment history,
+                community posts, direct messages, and detailed behavioral analytics. Your privacy policy must address each of
+                these categories to stay compliant with GDPR and payment processor requirements.
+              </p>
             </div>
           </div>
-        </section>
+        </header>
 
-        <section className="border-b bg-slate-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600">
-              <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-600" /><span>Reviewed by privacy attorneys</span></div>
-              <div className="flex items-center gap-2"><Globe className="w-4 h-4 text-blue-600" /><span>GDPR and CCPA coverage</span></div>
-              <div className="flex items-center gap-2"><Users className="w-4 h-4 text-purple-600" /><span>Used by 15,000+ community operators</span></div>
-              <div className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-600" /><span>Platform-specific guidance</span></div>
-            </div>
-          </div>
-        </section>
-
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="lg:grid lg:grid-cols-4 lg:gap-12">
-            <aside className="lg:col-span-1">
-              <TableOfContents sections={tocSections} />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-16">
+            <aside className="hidden lg:block">
+              <div className="sticky top-24">
+                <TableOfContents sections={tocSections} />
+                <div className="mt-8 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100/80">
+                  <p className="text-sm font-semibold text-slate-800">Need your own policy?</p>
+                  <p className="text-xs text-slate-500 mt-1">Generate in under 60 seconds</p>
+                  <Link href="/generate"><Button size="sm" className="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-lg">Generate Policy</Button></Link>
+                </div>
+              </div>
             </aside>
-
-            <article className="lg:col-span-3 space-y-12">
+            <article className="max-w-[720px]">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">AK</div>
+                  <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: March 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>13 min read</span></div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" /><span>Reviewed for compliance</span></div>
+              </div>
               <div id="quick-answer" className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                 <h2 className="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
                   <Info className="w-5 h-5" />

@@ -107,43 +107,62 @@ export default function ChromeExtensionSinglePurposePolicy() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ReadingProgress />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <ArrowRight className="w-3 h-3" />
-              <span>Chrome Extension Single Purpose Policy</span>
-            </div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-blue-500/20 p-3 rounded-xl"><Target className="w-8 h-8 text-blue-400" /></div>
-              <div>
-                <h1 className="text-3xl sm:text-4xl font-bold">Chrome Extension Single Purpose Policy</h1>
-                <p className="text-slate-400 mt-1">Chrome Web Store Developer Guide 2026</p>
+      <main className="min-h-screen">
+        <header className="relative overflow-hidden border-b border-slate-200/60">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white to-white" />
+          <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+            <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-blue-100/40 blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-blue-50/60 blur-3xl" />
+          </div>
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
+            <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-600">Chrome Extension Single Purpose Policy</span>
+            </nav>
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-medium mb-6">
+                <Target className="w-3.5 h-3.5" />
+                Chrome Web Store Developer Guide 2026
               </div>
-            </div>
-            <p className="text-xl text-slate-300 max-w-2xl">Every Chrome extension must have a single, clear purpose. This policy affects your permissions, data collection, and privacy policy. Here is what you need to know.</p>
-            <div className="flex items-center gap-4 mt-6 text-sm text-slate-400">
-              <span className="flex items-center gap-1"><Clock className="w-4 h-4" />Last updated: March 2026</span>
-              <span className="flex items-center gap-1"><FileText className="w-4 h-4" />10 min read</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="border-b bg-slate-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600">
-              <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-600" /><span>Reviewed by privacy attorneys</span></div>
-              <div className="flex items-center gap-2"><Globe className="w-4 h-4 text-blue-600" /><span>Chrome Web Store policy compliant</span></div>
-              <div className="flex items-center gap-2"><Users className="w-4 h-4 text-purple-600" /><span>Used by 20,000+ extension developers</span></div>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                Chrome Extension{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  Single Purpose Policy
+                </span>
+              </h1>
+              <p className="mt-5 text-lg text-slate-600 leading-relaxed max-w-xl">
+                Every Chrome extension must have a single, clear purpose. This policy affects your permissions, data collection, and privacy policy. Here is what you need to know.
+              </p>
             </div>
           </div>
-        </section>
+        </header>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="lg:grid lg:grid-cols-4 lg:gap-12">
-            <aside className="lg:col-span-1"><TableOfContents sections={tocSections} /></aside>
-            <article className="lg:col-span-3 space-y-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-16">
+            <aside className="hidden lg:block">
+              <div className="sticky top-24">
+                <TableOfContents sections={tocSections} />
+                <div className="mt-8 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100/80">
+                  <p className="text-sm font-semibold text-slate-800">Need your own policy?</p>
+                  <p className="text-xs text-slate-500 mt-1">Generate in under 60 seconds</p>
+                  <Link href="/generate"><Button size="sm" className="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-lg">Generate Policy</Button></Link>
+                </div>
+              </div>
+            </aside>
+            <article className="max-w-[720px]">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-10 pb-8 border-b border-slate-200/60 text-sm text-slate-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold text-xs flex-shrink-0">AK</div>
+                  <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
+                </div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <span>Last updated: March 2026</span>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>10 min read</span></div>
+                <span className="text-slate-300 hidden sm:inline">&middot;</span>
+                <div className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" /><span>Reviewed for compliance</span></div>
+              </div>
 
               <div id="what-is-single-purpose" className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                 <h2 className="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
