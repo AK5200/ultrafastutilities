@@ -23,9 +23,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Free GDPR Privacy Policy Template: UK and EU Compliant (2026) | ultrafastutilities",
+    "Free GDPR Privacy Policy Template [UK & EU Compliant 2026]",
   description:
-    "Free GDPR privacy policy template for UK and EU websites. Covers all 12 required sections: lawful basis, user rights, data retention, cookies, and international transfers. Generate your customised policy for $4.99.",
+    "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
   keywords:
     "GDPR privacy policy template, free GDPR privacy policy, privacy policy template UK, GDPR compliant privacy policy, GDPR compliant privacy policy template, free website privacy policy template UK, privacy policy GDPR template, gdpr privacy policy template free",
   robots: {
@@ -37,9 +37,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Free GDPR Privacy Policy Template: UK and EU Compliant (2026) | ultrafastutilities",
+      "Free GDPR Privacy Policy Template [UK & EU Compliant 2026]",
     description:
-      "Free GDPR privacy policy template for UK and EU websites. Covers all 12 required sections: lawful basis, user rights, data retention, cookies, and international transfers.",
+      "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
     url: "https://ultrafastutilities.com/gdpr-privacy-policy-template",
     siteName: "ultrafastutilities",
     images: [
@@ -58,7 +58,7 @@ export const metadata = {
     title:
       "Free GDPR Privacy Policy Template: UK and EU Compliant (2026)",
     description:
-      "Free GDPR privacy policy template for UK and EU websites. Covers all 12 required sections: lawful basis, user rights, data retention, cookies, and international transfers.",
+      "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -164,7 +164,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
               name: "Anupam Kumar",
             },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -294,7 +294,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                 UK or EU users.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for UK &amp; EU GDPR alignment
+                Last updated: April 2026 &middot; Reviewed for UK &amp; EU GDPR alignment
               </p>
             </div>
 
@@ -379,7 +379,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

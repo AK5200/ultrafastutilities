@@ -17,8 +17,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-  description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
+  title: "Privacy Policy for Shopify: Store Owner Guide [2026]",
+  description: "Shopify stores collect customer data, payments, and cookies -- your policy must cover it all. Generate a compliant privacy policy in 60 seconds.",
   keywords: "privacy policy for Shopify, Shopify privacy policy, Shopify store privacy policy, Shopify GDPR, Shopify CCPA",
   robots: {
     index: true,
@@ -28,18 +28,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-shopify",
   },
   openGraph: {
-    title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Shopify: Store Owner Guide [2026]",
+    description: "Shopify stores collect customer data, payments, and cookies -- your policy must cover it all. Generate a compliant privacy policy in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-shopify",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Shopify | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Shopify: Store Owner Guide [2026]" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for Shopify: Store Owner Guide [2026]",
+    description: "Shopify stores collect customer data, payments, and cookies -- your policy must cover it all. Generate a compliant privacy policy in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -61,11 +61,11 @@ export default function PrivacyPolicyForShopifyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Shopify Stores: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-            description: "Create a privacy policy for your Shopify store. Covers Shopify data collection, payment processing, app integrations, cookies, and analytics. Generate compliant documents for $4.99.",
+            headline: "Privacy Policy for Shopify: Store Owner Guide [2026]",
+            description: "Shopify stores collect customer data, payments, and cookies -- your policy must cover it all. Generate a compliant privacy policy in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -207,7 +207,7 @@ export default function PrivacyPolicyForShopifyPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

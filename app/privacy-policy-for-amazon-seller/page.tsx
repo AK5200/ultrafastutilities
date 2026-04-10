@@ -20,9 +20,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Amazon Sellers: FBA & Marketplace Guide (2026) | ultrafastutilities",
+    "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
   description:
-    "Create a privacy policy for your Amazon seller business. Covers FBA data, buyer communication, Amazon Ads, Brand Registry, external website requirements, and multi-channel selling.",
+    "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
   keywords:
     "privacy policy for amazon seller, amazon seller privacy policy, amazon fba privacy policy, amazon marketplace privacy policy, amazon third party seller privacy policy",
   robots: {
@@ -35,9 +35,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Amazon Sellers: FBA & Marketplace Guide (2026) | ultrafastutilities",
+      "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
     description:
-      "Create a privacy policy for your Amazon seller business. Covers FBA data, buyer communication, Amazon Ads, Brand Registry, external website requirements, and multi-channel selling.",
+      "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
     url: "https://ultrafastutilities.com/privacy-policy-for-amazon-seller",
     siteName: "ultrafastutilities",
     images: [
@@ -54,9 +54,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Amazon Sellers: FBA & Marketplace Guide (2026) | ultrafastutilities",
+      "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
     description:
-      "Create a privacy policy for your Amazon seller business. Covers FBA data, buyer communication, Amazon Ads, Brand Registry, external website requirements, and multi-channel selling.",
+      "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
     images: ["/og-image.png"],
   },
 };
@@ -196,12 +196,12 @@ export default function PrivacyPolicyForAmazonSellerPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline:
-              "Privacy Policy for Amazon Sellers: FBA & Marketplace Guide (2026) | ultrafastutilities",
+              "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
             description:
-              "Create a privacy policy for your Amazon seller business. Covers FBA data, buyer communication, Amazon Ads, Brand Registry, external website requirements, and multi-channel selling.",
+              "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -376,7 +376,7 @@ export default function PrivacyPolicyForAmazonSellerPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

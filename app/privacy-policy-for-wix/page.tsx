@@ -202,7 +202,7 @@ export default function PrivacyPolicyForWixPage() {
               "Create a compliant privacy policy for your Wix website. Covers Wix Analytics, Wix Payments, Wix Forms, App Market integrations, and GDPR requirements. Generate yours for $4.99.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -374,7 +374,7 @@ export default function PrivacyPolicyForWixPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

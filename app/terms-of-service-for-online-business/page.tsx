@@ -79,7 +79,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
               "Create terms of service for your online business. Covers liability limits, refund policies, user conduct, intellectual property protection, and dispute resolution. Generate yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -289,7 +289,7 @@ export default function TermsOfServiceForOnlineBusinessPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

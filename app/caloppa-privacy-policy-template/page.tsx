@@ -74,8 +74,8 @@ export default function CalOPPAPrivacyPolicyTemplatePage() {
             headline: "CalOPPA Privacy Policy Template (California Online Privacy) (2026) | ultrafastutilities",
             description: "Free CalOPPA-compliant privacy policy template. CalOPPA applies to any website collecting data from California residents. Covers Do Not Track signals, conspicuous posting, and update requirements.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -282,7 +282,7 @@ export default function CalOPPAPrivacyPolicyTemplatePage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

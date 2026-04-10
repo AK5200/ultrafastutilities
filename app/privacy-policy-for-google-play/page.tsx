@@ -209,7 +209,7 @@ export default function PrivacyPolicyForGooglePlayPage() {
               "Google Play requires a privacy policy for all apps that collect personal data. Learn the Data Safety section requirements, what Google checks during review, and how to create a compliant policy.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -382,7 +382,7 @@ export default function PrivacyPolicyForGooglePlayPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

@@ -157,7 +157,7 @@ export default function PrivacyPolicyVsTermsAndConditionsPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -246,7 +246,7 @@ export default function PrivacyPolicyVsTermsAndConditionsPage() {
                 operators.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for GDPR, CCPA &amp; UK compliance
+                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp; UK compliance
               </p>
             </div>
 
@@ -322,7 +322,7 @@ export default function PrivacyPolicyVsTermsAndConditionsPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

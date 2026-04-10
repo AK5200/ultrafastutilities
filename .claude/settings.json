@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Read(//usr/**)",
+      "Read(//mingw64/**)",
+      "Bash(/c/Users/LENOVO/AppData/Local/Programs/Python/Python312/python -c \"print\\(''hello''\\)\")",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Bash(echo \"0 em dashes\" grep \"Last updated\" \"$f\")",
+      "Bash(grep -l from-slate-900 D:app1app*/page.tsx)",
+      "Bash(grep -rl '\"2026-03-27\"' app/*/page.tsx)",
+      "Bash(grep -rl \"March 2026\" app/*/page.tsx)"
+    ],
+    "additionalDirectories": [
+      "D:\\app1\\app\\privacy-policy-fines-and-penalties",
+      "D:\\app1\\app"
+    ]
+  }
+}

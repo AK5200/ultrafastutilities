@@ -198,8 +198,8 @@ export default function PrivacyPolicyForSquarespacePage() {
             description:
               "Create a privacy policy for your Squarespace website. Covers Squarespace Analytics, forms, Commerce, email campaigns, member areas, scheduling, and third-party integrations.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -373,7 +373,7 @@ export default function PrivacyPolicyForSquarespacePage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

@@ -24,9 +24,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Gumroad: Digital Product Seller Guide (2026) | ultrafastutilities",
+    "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
   description:
-    "Selling digital products on Gumroad? Your privacy policy must cover buyer data, payment processing, email lists, license keys, and affiliate programs. Complete guide for Gumroad sellers.",
+    "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
   keywords:
     "privacy policy for gumroad, gumroad privacy policy, gumroad seller privacy policy, digital product privacy policy, gumroad data collection",
   robots: {
@@ -38,9 +38,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Gumroad: Digital Product Seller Guide (2026) | ultrafastutilities",
+      "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
     description:
-      "Selling digital products on Gumroad? Your privacy policy must cover buyer data, payment processing, email lists, license keys, and affiliate programs. Complete guide for Gumroad sellers.",
+      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
     url: "https://ultrafastutilities.com/privacy-policy-for-gumroad",
     siteName: "ultrafastutilities",
     images: [
@@ -48,7 +48,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Privacy Policy for Gumroad Sellers | ultrafastutilities",
+        alt: "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
       },
     ],
     locale: "en_US",
@@ -57,9 +57,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Gumroad: Digital Product Seller Guide (2026) | ultrafastutilities",
+      "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
     description:
-      "Selling digital products on Gumroad? Your privacy policy must cover buyer data, payment processing, email lists, license keys, and affiliate programs. Complete guide for Gumroad sellers.",
+      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
     images: ["/og-image.png"],
   },
 };
@@ -199,12 +199,12 @@ export default function PrivacyPolicyForGumroadPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline:
-              "Privacy Policy for Gumroad: Digital Product Seller Guide (2026) | ultrafastutilities",
+              "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
             description:
-              "Selling digital products on Gumroad? Your privacy policy must cover buyer data, payment processing, email lists, license keys, and affiliate programs. Complete guide for Gumroad sellers.",
+              "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -379,7 +379,7 @@ export default function PrivacyPolicyForGumroadPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

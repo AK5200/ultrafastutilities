@@ -168,7 +168,7 @@ const articleSchema = {
   description:
     "Complete guide to creating a privacy policy for your eCommerce store, covering customer data, payment processing, shipping, marketing, and GDPR/CCPA compliance.",
   datePublished: "2026-01-01",
-  dateModified: "2026-03-27",
+  dateModified: "2026-04-11",
   author: {
     "@type": "Organization",
     name: "ultrafastutilities",
@@ -278,7 +278,7 @@ export default function EcommercePrivacyPolicyTemplate() {
                   <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>13 min read</span></div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>

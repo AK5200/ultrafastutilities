@@ -78,8 +78,8 @@ export default function PrivacyPolicyForZoomPage() {
             headline: "Privacy Policy for Zoom: Meeting Host & App Guide (2026) | ultrafastutilities",
             description: "Using Zoom for business meetings, webinars, or building Zoom apps? Your privacy policy must cover recording, participant data, chat logs, and Zoom Marketplace requirements.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -287,7 +287,7 @@ export default function PrivacyPolicyForZoomPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

@@ -22,8 +22,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Typeform: Form Builder Guide (2026) | ultrafastutilities",
-  description: "Using Typeform for surveys and forms? Your privacy policy must disclose respondent data collection. Covers form responses, hidden fields, tracking pixels, payment forms, and GDPR consent.",
+  title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
+  description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
   keywords: "privacy policy for typeform, typeform privacy policy, typeform data collection, survey privacy policy, typeform gdpr",
   robots: {
     index: true,
@@ -33,18 +33,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-typeform",
   },
   openGraph: {
-    title: "Privacy Policy for Typeform: Form Builder Guide (2026) | ultrafastutilities",
-    description: "Using Typeform for surveys and forms? Your privacy policy must disclose respondent data collection. Covers form responses, hidden fields, tracking pixels, payment forms, and GDPR consent.",
+    title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
+    description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-typeform",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Typeform | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Typeform: Survey Data Guide [2026]" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Typeform: Form Builder Guide (2026) | ultrafastutilities",
-    description: "Using Typeform for surveys and forms? Your privacy policy must disclose respondent data collection. Covers form responses, hidden fields, tracking pixels, payment forms, and GDPR consent.",
+    title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
+    description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -74,11 +74,11 @@ export default function PrivacyPolicyForTypeformPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Typeform: Form Builder Guide (2026) | ultrafastutilities",
-            description: "Using Typeform for surveys and forms? Your privacy policy must disclose respondent data collection. Covers form responses, hidden fields, tracking pixels, payment forms, and GDPR consent.",
+            headline: "Privacy Policy for Typeform: Survey Data Guide [2026]",
+            description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -286,7 +286,7 @@ export default function PrivacyPolicyForTypeformPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

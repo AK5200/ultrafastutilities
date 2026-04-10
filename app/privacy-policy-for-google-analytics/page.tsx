@@ -74,8 +74,8 @@ export default function PrivacyPolicyForGoogleAnalyticsPage() {
             headline: "Privacy Policy for Google Analytics: What You Must Disclose to Visitors",
             description: "Using Google Analytics? Your privacy policy must disclose it. Google requires it. Learn what GA4 collects, cookie consent requirements, IP anonymization, data retention settings, and GDPR compliance.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -297,7 +297,7 @@ export default function PrivacyPolicyForGoogleAnalyticsPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

@@ -199,7 +199,7 @@ export default function PrivacyPolicyForWebflowPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -292,7 +292,7 @@ export default function PrivacyPolicyForWebflowPage() {
                 sites on the Webflow platform.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
                 CalOPPA compliance
               </p>
             </div>
@@ -369,7 +369,7 @@ export default function PrivacyPolicyForWebflowPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>10 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

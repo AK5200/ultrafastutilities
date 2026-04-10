@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Write",
       "Bash(npm run build:*)",
       "Bash(curl:*)",
       "WebFetch(domain:docs.dodopayments.com)",

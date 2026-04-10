@@ -166,7 +166,7 @@ const articleSchema = {
   description:
     "Complete guide to creating an Australian privacy policy compliant with the Privacy Act 1988, Australian Privacy Principles, and the Notifiable Data Breaches scheme.",
   datePublished: "2026-01-01",
-  dateModified: "2026-03-27",
+  dateModified: "2026-04-11",
   author: {
     "@type": "Organization",
     name: "ultrafastutilities",
@@ -276,7 +276,7 @@ export default function AustraliaPrivacyPolicyTemplate() {
                   <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>13 min read</span></div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>

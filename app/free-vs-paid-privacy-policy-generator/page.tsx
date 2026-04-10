@@ -63,7 +63,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
             description: "Compare free and paid privacy policy generators side by side. Learn what free tools miss, the compliance gaps to watch for, and why a $4.99 structured generator beats both free tools and $500 lawyers.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -204,7 +204,7 @@ export default function FreeVsPaidPrivacyPolicyGeneratorPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />

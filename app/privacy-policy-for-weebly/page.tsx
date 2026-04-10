@@ -201,8 +201,8 @@ export default function PrivacyPolicyForWeeblyPage() {
             description:
               "Create a privacy policy for your Weebly website. Covers Weebly's built-in analytics, contact forms, ecommerce, membership features, and Square integration requirements.",
             author: { "@type": "Person", name: "Anupam Kumar" },
-            datePublished: "2026-03-27",
-            dateModified: "2026-03-27",
+            datePublished: "2026-04-11",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -376,7 +376,7 @@ export default function PrivacyPolicyForWeeblyPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

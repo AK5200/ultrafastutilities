@@ -15,9 +15,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Chrome Extension Privacy Policy Template (Free, Copy-Paste Ready) (2026) | ultrafastutilities",
+    "Chrome Extension Privacy Policy Template [Free 2026]",
   description:
-    "Free Chrome extension privacy policy template you can copy, customize, and publish today. Covers Web Store requirements, permissions disclosures, data handling, and GDPR compliance.",
+    "Free copy-paste Chrome extension privacy policy template. Covers Web Store requirements, permissions, data handling, and GDPR. Generate in 60 seconds.",
   keywords:
     "chrome extension privacy policy template, chrome extension privacy policy example, chrome extension privacy policy sample, free chrome extension privacy policy, browser extension privacy policy template",
   robots: {
@@ -30,9 +30,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Chrome Extension Privacy Policy Template (Free, Copy-Paste Ready) (2026) | ultrafastutilities",
+      "Chrome Extension Privacy Policy Template [Free 2026]",
     description:
-      "Free Chrome extension privacy policy template you can copy, customize, and publish today. Covers Web Store requirements, permissions disclosures, data handling, and GDPR compliance.",
+      "Free copy-paste Chrome extension privacy policy template. Covers Web Store requirements, permissions, data handling, and GDPR. Generate in 60 seconds.",
     url: "https://ultrafastutilities.com/chrome-extension-privacy-policy-template",
     siteName: "ultrafastutilities",
     images: [
@@ -188,13 +188,13 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
             headline:
               "Chrome Extension Privacy Policy Template (Free, Copy-Paste Ready) (2026)",
             description:
-              "Free Chrome extension privacy policy template you can copy, customize, and publish today. Covers Web Store requirements, permissions disclosures, data handling, and GDPR compliance.",
+              "Free copy-paste Chrome extension privacy policy template. Covers Web Store requirements, permissions, data handling, and GDPR. Generate in 60 seconds.",
             author: {
               "@type": "Person",
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-16",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -300,7 +300,7 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
                 privacy policy without starting from scratch.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
                 Chrome Web Store compliance
               </p>
             </div>
@@ -377,7 +377,7 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>14 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

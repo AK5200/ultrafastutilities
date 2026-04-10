@@ -202,7 +202,7 @@ export default function PrivacyPolicyForSlackAppPage() {
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -296,7 +296,7 @@ export default function PrivacyPolicyForSlackAppPage() {
                 workflows, and tools for Slack workspaces.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
                 Slack App Directory compliance
               </p>
             </div>
@@ -373,7 +373,7 @@ export default function PrivacyPolicyForSlackAppPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>10 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

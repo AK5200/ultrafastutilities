@@ -19,9 +19,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Chrome Extensions: Web Store Requirements (2026) | ultrafastutilities",
+    "Privacy Policy for Chrome Extensions: Complete Guide [2026]",
   description:
-    "Chrome Web Store requires a privacy policy for extensions that handle user data. Learn exactly what Google requires, which permissions trigger it, and how to create one that passes review.",
+    "Chrome Web Store requires a privacy policy for extensions that access user data. See which 8 permissions trigger it and create yours in 60 seconds.",
   keywords:
     "privacy policy for chrome extension, chrome web store privacy policy, chrome extension privacy policy requirement, browser extension privacy policy, chrome extension data handling",
   robots: {
@@ -34,9 +34,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Chrome Extensions: Web Store Requirements (2026) | ultrafastutilities",
+      "Privacy Policy for Chrome Extensions: Complete Guide [2026]",
     description:
-      "Chrome Web Store requires a privacy policy for extensions that handle user data. Learn exactly what Google requires, which permissions trigger it, and how to create one that passes review.",
+      "Chrome Web Store requires a privacy policy for extensions that access user data. See which 8 permissions trigger it and create yours in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-chrome-extension",
     siteName: "ultrafastutilities",
     images: [
@@ -199,13 +199,13 @@ export default function PrivacyPolicyForChromeExtensionPage() {
             headline:
               "Privacy Policy for Chrome Extensions: Web Store Requirements (2026)",
             description:
-              "Chrome Web Store requires a privacy policy for extensions that handle user data. Learn exactly what Google requires, which permissions trigger it, and how to create one that passes review.",
+              "Chrome Web Store requires a privacy policy for extensions that access user data. See which 8 permissions trigger it and create yours in 60 seconds.",
             author: {
               "@type": "Person",
               name: "Anupam Kumar",
             },
             datePublished: "2026-03-09",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: {
               "@type": "Organization",
               name: "ultrafastutilities",
@@ -298,7 +298,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                 publishing to the Chrome Web Store.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: March 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
                 Chrome Web Store compliance
               </p>
             </div>
@@ -375,7 +375,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>11 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

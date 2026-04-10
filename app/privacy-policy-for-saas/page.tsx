@@ -17,8 +17,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for SaaS: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-  description: "Create a privacy policy for your SaaS platform. Covers user accounts, billing data, analytics, API access, GDPR lawful basis, and CCPA user rights. Generate compliant documents for $4.99.",
+  title: "Privacy Policy for SaaS: What Cloud Apps Must Disclose [2026]",
+  description: "SaaS apps collect accounts, billing, and API data -- your policy must disclose it all. Generate yours free in 60 seconds.",
   keywords: "privacy policy for SaaS, SaaS privacy policy, SaaS GDPR compliance, SaaS CCPA compliance, SaaS data protection",
   robots: {
     index: true,
@@ -28,18 +28,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-saas",
   },
   openGraph: {
-    title: "Privacy Policy for SaaS: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your SaaS platform. Covers user accounts, billing data, analytics, API access, GDPR lawful basis, and CCPA user rights. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for SaaS: What Cloud Apps Must Disclose [2026]",
+    description: "SaaS apps collect accounts, billing, and API data -- your policy must disclose it all. Generate yours free in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-saas",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for SaaS | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for SaaS: What Cloud Apps Must Disclose [2026]" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for SaaS: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your SaaS platform. Covers user accounts, billing data, analytics, API access, GDPR lawful basis, and CCPA user rights. Generate compliant documents for $4.99.",
+    title: "Privacy Policy for SaaS: What Cloud Apps Must Disclose [2026]",
+    description: "SaaS apps collect accounts, billing, and API data -- your policy must disclose it all. Generate yours free in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -62,11 +62,11 @@ export default function PrivacyPolicyForSaaSPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for SaaS: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-            description: "Create a privacy policy for your SaaS platform. Covers user accounts, billing data, analytics, API access, GDPR lawful basis, and CCPA user rights. Generate compliant documents for $4.99.",
+            headline: "Privacy Policy for SaaS: What Cloud Apps Must Disclose [2026]",
+            description: "SaaS apps collect accounts, billing, and API data -- your policy must disclose it all. Generate yours free in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
-            dateModified: "2026-03-27",
+            dateModified: "2026-04-11",
             publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
           }),
         }}
@@ -208,7 +208,7 @@ export default function PrivacyPolicyForSaaSPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: March 2026</span>
+                <span>Last updated: April 2026</span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
