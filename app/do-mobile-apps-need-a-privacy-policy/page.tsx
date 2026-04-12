@@ -286,7 +286,7 @@ export default function DoMobileAppsNeedAPrivacyPolicyPage() {
                 the Apple App Store or Google Play Store.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA, COPPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA, COPPA &amp;
                 app store compliance
               </p>
             </div>
@@ -363,7 +363,7 @@ export default function DoMobileAppsNeedAPrivacyPolicyPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>12 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

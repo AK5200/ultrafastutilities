@@ -22,8 +22,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
-  description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
+  title: "Privacy Policy for Typeform Surveys (Hidden Fields + GDPR 2026)",
+  description: "Typeform collects respondent data, hidden fields, and payment info. See what your privacy policy must disclose and generate yours free in 60 seconds.",
   keywords: "privacy policy for typeform, typeform privacy policy, typeform data collection, survey privacy policy, typeform gdpr",
   robots: {
     index: true,
@@ -33,18 +33,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-typeform",
   },
   openGraph: {
-    title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
-    description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
+    title: "Privacy Policy for Typeform Surveys (Hidden Fields + GDPR 2026)",
+    description: "Typeform collects respondent data, hidden fields, and payment info. See what your privacy policy must disclose and generate yours free in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-typeform",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Typeform: Survey Data Guide [2026]" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Typeform Surveys (Hidden Fields + GDPR 2026)" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Typeform: Survey Data Guide [2026]",
-    description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
+    title: "Privacy Policy for Typeform Surveys (Hidden Fields + GDPR 2026)",
+    description: "Typeform collects respondent data, hidden fields, and payment info. See what your privacy policy must disclose and generate yours free in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -74,8 +74,8 @@ export default function PrivacyPolicyForTypeformPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Typeform: Survey Data Guide [2026]",
-            description: "Typeform collects respondent data, hidden fields, and payment info -- your policy must disclose it. Create a compliant privacy policy in 60 seconds.",
+            headline: "Privacy Policy for Typeform Surveys (Hidden Fields + GDPR 2026)",
+            description: "Typeform collects respondent data, hidden fields, and payment info. See what your privacy policy must disclose and generate yours free in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-04-11",
             dateModified: "2026-04-11",
@@ -286,7 +286,7 @@ export default function PrivacyPolicyForTypeformPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -301,6 +301,10 @@ export default function PrivacyPolicyForTypeformPage() {
 
               {/* Featured Snippet */}
               <div className="rounded-xl border border-blue-200/80 bg-blue-50/40 p-6 mb-10">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">Typeform 2026 GDPR rules</span>
+                </p>
                 <h2 className="text-lg font-semibold text-slate-900 mb-3">
                   Quick Answer: Do You Need a Privacy Policy for Typeform?
                 </h2>

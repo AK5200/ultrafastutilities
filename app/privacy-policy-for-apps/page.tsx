@@ -16,8 +16,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
-  description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
+  title: "Privacy Policy for Apps: Free iOS & Android Generator (2026)",
+  description: "Free privacy policy for your iOS or Android app. Meets App Store and Play Store rules with GDPR and CCPA covered. Generate yours in 60 seconds.",
   keywords: "privacy policy for apps, mobile app privacy policy, iOS privacy policy, Android privacy policy, app store privacy policy",
   robots: {
     index: true,
@@ -27,8 +27,8 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-apps",
   },
   openGraph: {
-    title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
+    title: "Privacy Policy for Apps: Free iOS & Android Generator (2026)",
+    description: "Free privacy policy for your iOS or Android app. Meets App Store and Play Store rules with GDPR and CCPA covered. Generate yours in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-apps",
     siteName: "ultrafastutilities",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Mobile Apps | ultrafastutilities" }],
@@ -37,8 +37,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
-    description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
+    title: "Privacy Policy for Apps: Free iOS & Android Generator (2026)",
+    description: "Free privacy policy for your iOS or Android app. Meets App Store and Play Store rules with GDPR and CCPA covered. Generate yours in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -62,8 +62,8 @@ export default function PrivacyPolicyForAppsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Apps: iOS & Android, GDPR & CCPA (2026) | ultrafastutilities",
-            description: "Create a privacy policy for your iOS or Android app. Meet App Store and Play Store submission requirements with GDPR and CCPA-compliant documents. Generate yours for $4.99.",
+            headline: "Privacy Policy for Apps: Free iOS & Android Generator (2026)",
+            description: "Free privacy policy for your iOS or Android app. Meets App Store and Play Store rules with GDPR and CCPA covered. Generate yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-04-11",
@@ -235,7 +235,7 @@ export default function PrivacyPolicyForAppsPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -247,6 +247,23 @@ export default function PrivacyPolicyForAppsPage() {
                   <span>Reviewed for compliance</span>
                 </div>
               </div>
+
+              {/* Featured Snippet Box */}
+              <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 App Store & Play Store rules</span>
+                </p>
+                <p className="text-base leading-7 text-slate-800">
+                  <strong>Yes, every iOS and Android app needs a privacy policy.</strong>{" "}
+                  Apple App Store, Google Play Store, GDPR, and CCPA all require
+                  apps that collect any personal data, including device IDs, IP
+                  addresses, crash logs, or analytics, to publish a privacy
+                  policy. App submissions without one are rejected, and existing
+                  apps can be removed for non compliance.
+                </p>
+              </div>
+
               {/* Section 1: Why Apps Require Privacy Policies */}
               <section id="why-apps-require" className="scroll-mt-24">
                 <div className="flex items-start gap-4">

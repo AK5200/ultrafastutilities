@@ -116,7 +116,7 @@ const articleSchema = {
   description:
     "Complete guide to privacy policy requirements for Ghost CMS users, covering self-hosted vs Ghost Pro, member data, Stripe payments, analytics, commenting systems, and GDPR.",
   datePublished: "2026-01-01",
-  dateModified: "2026-03-31",
+  dateModified: "2026-04-11",
   author: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
   publisher: { "@type": "Organization", name: "ultrafastutilities", url: "https://ultrafastutilities.com" },
 };
@@ -188,7 +188,7 @@ export default function PrivacyPolicyGhost() {
                   <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>13 min read</span></div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>

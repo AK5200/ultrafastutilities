@@ -376,7 +376,7 @@ export default function PrivacyPolicyForGoDaddyWebsitePage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>

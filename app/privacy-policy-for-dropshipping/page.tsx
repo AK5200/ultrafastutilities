@@ -16,9 +16,9 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Dropshipping Stores: What You Must Disclose (2026)",
+  title: "Privacy Policy for Dropshipping: Supplier & Carrier Data (2026)",
   description:
-    "Dropshipping stores share customer data with suppliers, carriers, and payment processors. Learn what your privacy policy must say about this data flow under GDPR, CCPA, and Shopify requirements.",
+    "Dropshipping stores share customer data with suppliers, carriers, and payment processors. See what your privacy policy must disclose. Free, updated April 2026.",
   keywords:
     "privacy policy for dropshipping, dropshipping privacy policy, dropshipping store privacy policy, dropshipping website privacy policy",
   robots: { index: true, follow: true },
@@ -26,7 +26,7 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-dropshipping",
   },
   openGraph: {
-    title: "Privacy Policy for Dropshipping Stores: What You Must Disclose (2026)",
+    title: "Privacy Policy for Dropshipping: Supplier & Carrier Data (2026)",
     description:
       "Customer data in dropshipping flows from your store to payment processors, suppliers, and carriers. Your privacy policy must disclose this entire chain.",
     url: "https://ultrafastutilities.com/privacy-policy-for-dropshipping",
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Dropshipping Stores: What You Must Disclose (2026)",
+    title: "Privacy Policy for Dropshipping: Supplier & Carrier Data (2026)",
     description:
       "Customer data flows from your store to suppliers and carriers. Your privacy policy must cover this entire chain.",
     images: ["/og-image.png"],
@@ -109,7 +109,7 @@ const articleSchema = {
   headline: "Privacy Policy for Dropshipping Stores: What You Must Disclose",
   description:
     "A complete guide to privacy policy requirements for dropshipping stores, covering supplier data sharing, customer data flow, GDPR, CCPA, and platform requirements.",
-  dateModified: "2026-03-31",
+  dateModified: "2026-04-11",
   author: { "@type": "Organization", name: "Ultra Fast Utilities" },
   publisher: { "@type": "Organization", name: "Ultra Fast Utilities" },
 };
@@ -194,7 +194,7 @@ export default function DropshippingPrivacyPolicyPage() {
                   <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>12 min read</span></div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
@@ -203,6 +203,10 @@ export default function DropshippingPrivacyPolicyPage() {
 
             {/* Featured snippet */}
             <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 mb-8 not-prose">
+              <p className="text-xs font-medium text-blue-700/70 mb-2">
+                <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                <span className="text-blue-600/60">2026 dropshipping rules</span>
+              </p>
               <h2 className="text-blue-900 font-bold text-lg mb-3">Quick Answer: What a Dropshipping Privacy Policy Must Cover</h2>
               <ul className="space-y-2 text-blue-800 text-sm">
                 <li><strong>Supplier data sharing:</strong> Customer name and shipping address shared with fulfillment partners</li>

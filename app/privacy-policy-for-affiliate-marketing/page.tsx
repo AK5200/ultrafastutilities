@@ -108,7 +108,7 @@ const articleSchema = {
   headline: "Privacy Policy for Affiliate Marketing Websites",
   description:
     "A complete guide to privacy policy requirements for affiliate marketing websites, covering FTC disclosure, cookie tracking, affiliate network requirements, and GDPR.",
-  dateModified: "2026-03-31",
+  dateModified: "2026-04-11",
   author: { "@type": "Organization", name: "Ultra Fast Utilities" },
   publisher: { "@type": "Organization", name: "Ultra Fast Utilities" },
 };
@@ -203,7 +203,7 @@ export default function AffiliateMarketingPrivacyPolicyPage() {
                 <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
               </div>
               <span className="text-slate-300 hidden sm:inline">&middot;</span>
-              <span>Last updated: April 2026</span>
+              <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
               <span className="text-slate-300 hidden sm:inline">&middot;</span>
               <div className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" /><span>Reviewed for compliance</span></div>
             </div>

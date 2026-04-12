@@ -17,9 +17,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Can I Copy Someone Else's Privacy Policy? The Legal Truth (2026) | ultrafastutilities",
+    "Can I Copy Someone Else's Privacy Policy? No, Here's Why (2026)",
   description:
-    "Copying someone else's privacy policy is both a copyright violation and a compliance failure. Learn exactly why it is illegal, what the risks are, and how to create an accurate policy the right way.",
+    "No. Copying a privacy policy is copyright infringement and a compliance failure. See the 5 real risks and create your own with a free 60 second generator.",
   keywords:
     "can i copy someone else's privacy policy, is it illegal to copy a privacy policy, can i copy and paste a privacy policy, copy privacy policy copyright infringement, copying privacy policy legal risk, can i use someone else's privacy policy",
   robots: {
@@ -32,9 +32,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Can I Copy Someone Else's Privacy Policy? The Legal Truth (2026) | ultrafastutilities",
+      "Can I Copy Someone Else's Privacy Policy? No, Here's Why (2026)",
     description:
-      "Copying someone else's privacy policy is both a copyright violation and a compliance failure. Learn exactly why it is illegal, what the risks are, and how to create an accurate policy the right way.",
+      "No. Copying a privacy policy is copyright infringement and a compliance failure. See the 5 real risks and create your own with a free 60 second generator.",
     url: "https://ultrafastutilities.com/can-i-copy-someone-elses-privacy-policy",
     siteName: "ultrafastutilities",
     images: [
@@ -197,7 +197,7 @@ export default function CanICopySomeoneElsesPrivacyPolicyPage() {
             headline:
               "Can I Copy Someone Else's Privacy Policy? The Legal Truth (2026)",
             description:
-              "Copying someone else's privacy policy is both a copyright violation and a compliance failure. Learn exactly why it is illegal, what the risks are, and how to create an accurate policy the right way.",
+              "No. Copying a privacy policy is copyright infringement and a compliance failure. See the 5 real risks and create your own with a free 60 second generator.",
             author: {
               "@type": "Person",
               name: "Anupam Kumar",
@@ -296,7 +296,7 @@ export default function CanICopySomeoneElsesPrivacyPolicyPage() {
                 want to stay compliant without the legal risk.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA &amp;
                 CalOPPA compliance
               </p>
             </div>
@@ -373,7 +373,7 @@ export default function CanICopySomeoneElsesPrivacyPolicyPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>10 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
@@ -385,6 +385,10 @@ export default function CanICopySomeoneElsesPrivacyPolicyPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">Copyright & compliance review</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>Copying another website&apos;s privacy policy is both a copyright violation and a compliance failure.</strong>{" "}
                   Even if the original owner never sues you, the copied policy describes

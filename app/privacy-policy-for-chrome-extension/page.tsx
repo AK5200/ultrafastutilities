@@ -19,9 +19,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Chrome Extensions: Complete Guide [2026]",
+    "Privacy Policy for Chrome Extension: Free Generator (2026)",
   description:
-    "Chrome Web Store requires a privacy policy for extensions that access user data. See which 8 permissions trigger it and create yours in 60 seconds.",
+    "Chrome Web Store requires a privacy policy for extensions handling user data. See the 8 trigger permissions, GDPR rules, and generate yours free in 60 seconds.",
   keywords:
     "privacy policy for chrome extension, chrome web store privacy policy, chrome extension privacy policy requirement, browser extension privacy policy, chrome extension data handling",
   robots: {
@@ -34,9 +34,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Chrome Extensions: Complete Guide [2026]",
+      "Privacy Policy for Chrome Extension: Free Generator (2026)",
     description:
-      "Chrome Web Store requires a privacy policy for extensions that access user data. See which 8 permissions trigger it and create yours in 60 seconds.",
+      "Chrome Web Store requires a privacy policy for extensions handling user data. See the 8 trigger permissions, GDPR rules, and generate yours free in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-chrome-extension",
     siteName: "ultrafastutilities",
     images: [
@@ -53,9 +53,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Chrome Extensions: Web Store Requirements (2026)",
+      "Privacy Policy for Chrome Extension: Free Generator (2026)",
     description:
-      "Chrome Web Store requires a privacy policy for extensions that handle user data. Learn what Google requires and which permissions trigger it.",
+      "Chrome Web Store requires a privacy policy for extensions handling user data. See the 8 trigger permissions and generate yours free in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -298,7 +298,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                 publishing to the Chrome Web Store.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA &amp;
                 Chrome Web Store compliance
               </p>
             </div>
@@ -375,7 +375,7 @@ export default function PrivacyPolicyForChromeExtensionPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>11 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
@@ -387,6 +387,10 @@ export default function PrivacyPolicyForChromeExtensionPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 Chrome Web Store policy</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>The Chrome Web Store requires a privacy policy for any extension that handles personal or sensitive user data.</strong>{" "}
                   If your extension requests permissions like tabs, cookies,

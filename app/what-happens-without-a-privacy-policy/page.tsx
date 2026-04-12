@@ -19,9 +19,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
+    "What Happens Without a Privacy Policy? Fines & Lawsuits (2026)",
   description:
-    "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
+    "No privacy policy means GDPR fines up to €20M, CCPA lawsuits, App Store removal, and lost trust. See the 7 real consequences and fix yours in 60 seconds.",
   keywords:
     "no privacy policy consequences, privacy policy required by law, website without privacy policy, privacy policy fines, GDPR penalty no privacy policy, do I need a privacy policy",
   robots: {
@@ -32,18 +32,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy",
   },
   openGraph: {
-    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
-    description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
+    title: "What Happens Without a Privacy Policy? Fines & Lawsuits (2026)",
+    description: "No privacy policy means GDPR fines up to €20M, CCPA lawsuits, App Store removal, and lost trust. See the 7 real consequences and fix yours in 60 seconds.",
     url: "https://ultrafastutilities.com/what-happens-without-a-privacy-policy",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "What Happens Without a Privacy Policy? Fines & Lawsuits (2026)" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
-    description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
+    title: "What Happens Without a Privacy Policy? Fines & Lawsuits (2026)",
+    description: "No privacy policy means GDPR fines up to €20M, CCPA lawsuits, App Store removal, and lost trust. See the 7 real consequences and fix yours in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -68,8 +68,8 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "What Happens Without a Privacy Policy? Fines, Lawsuits & Risks (2026) | ultrafastutilities",
-            description: "No privacy policy on your website or app? Learn the real consequences: GDPR fines up to €20M, CCPA lawsuits, app store removal, and lost customer trust. Fix it in 60 seconds.",
+            headline: "What Happens Without a Privacy Policy? Fines & Lawsuits (2026)",
+            description: "No privacy policy means GDPR fines up to €20M, CCPA lawsuits, App Store removal, and lost trust. See the 7 real consequences and fix yours in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-04-11",
@@ -259,7 +259,7 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -274,6 +274,10 @@ export default function WhatHappensWithoutPrivacyPolicyPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-red-200/80 bg-red-50/40 p-5">
+                <p className="text-xs font-medium text-red-700/70 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-red-600/60">2026 GDPR & CCPA enforcement</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>Without a privacy policy</strong>, your website or app faces GDPR fines up to €20 million, CCPA penalties of $7,500 per violation, app store removal, ad account suspension, payment processor bans, and loss of customer trust. Privacy laws apply the moment you collect any personal data, regardless of your business size or location.
                 </p>

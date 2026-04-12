@@ -22,9 +22,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "COPPA Privacy Policy Template: Children's Privacy Guide (2026) | ultrafastutilities",
+    "COPPA Privacy Policy Template: Free, FTC Compliant (2026)",
   description:
-    "COPPA-compliant privacy policy template for websites and apps that collect data from children under 13. Covers parental consent, data minimization, and FTC requirements.",
+    "Free COPPA compliant privacy policy template for sites and apps targeting children under 13. Parental consent, data minimization, FTC ready. Updated April 2026.",
   keywords:
     "COPPA privacy policy template, COPPA compliant privacy policy, children privacy policy, under 13 privacy policy, COPPA requirements privacy policy",
   robots: {
@@ -36,9 +36,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "COPPA Privacy Policy Template: Children's Privacy Guide (2026) | ultrafastutilities",
+      "COPPA Privacy Policy Template: Free, FTC Compliant (2026)",
     description:
-      "COPPA-compliant privacy policy template for websites and apps that collect data from children under 13. Covers parental consent, data minimization, and FTC requirements.",
+      "Free COPPA compliant privacy policy template for sites and apps targeting children under 13. Parental consent, data minimization, FTC ready. Updated April 2026.",
     url: "https://ultrafastutilities.com/coppa-privacy-policy-template",
     siteName: "ultrafastutilities",
     images: [
@@ -55,9 +55,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "COPPA Privacy Policy Template: Children's Privacy Guide (2026) | ultrafastutilities",
+      "COPPA Privacy Policy Template: Free, FTC Compliant (2026)",
     description:
-      "COPPA-compliant privacy policy template for websites and apps that collect data from children under 13. Covers parental consent, data minimization, and FTC requirements.",
+      "Free COPPA compliant privacy policy template for sites and apps targeting children under 13. Parental consent, data minimization, FTC ready. Updated April 2026.",
     images: ["/og-image.png"],
   },
 };
@@ -275,7 +275,7 @@ export default function CoppaPrivacyPolicyTemplate() {
                   <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" /><span>13 min read</span></div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
@@ -283,6 +283,10 @@ export default function CoppaPrivacyPolicyTemplate() {
               </div>
               {/* Featured Snippet Box */}
               <div id="what-is-coppa" className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <p className="text-xs font-medium text-blue-700/70 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-blue-600/60">FTC COPPA 2026 rules</span>
+                </p>
                 <h2 className="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
                   <Info className="w-5 h-5" />
                   What Is COPPA?

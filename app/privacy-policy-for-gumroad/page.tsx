@@ -24,9 +24,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
+    "Privacy Policy for Gumroad Sellers (Buyer Data + Payments, 2026)",
   description:
-    "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
+    "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. See the 7 sections you need and generate yours free in 60 seconds.",
   keywords:
     "privacy policy for gumroad, gumroad privacy policy, gumroad seller privacy policy, digital product privacy policy, gumroad data collection",
   robots: {
@@ -38,9 +38,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
+      "Privacy Policy for Gumroad Sellers (Buyer Data + Payments, 2026)",
     description:
-      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
+      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. See the 7 sections you need and generate yours free in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-gumroad",
     siteName: "ultrafastutilities",
     images: [
@@ -48,7 +48,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
+        alt: "Privacy Policy for Gumroad Sellers (Buyer Data + Payments, 2026)",
       },
     ],
     locale: "en_US",
@@ -57,9 +57,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
+      "Privacy Policy for Gumroad Sellers (Buyer Data + Payments, 2026)",
     description:
-      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
+      "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. See the 7 sections you need and generate yours free in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -199,9 +199,9 @@ export default function PrivacyPolicyForGumroadPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline:
-              "Privacy Policy for Gumroad Sellers [Complete Guide 2026]",
+              "Privacy Policy for Gumroad Sellers (Buyer Data + Payments, 2026)",
             description:
-              "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. Learn what to include and generate yours free.",
+              "Gumroad sellers must disclose buyer data, payments, email lists, and license keys. See the 7 sections you need and generate yours free in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2026-04-11",
             dateModified: "2026-04-11",
@@ -379,7 +379,7 @@ export default function PrivacyPolicyForGumroadPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
@@ -398,6 +398,10 @@ export default function PrivacyPolicyForGumroadPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 Gumroad seller rules</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>
                     Gumroad sellers who collect buyer data need their own

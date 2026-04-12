@@ -303,7 +303,9 @@ export default function DoINeedAPrivacyPolicyForABlogPage() {
                 For personal bloggers, WordPress sites, and content creators.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp; CalOPPA compliance
+                Last updated{" "}
+                <time dateTime="2026-04-11">April 11, 2026</time>{" "}
+                &middot; Reviewed for GDPR, CCPA &amp; CalOPPA compliance
               </p>
             </div>
 
@@ -379,7 +381,10 @@ export default function DoINeedAPrivacyPolicyForABlogPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>
+                  Updated{" "}
+                  <time dateTime="2026-04-11">April 11, 2026</time>
+                </span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -394,6 +399,10 @@ export default function DoINeedAPrivacyPolicyForABlogPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">Updated guidance</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>Yes, blogs need a privacy policy.</strong> Any blog
                   that uses Google Analytics, has a contact form, allows

@@ -15,9 +15,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Chrome Extension Privacy Policy Template [Free 2026]",
+    "Chrome Extension Privacy Policy Template (Free, Copy Paste 2026)",
   description:
-    "Free copy-paste Chrome extension privacy policy template. Covers Web Store requirements, permissions, data handling, and GDPR. Generate in 60 seconds.",
+    "Free copy paste Chrome extension privacy policy template with all 7 sections. Web Store approved, GDPR ready, updated April 2026. Generate yours in 60 seconds.",
   keywords:
     "chrome extension privacy policy template, chrome extension privacy policy example, chrome extension privacy policy sample, free chrome extension privacy policy, browser extension privacy policy template",
   robots: {
@@ -30,9 +30,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Chrome Extension Privacy Policy Template [Free 2026]",
+      "Chrome Extension Privacy Policy Template (Free, Copy Paste 2026)",
     description:
-      "Free copy-paste Chrome extension privacy policy template. Covers Web Store requirements, permissions, data handling, and GDPR. Generate in 60 seconds.",
+      "Free copy paste Chrome extension privacy policy template with all 7 sections. Web Store approved, GDPR ready, updated April 2026. Generate yours in 60 seconds.",
     url: "https://ultrafastutilities.com/chrome-extension-privacy-policy-template",
     siteName: "ultrafastutilities",
     images: [
@@ -49,9 +49,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Chrome Extension Privacy Policy Template (Free, Copy-Paste Ready) (2026)",
+      "Chrome Extension Privacy Policy Template (Free, Copy Paste 2026)",
     description:
-      "Free Chrome extension privacy policy template you can copy, customize, and publish today. Covers Web Store requirements, permissions disclosures, and GDPR compliance.",
+      "Free Chrome extension privacy policy template with all 7 sections. Web Store approved, GDPR ready. Generate yours in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -300,7 +300,7 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
                 privacy policy without starting from scratch.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA &amp;
                 Chrome Web Store compliance
               </p>
             </div>
@@ -377,7 +377,7 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>14 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
@@ -389,6 +389,10 @@ export default function ChromeExtensionPrivacyPolicyTemplatePage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">Web Store approved template</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>A Chrome extension privacy policy template should include seven core sections: what data your extension collects, how it uses that data, whether it shares data with third parties, how data is stored and secured, how users can request deletion, your contact information, and the effective date.</strong>{" "}
                   For extensions subject to GDPR, add your legal basis for

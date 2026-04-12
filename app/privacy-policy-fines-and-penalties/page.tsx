@@ -107,7 +107,7 @@ const articleSchema = {
   headline: "Privacy Policy Fines and Penalties: What Regulators Can Charge You",
   description:
     "A detailed guide to privacy policy fines under GDPR, CCPA, FTC, and Australian law with real enforcement examples.",
-  dateModified: "2026-03-31",
+  dateModified: "2026-04-11",
   author: { "@type": "Organization", name: "Ultra Fast Utilities" },
   publisher: { "@type": "Organization", name: "Ultra Fast Utilities" },
 };
@@ -202,7 +202,7 @@ export default function PrivacyPolicyFinesPage() {
                 <span>Written by{" "}<span className="font-semibold text-slate-800">Anupam Kumar</span></span>
               </div>
               <span className="text-slate-300 hidden sm:inline">&middot;</span>
-              <span>Last updated: April 2026</span>
+              <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
               <span className="text-slate-300 hidden sm:inline">&middot;</span>
               <div className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" /><span>Reviewed for compliance</span></div>
             </div>

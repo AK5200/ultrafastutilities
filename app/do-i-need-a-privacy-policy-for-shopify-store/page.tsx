@@ -285,7 +285,7 @@ export default function DoINeedAPrivacyPolicyForShopifyStorePage() {
                 entrepreneurs who want to stay legally compliant.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA &amp;
                 PIPEDA compliance
               </p>
             </div>
@@ -362,7 +362,7 @@ export default function DoINeedAPrivacyPolicyForShopifyStorePage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>10 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>

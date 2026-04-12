@@ -17,9 +17,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Do Chrome Extensions Need a Privacy Policy? [2026 Rules]",
+    "Do Chrome Extensions Need a Privacy Policy? Yes (2026 Google Rules)",
   description:
-    "Yes -- Google requires a privacy policy for Chrome extensions that access user data. See the 7 permissions that trigger it and generate yours free.",
+    "Yes. Google requires a privacy policy for Chrome extensions that request data permissions. See the 7 triggers, 2026 Web Store rules, and a free 60 second generator.",
   keywords:
     "do chrome extensions need a privacy policy, chrome extension privacy policy required, does my chrome extension need a privacy policy, browser extension privacy requirements, chrome extension privacy law",
   robots: {
@@ -32,9 +32,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Do Chrome Extensions Need a Privacy Policy? [2026 Rules]",
+      "Do Chrome Extensions Need a Privacy Policy? Yes (2026 Google Rules)",
     description:
-      "Yes -- Google requires a privacy policy for Chrome extensions that access user data. See the 7 permissions that trigger it and generate yours free.",
+      "Yes. Google requires a privacy policy for Chrome extensions that request data permissions. See the 7 triggers, 2026 Web Store rules, and a free 60 second generator.",
     url: "https://ultrafastutilities.com/do-chrome-extensions-need-a-privacy-policy",
     siteName: "ultrafastutilities",
     images: [
@@ -51,9 +51,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Do Chrome Extensions Need a Privacy Policy? Yes, Here's When (2026)",
+      "Do Chrome Extensions Need a Privacy Policy? Yes (2026 Google Rules)",
     description:
-      "Yes, Chrome extensions that handle user data need a privacy policy. Google requires it for Web Store listing, and GDPR/CCPA may apply.",
+      "Yes. Google requires a privacy policy for Chrome extensions that request data permissions. See the 7 triggers, 2026 Web Store rules, and a free generator.",
     images: ["/og-image.png"],
   },
 };
@@ -284,7 +284,7 @@ export default function DoChromeExtensionsNeedAPrivacyPolicyPage() {
                 publishing to the Chrome Web Store.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for GDPR, CCPA &amp;
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for GDPR, CCPA &amp;
                 Chrome Web Store compliance
               </p>
             </div>
@@ -361,7 +361,7 @@ export default function DoChromeExtensionsNeedAPrivacyPolicyPage() {
                   </span>
                 </div>
                 <span className="hidden sm:inline text-slate-300">|</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="hidden sm:inline text-slate-300">|</span>
                 <span>10 min read</span>
                 <span className="hidden sm:inline text-slate-300">|</span>
@@ -373,6 +373,10 @@ export default function DoChromeExtensionsNeedAPrivacyPolicyPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 Chrome Web Store rules</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>Yes, Chrome extensions that handle user data need a privacy policy.</strong>{" "}
                   Google requires a privacy policy URL in the Chrome Web Store

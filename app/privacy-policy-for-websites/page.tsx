@@ -15,8 +15,8 @@ import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-  description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
+  title: "Privacy Policy for Website: Free Generator (GDPR + CCPA 2026)",
+  description: "Free privacy policy for any website. GDPR consent, CCPA disclosures, cookie categories, user rights covered. Updated April 2026, generate in 60 seconds.",
   keywords: "privacy policy for websites, website privacy policy, GDPR privacy policy, CCPA privacy policy, privacy policy generator",
   robots: {
     index: true,
@@ -26,18 +26,18 @@ export const metadata = {
     canonical: "https://ultrafastutilities.com/privacy-policy-for-websites",
   },
   openGraph: {
-    title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
+    title: "Privacy Policy for Website: Free Generator (GDPR + CCPA 2026)",
+    description: "Free privacy policy for any website. GDPR consent, CCPA disclosures, cookie categories, user rights covered. Updated April 2026, generate in 60 seconds.",
     url: "https://ultrafastutilities.com/privacy-policy-for-websites",
     siteName: "ultrafastutilities",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Privacy Policy for Website: Free Generator (GDPR + CCPA 2026)" }],
     locale: "en_US",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-    description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
+    title: "Privacy Policy for Website: Free Generator (GDPR + CCPA 2026)",
+    description: "Free privacy policy for any website. GDPR consent, CCPA disclosures, cookie categories, user rights covered. Updated April 2026, generate in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -61,8 +61,8 @@ export default function PrivacyPolicyForWebsitesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Privacy Policy for Websites: GDPR & CCPA Compliant (2026) | ultrafastutilities",
-            description: "Create a compliant privacy policy for your website in under 60 seconds. Covers GDPR consent, CCPA disclosures, cookie categories, user rights, and data retention. Free preview with one-time $4.99 generation.",
+            headline: "Privacy Policy for Website: Free Generator (GDPR + CCPA 2026)",
+            description: "Free privacy policy for any website. GDPR consent, CCPA disclosures, cookie categories, user rights covered. Updated April 2026, generate in 60 seconds.",
             author: { "@type": "Person", name: "Anupam Kumar" },
             datePublished: "2025-01-01",
             dateModified: "2026-04-11",
@@ -250,7 +250,7 @@ export default function PrivacyPolicyForWebsitesPage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -262,6 +262,23 @@ export default function PrivacyPolicyForWebsitesPage() {
                   <span>Reviewed for compliance</span>
                 </div>
               </div>
+
+              {/* Featured Snippet Box */}
+              <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 GDPR & CCPA website rules</span>
+                </p>
+                <p className="text-base leading-7 text-slate-800">
+                  <strong>Yes, every website that collects personal data needs a privacy policy.</strong>{" "}
+                  Under GDPR, CCPA, and 18 other US state privacy laws, any
+                  website using contact forms, analytics, cookies, newsletters,
+                  payment processing, or even basic server logs is collecting
+                  personal data and must publish a privacy policy that
+                  discloses how that data is handled.
+                </p>
+              </div>
+
               {/* Section 1: What is a Website Privacy Policy? */}
               <section id="what-is" className="scroll-mt-24">
                 <div className="flex items-start gap-4">

@@ -23,9 +23,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Facebook Ads: Meta Requirements [2026]",
+    "Privacy Policy for Facebook Ads: Meta Requirements (2026)",
   description:
-    "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or retargeting. See exactly what to include and generate yours free.",
+    "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or Lead Ads. See what to include and generate yours free in 60 seconds.",
   keywords:
     "do i need a privacy policy for facebook ads, facebook ads privacy policy, meta ads privacy policy, facebook pixel privacy policy, custom audiences privacy policy",
   robots: {
@@ -38,9 +38,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Facebook Ads: Meta Requirements [2026]",
+      "Privacy Policy for Facebook Ads: Meta Requirements (2026)",
     description:
-      "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or retargeting. See exactly what to include and generate yours free.",
+      "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or Lead Ads. See what to include and generate yours free in 60 seconds.",
     url: "https://ultrafastutilities.com/do-i-need-a-privacy-policy-for-facebook-ads",
     siteName: "ultrafastutilities",
     images: [
@@ -48,7 +48,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Privacy Policy for Facebook Ads: Meta Requirements [2026]",
+        alt: "Privacy Policy for Facebook Ads: Meta Requirements (2026)",
       },
     ],
     locale: "en_US",
@@ -57,9 +57,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Facebook Ads: Meta Requirements [2026]",
+      "Privacy Policy for Facebook Ads: Meta Requirements (2026)",
     description:
-      "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or retargeting. See exactly what to include and generate yours free.",
+      "Meta requires a privacy policy for all advertisers using Pixel, Custom Audiences, or Lead Ads. See what to include and generate yours free in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -299,7 +299,7 @@ export default function PrivacyPolicyFacebookAds() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -313,6 +313,10 @@ export default function PrivacyPolicyFacebookAds() {
               </div>
               {/* Featured Snippet Box */}
               <div id="quick-answer" className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <p className="text-xs font-medium text-blue-700/70 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-blue-600/60">2026 Meta advertiser rules</span>
+                </p>
                 <h2 className="text-lg font-semibold text-blue-900 mb-3 flex items-center gap-2">
                   <Info className="w-5 h-5" />
                   Quick Answer: Do You Need a Privacy Policy for Facebook Ads?

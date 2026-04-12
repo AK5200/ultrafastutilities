@@ -23,9 +23,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Free GDPR Privacy Policy Template [UK & EU Compliant 2026]",
+    "Free GDPR Privacy Policy Template (UK & EU Compliant, 2026)",
   description:
-    "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
+    "Free GDPR privacy policy template with all 12 required sections. Lawful basis, user rights, retention, cookies. Updated April 2026, generate in 60 seconds.",
   keywords:
     "GDPR privacy policy template, free GDPR privacy policy, privacy policy template UK, GDPR compliant privacy policy, GDPR compliant privacy policy template, free website privacy policy template UK, privacy policy GDPR template, gdpr privacy policy template free",
   robots: {
@@ -37,9 +37,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Free GDPR Privacy Policy Template [UK & EU Compliant 2026]",
+      "Free GDPR Privacy Policy Template (UK & EU Compliant, 2026)",
     description:
-      "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
+      "Free GDPR privacy policy template with all 12 required sections. Lawful basis, user rights, retention, cookies. Updated April 2026, generate in 60 seconds.",
     url: "https://ultrafastutilities.com/gdpr-privacy-policy-template",
     siteName: "ultrafastutilities",
     images: [
@@ -56,9 +56,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Free GDPR Privacy Policy Template: UK and EU Compliant (2026)",
+      "Free GDPR Privacy Policy Template (UK & EU Compliant, 2026)",
     description:
-      "Free GDPR privacy policy template covering all 12 required sections. Lawful basis, user rights, data retention, cookies. Generate yours in 60 seconds.",
+      "Free GDPR privacy policy template with all 12 required sections. Lawful basis, user rights, retention, cookies. Generate in 60 seconds.",
     images: ["/og-image.png"],
   },
 };
@@ -294,7 +294,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                 UK or EU users.
               </p>
               <p className="mt-2 text-xs text-slate-400">
-                Last updated: April 2026 &middot; Reviewed for UK &amp; EU GDPR alignment
+                Last updated <time dateTime="2026-04-11">April 11, 2026</time> &middot; Reviewed for UK &amp; EU GDPR alignment
               </p>
             </div>
 
@@ -379,7 +379,7 @@ export default function GDPRPrivacyPolicyTemplatePage() {
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">&middot;</span>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
@@ -394,6 +394,10 @@ export default function GDPRPrivacyPolicyTemplatePage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">UK & EU GDPR aligned</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>A GDPR privacy policy template</strong> is a pre-structured document that covers every disclosure required under the General Data Protection Regulation, including lawful basis for processing, data retention periods, user rights, cookie usage, international transfers, and breach notification procedures. It applies to any website or app that collects personal data from UK or EU residents.
                 </p>

@@ -20,9 +20,9 @@ import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
   title:
-    "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
+    "Privacy Policy for Amazon Sellers (FBA + Brand Registry, 2026)",
   description:
-    "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
+    "Amazon requires a privacy policy for Brand Registry, external sites, and Amazon Ads. Covers FBA buyer data and multi channel rules. Free, updated April 2026.",
   keywords:
     "privacy policy for amazon seller, amazon seller privacy policy, amazon fba privacy policy, amazon marketplace privacy policy, amazon third party seller privacy policy",
   robots: {
@@ -35,9 +35,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
+      "Privacy Policy for Amazon Sellers (FBA + Brand Registry, 2026)",
     description:
-      "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
+      "Amazon requires a privacy policy for Brand Registry, external sites, and Amazon Ads. Covers FBA buyer data and multi channel rules. Free, updated April 2026.",
     url: "https://ultrafastutilities.com/privacy-policy-for-amazon-seller",
     siteName: "ultrafastutilities",
     images: [
@@ -54,9 +54,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Privacy Policy for Amazon Sellers [FBA Guide 2026]",
+      "Privacy Policy for Amazon Sellers (FBA + Brand Registry, 2026)",
     description:
-      "Amazon requires a privacy policy for Brand Registry and external websites. Covers FBA data, buyer info, Amazon Ads, and multi-channel selling. Generate yours free.",
+      "Amazon requires a privacy policy for Brand Registry, external sites, and Amazon Ads. Covers FBA buyer data and multi channel rules. Free, updated April 2026.",
     images: ["/og-image.png"],
   },
 };
@@ -376,7 +376,7 @@ export default function PrivacyPolicyForAmazonSellerPage() {
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
-                <span>Last updated: April 2026</span>
+                <span>Last updated <time dateTime="2026-04-11">April 11, 2026</time></span>
                 <span className="text-slate-300 hidden sm:inline">
                   &middot;
                 </span>
@@ -395,6 +395,10 @@ export default function PrivacyPolicyForAmazonSellerPage() {
 
               {/* Featured Snippet Box */}
               <div className="mb-10 rounded-xl border border-blue-200/80 bg-blue-50/40 p-5">
+                <p className="text-xs font-medium text-slate-500 mb-2">
+                  <time dateTime="2026-04-11">April 11, 2026</time> &mdash;{" "}
+                  <span className="text-slate-400">2026 Amazon seller rules</span>
+                </p>
                 <p className="text-base leading-7 text-slate-800">
                   <strong>
                     Amazon third-party sellers who handle buyer data, operate
